@@ -1,5 +1,8 @@
 <html>
 <head>
+<title>
+redspin.net - B Davis
+</title>
 <!-- This Script is from www.htmlfreecodes.com, Provided by: Mahmood Bina -->
 <script>
 // Select fade-effect below:
@@ -150,15 +153,18 @@ if (browserok) {
 	window.onload=setrandomcolor
 }
 </script>
-<link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans' rel='stylesheet' type='text/css'/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="typed.js"></script>
 <script>
   $(function(){
       $(".element").typed({
         strings: ["Brandon Davis"],
-        typeSpeed: 60
+        typeSpeed: 60, // typing speed
+        backDelay: 500, // pause before backspacing
+        callback: function(){ setTimeout(show(),800);} // call function after typing is done
       });
+	    function show() {$("#info").fadeIn("slow");}
   });
 </script>
 <style>
@@ -180,11 +186,9 @@ a:visited {
 	margin-left:40px;
     top: 32%;
 	">
-	<div style="
-		font-size:40px;
-		font-family:'Press Start 2P';
-		">Brandon Davis</div><br><br>
-	<div style="
+	<div class="element" style="font-size:40px;font-family:'Press Start 2P';"></div><br><br>
+	<div id= "info" style="
+		display:none;
 		font-size:20px;
 		line-height: 30px;
 		font-family: 'Open Sans', sans-serif;
