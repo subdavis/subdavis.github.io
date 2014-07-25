@@ -3,139 +3,6 @@
 <title>
 Brandon Davis
 </title>
-<script>
-var fade_effect=3
-var gradient_effect="horizontal"
-var speed=60
-var browserinfos=navigator.userAgent 
-var ie4=document.all&&!document.getElementById
-var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
-var ns4=document.layers
-var ns6=document.getElementById&&!document.all
-var opera=browserinfos.match(/Opera/)  
-var browserok=ie4||ie5||ns4||ns6||opera
-
-if (fade_effect==1) {
-	var darkmax=1
-	var lightmax=127
-}
-if (fade_effect==2) {
-	var darkmax=127
-	var lightmax=254
-}
-if (fade_effect==3) {
-	var darkmax=1
-	var lightmax=254
-}
-if (fade_effect==4) {
-	var darkmax=190
-	var lightmax=254
-}
-if (fade_effect==5) {
-	var darkmax=1
-	var lightmax=80
-}
-var hexc = new Array('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F')
-
-var newred
-var newgreen
-var newblue
-var oldred
-var oldgreen
-var oldblue
-
-var redcol_1
-var redcol_2 
-var greencol_1 
-var greencol_2 
-var bluecol_1 
-var bluecol_2 
-var oldcolor
-var newcolor
-var firsttime=true
- 
-var stepred=1
-var stepgreen=1
-var stepblue=1
-
-function setrandomcolor() {
-	var range=(lightmax-darkmax)
-	if (firsttime) {
-		newred=Math.ceil(range*Math.random())+darkmax
-		newgreen=Math.ceil(range*Math.random())+darkmax
-		newblue=Math.ceil(range*Math.random())+darkmax
-		firsttime=false
-	}
-	
-	oldred=Math.ceil(range*Math.random())+darkmax
-	oldgreen=Math.ceil(range*Math.random())+darkmax
-	oldblue=Math.ceil(range*Math.random())+darkmax
-	
-	stepred=newred-oldred
-	if (oldred>newred) {stepred=1}
-	else if (oldred<newred) {stepred=-1}
-	else {stepred=0}
-	
-	stepgreen=newgreen-oldgreen
-	if (oldgreen>newgreen) {stepgreen=1}
-	else if (oldgreen<newgreen) {stepgreen=-1}
-	else {stepgreen=0}
-	
-	stepblue=newblue-oldblue
-	if (oldblue>newblue) {stepblue=1}
-	else if (oldblue<newblue) {stepblue=-1}
-	else {stepblue=0}
-	fadebg()
-}
-
-function fadebg() {
-	if (newred==oldred) {stepred=0}
-	if (newgreen==oldgreen) {stepgreen=0}
-	if (newblue==oldblue) {stepblue=0}
-	newred+=stepred
-	newgreen+=stepgreen
-	newblue+=stepblue
-	
-	if (stepred!=0 || stepgreen!=0 || stepblue!=0) {
-      	redcol_1 = hexc[Math.floor(newred/16)];
-     	redcol_2 = hexc[newred%16];
-	 	greencol_1 = hexc[Math.floor(newgreen/16)];
-      	greencol_2 = hexc[newgreen%16];
-	  	bluecol_1 = hexc[Math.floor(newblue/16)];
-      	bluecol_2 = hexc[newblue%16];
-	  	newcolor="#"+redcol_1+redcol_2+greencol_1+greencol_2+bluecol_1+bluecol_2
-		if (ie5 && gradient_effect!="none") {
-			if (gradient_effect=="horizontal") {gradient_effect=1}
-			if (gradient_effect=="vertical") {gradient_effect=0}
-      		greencol_1 = hexc[Math.floor(newred/16)];
-     		greencol_2 = hexc[newred%16];
-	 		bluecol_1 = hexc[Math.floor(newgreen/16)];
-      		bluecol_2 = hexc[newgreen%16];
-	  		redcol_1 = hexc[Math.floor(newblue/16)];
-      		redcol_2 = hexc[newblue%16];
-			var newcolorCompl="#"+redcol_1+redcol_2+greencol_1+greencol_2+bluecol_1+bluecol_2
-			document.body.style.filter=
-"progid:DXImageTransform.Microsoft.Gradient(startColorstr="+newcolorCompl+", endColorstr="+newcolor+" GradientType="+gradient_effect+")"
-		}
-		else {
-	  		document.bgColor=newcolor 
-		}
-		var timer=setTimeout("fadebg()",speed);
-    } 
-  	else {
-  		clearTimeout(timer)
-		newred=oldred
-		newgreen=oldgreen
-		newblue=oldblue
-		oldcolor=newcolor
-		setrandomcolor()
-  	}
-}
-
-if (browserok) {
-	window.onload=setrandomcolor
-}
-</script>
 <link href='http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans' rel='stylesheet' type='text/css'/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="typed.js"></script>
@@ -152,24 +19,36 @@ if (browserok) {
 </script>
 <style>
 a:link {
-    color: #000000;
+    color: #D773FF;
     text-decoration: none;
 	font-weight:bold;
 }
 
 a:visited {
-    color: #000000;
+    color: #D773FF;
 	text-decoration: none;
+}
+body{
+	margin:0;
+}
+.header{
+	background:url(fade.jpg) no-repeat;
+	line-height:70px;
+	display:block;
 }
 </style>
 </head>
-<body>
+<body bgcolor="000000">
+<font color="white">
+<div id="header" class="header">
+	<img src="Galaxy.jpg" height="80px"  width="100%" alt="logo" />
+</div> 
 <div style="
 	position: absolute;
-	margin-left:40px;
-    top: 28%;
+	margin-left:50px;
+    top: 22%;
 	">
-	<div class="element" style="font-size:40px;font-family:'Press Start 2P';"></div><br>
+	<div class="element" style="font-size:40px;color:#B0B0B0;font-family:'Press Start 2P';"></div><br>
 	<div id= "info" style="
 		display:none;
 		font-size:20px;
@@ -180,12 +59,12 @@ a:visited {
 		width:520px;
 		text-align:justify;
 		">
-		(<b>bdavis<span style="display:none;">foobar</span>@redspin.net)</b>
-		<br><br>CS major at UNC trying to figure out how these neat computer things work.
+		<font color="D773FF">(<b>bdavis<span style="display:none;">foobar</span>@redspin.net)</font></b>
+		<br><br>Computer Science student at UNC trying to figure out how these neat things work.
 		Minecraft server operator at <a href="http://rsmc.tk">mc.redspin.net</a>.
 		Raspberry Pi and Linux enthusiast.
-		Player of muggle Quidditch.
-		<a href="https://github.com/subdavis">Github</a>. <a href="https://twitter.com/subdavis">Twitter</a>.</div>
+		I play muggle Quidditch and drink hot tea.
+		You can peruse my <a href="https://github.com/subdavis">GitHub</a> repos or follow me on <a href="https://twitter.com/subdavis">Twitter</a>.</div>
 </div>
 </body>
 </html>
