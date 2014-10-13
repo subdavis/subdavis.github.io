@@ -7,67 +7,82 @@ Brandon Davis
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="typed.js"></script>
 <script>
-  $(function(){
+  /*$(function(){
       $(".element").typed({
         strings: ["Brandon Davis"],
         typeSpeed: 60, // typing speed
         backDelay: 500, // pause before backspacing
         callback: function(){ setTimeout(show(),800);} // call function after typing is done
       });
-	    function show() {$("#info").fadeIn("slow");}
-  });
+      function show() {$("#info").fadeIn("slow");}
+  });*/
+  function load(){
+    //$("#info").hide();
+  }
 </script>
 <style>
 a:link {
     color: #D773FF;
     text-decoration: none;
-	font-weight:bold;
+  font-weight:bold;
 }
 
 a:visited {
-    color: #D773FF;
-	text-decoration: none;
+  color: #D773FF;
+  text-decoration: none;
 }
-body{
-	margin:0;
+html, body{
+  margin:0;
+  background-color:#000000;
 }
 .header{
-	line-height:70px;
-	display:block;
+  line-height:70px;
+  display:block;
+}
+.frame{
+  margin-top:70px;
+  margin-right:auto;
+  margin-left:auto;
+  background-size: 600px 600px;
+  background-image: url("frame.png");
+  background-color:#000000;
+  width:600px;
+  background-repeat: no-repeat;
+}
+.element{
+  padding-top:145px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:30px;
+  color:#B0B0B0;
+  font-family:'Press Start 2P';
+
 }
 </style>
 </head>
-<body bgcolor="000000">
+<body onload="load()">
 <font color="white">
-<div id="header" class="header">
-	<img src="Galaxy.jpg" height="80px"  width="100%" alt="logo" />
-</div>
-<div style="
-	position: absolute;
-	margin-left:50px;
-    top: 22%;
-	">
-	<div class="element" style="font-size:40px;color:#B0B0B0;font-family:'Press Start 2P';"></div><br>
-		<div id= "info" style="
-			display:none;
-			font-size:20px;
-			line-height: 42px;
-			font-family: 'Open Sans', sans-serif;
-			letter-spacing: 2px;
-			margin-top: -25px;
-			width:520px;
-			text-align:justify;
-			">
-			<font color="D773FF">(<b>bdavis<span style="display:none;">foobar</span>@redspin.net)</font></b>
-			<br><br>Computer Science student at UNC trying to figure out how these nifty things work.
-			Minecraft server operator at <a href="http://rsmc.tk">mc.redspin.net</a>.
-			Raspberry Pi and Linux enthusiast.
-			I play muggle Quidditch and drink hot tea.
-			You can peruse my <a href="https://github.com/subdavis">GitHub</a> repos
-      or follow me on <a href="https://twitter.com/subdavis">Twitter</a>.
-      Working on <a href="http://github.com/subdavis/jukeberry">JukeBerry</a>
-      and <a href="http://keypad.io">keypad.io</a>.
-		</div>
-	</div>
+  <center><div class="frame"><!--<img src="frame.png" width="600px" height="600px" style="z-index:-1"/>-->
+    <div class="element">Brandon Davis</div>
+      <div id="info" style="
+        font-size:16px;
+        line-height: 32px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        width:400px;
+        text-align:center;
+        ">
+        <font color="D773FF">(<b>bdavis<span style="display:none;">foobar</span>@redspin.net)</font></b>
+        <br><br>Computer Science student at UNC trying to figure out how these nifty things work.
+        Minecraft server operator at <a href="http://rsmc.tk">mc.redspin.net</a>.
+        Raspberry Pi and Linux enthusiast.
+        I play muggle Quidditch and drink hot tea.
+        You can peruse my <a href="https://github.com/subdavis">GitHub</a> repos
+        or follow me on <a href="https://twitter.com/subdavis">Twitter</a>.
+        Working on <a href="http://github.com/subdavis/jukeberry">JukeBerry</a>
+        and <a href="http://keypad.io">keypad.io</a>.<br><br><br><br><br>
+      </div>
+    </div>
 </body>
 </html>
