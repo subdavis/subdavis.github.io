@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/bdavis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://redspin.net
+  * I am bdavis (https://keybase.io/bdavis) on keybase.
+  * I have a public key with fingerprint CC68 8837 8F04 FA3B A283  F8CE DFC3 F87A 918D 014F
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "cc6888378f04fa3ba283f8cedfc3f87a918d014f",
+            "host": "keybase.io",
+            "key_id": "dfc3f87a918d014f",
+            "kid": "0101af81f65a59b6f5b07af1a0ceb95cbf9f8cadf5644fa5c4ea93435f493e637c990a",
+            "uid": "e6e51e8c1317e2df46d70ffbecb34700",
+            "username": "bdavis"
+        },
+        "revoke": {
+            "sig_ids": [
+                "c2a118c8cd8573de9fce9d1e36b1785b348462e713ac3b27f688b7fe8aea19a60f"
+            ]
+        },
+        "service": {
+            "hostname": "redspin.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1423417702,
+    "expire_in": 157680000,
+    "prev": "6a3431106f85a149cbf070a81791e8f8fbd06af02182351207128dbdc12094a0",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMJeAnicbZJZaFVHHMZv1ESMcUMRtUHI4J40zpxt5tw+KPqQYqot4oppr7Mmx8Rz
+ruecXA3x1kIrKsUlVbBVElwR9E1JIlhKagtJFBEXEM2LuIGIYkQ0canOCfrWeZnt
+m9//m2/m3zHDU8UF/fMrnu3/czctuPz3ocbUiltHVTNggWgC6WZQL4c65fm1MsyG
+nh+DNODcIYSYmChoKWoyahBTES6F4rrH1EVEQGQpUAHqgig5oTGMRrLSC/SanmQ8
+oVf/R18/tAERRFQRpByb2i5zlM0gpgpRyCVzbc6Uq+tRoWzH0g5sbknqmpZpK8s1
+pWNi7rqQalzjEE460kaScGQiLA2hLEdgqBSTnJkWhjARRjL06Uap1UzQnBeBfAUI
+ZS6ol8n9I69WW45Aeh3gBkWIcMIFsbEppKu4dAWSpsMQJrYmEssxJEYm5SYzsNJZ
+MawkoZIilzpQge81W9fLeXwInmT0qXYoRZT1/EpfxtpUNgzigAcNeqMujrPpxFPc
+lE2EmyXLfEJkmOcL/T76QE6GkRf4II20ksdewkSWYVoIY2hUALkl64Uy4yUKGzsE
+6paUkTmNdKhOECHoKGJTZLk6ZYghJQi7OjxFFBPQoQoaiBimjQyIkUEEE1wPXYsm
+KUZykx9oNtI+aa1m6tx8GjeGEuQvdtWMSBUUp4oKhyVfLFU8avznj1dtjPxQfaPj
+3ReVpb+dftW3c/9X7bPOLlkAr/SVvZpa9GvNrmudmaDsVHziVOuP4982VZ17sLpu
+X1v/1K175p0AM3r2vKx5vKg1v7tzR2ZSe8v67m03Dx7eiIsy16dnj88ZDHrLu08u
+LFt+aOV3f+zcW9XWu6K9pGn77SPXGvoGJi58dP3g4F/N3+4a/eLO66U/Pyq8MKa4
+tKf8v1W3ijrujSUH8j2Xyhc/ndxWBRvOjvundkrJsjfN7/OF04Yvm3RmID3Y+sPa
+++zL7h0Te2f+VDL6YsuTlufbNq9R80ruHy+c29HQ2rlvZsvD9C/g9xkDGwoGhpWO
+rV40wTq89vbyrtdXuzJidv/Vb9bBace+Pn938CPDKUQc
+=FO3F
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bdavis
+
+==================================================================
+
