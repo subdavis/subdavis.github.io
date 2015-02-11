@@ -4,13 +4,13 @@ subdavis.github.io
 Simply a static site for redspin.net.
 My domains, sites, and services include:
 
-http://mc.redspin.net
+mc.redspin.net
 --------
-Address of my Minecraft server.  More info at...
+Address of my OLD Minecraft server.  Redirects to server.collectrum.net
 
-http://rsmc.tk
+http://web.redspin.net
 -----
-Website for Minecraft server, including whitelist application
+Website for OLD Minecraft server, including map server map downloads.
 
 http://epochti.me
 ------
