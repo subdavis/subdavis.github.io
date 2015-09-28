@@ -249,3 +249,16 @@ function getPosition(event)
 
   view.tap(x, y, canvas);
 }
+
+function addFromIn(){
+	var lin = $('#in').val();
+	console.log(lin);
+	var lines = lin.split(/\r\n|\r|\n/g);
+	//console.log(lines);
+	for(i = 0; i < lines.length; i++){
+		var coords = lines[i].split(" ");
+		console.log(coords);
+		view.addCell(parseInt(coords[0]) + 30, parseInt(coords[1])+ 30, 1);
+	}
+	view.drawView();
+}
