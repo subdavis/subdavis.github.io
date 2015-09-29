@@ -35,6 +35,10 @@ function pause(){
         stepModel();
     }
 }
+function setStepTime(){
+    var newTime = $("#time").val();
+    stepTime = newTime;
+}
 function randomize(){
     view.resetCells();
     view.randomFill();
@@ -68,11 +72,11 @@ function bump(direction){
     var topleft = view.renderAgent.topleft;
     var bottomright = view.renderAgent.bottomright;
     var d = 10
-    if (direction == "up"){
+    if (direction == "down"){
         var newTL = [topleft[0] , topleft[1]+d];
         var newBR = [bottomright[0] , bottomright[1] +d];
         scroll(newTL, newBR);
-    }else if (direction == "down"){
+    }else if (direction == "up"){
         var newTL = [topleft[0] , topleft[1]-d];
         var newBR = [bottomright[0] , bottomright[1]-d];
         scroll(newTL, newBR);
@@ -332,3 +336,15 @@ function addFromIn(){
 	}
 	view.drawView();
 }
+window.onkeydown = function (e) {
+    var code = e.keyCode ? e.keyCode : e.which;
+    if (code === 87 || code === 38) { //up key
+        bump('up');
+    } else if (code === 65 || code === 37) { //down key
+        bump('left');
+    }else if (code === 83 || code === 40) { //down key
+        bump('down');
+    }else if (code === 68 || code === 39) { //down key
+        bump('right');
+    }
+};
