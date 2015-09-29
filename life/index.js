@@ -116,6 +116,7 @@ function View(cellSize){
     this.h = Math.floor((pageHeight - bottomMargin) / this.cellSize);
     this.activeCells = {};
     this.updatedCells = {};
+    this.mode = "inf"//inf, tor, alive
 
     this.renderAgent = new RenderAgent(this.h, this.w, cellSize);
     
@@ -220,8 +221,6 @@ function View(cellSize){
         //Returns array of neighbor cells
         var xi = cell.x;
         var yi = cell.y;
-
-        //Create a square window in which to check INCLUSIVELY
 
         var resp = {}
         resp.neighbors = []
