@@ -136,8 +136,9 @@ function View(cellSize){
         }
     }
     this.tap = function(x, y, canvas){
-        var row = Math.floor(x/ this.cellSize);
-        var col = Math.floor(y/ this.cellSize);
+        var pair = this.renderAgent.getCellByCoords(x, y);
+        var row = pair[0];
+        var col = pair[1];
         var key = row + "." + col
         if (this.activeCells[key]){
             if (this.activeCells[key].state == 1){
@@ -244,6 +245,7 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
     //get the canvas
     this.canvas = document.getElementById("main");
     this.canvas.addEventListener("click", getPosition, false);
+    this.cellSize = cellSize;
     //resize the canvas for our new thingy
     this.canvas.width = cellsWide * cellSize; //in pixels
     this.canvas.height = cellsHigh * cellSize; //in pixels
@@ -293,6 +295,11 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
         this.topleft = topleft;
         this.bottomright = bottomright;
         this.clearAll();
+    }
+    this.getCellByCoords = function(x, y){
+        var row = Math.floor(x / this.cellSize) + this.topleft[0]; //account for window scroll
+        var col = Math.floor(y / this.cellSize) + this.topleft[1]; //account for window scroll
+        return [row, col];
     }
 }
 
