@@ -15,9 +15,10 @@ body {
      opacity: .85;
     position: fixed;
     right: 30px;
-    top: 30px;
+    top: 5%;
     background: lightblue;
     padding: 15px;
+    height: 85%;
 }
 
 canvas {

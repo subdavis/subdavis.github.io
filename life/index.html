@@ -18,9 +18,11 @@
             <button id="glider" onclick="loadPreset('glider')">Glider Gun</button><br>
             <button id="seed" onclick="loadPreset('seed')">Infinite Seed</button><br>
             <button id="osc" onclick="loadPreset('oscillator')">Oscillator</button><br>
-            Load .lif 6<br>
-			<textarea rows="5" id="in"></textarea><br>
-            <button id="setIn" onclick="addFromIn()">Add From Text In</button><br>
+            Load From File<br>
+			<textarea rows="5" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
+            <button id="setIn" onclick="addFromIn()">Load</button>
+            <button id='generate' onclick='view.generate()'>Output State</button><br>
+            Edit View<br>
             <input type="text" size="3" id="zoom" value="15"></input>
             <button id="setZoom" onclick="setZoom()">Set Zoom</button><br>
             <input type="text" size="3" id="time" value="100"></input>

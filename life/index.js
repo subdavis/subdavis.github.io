@@ -11,6 +11,7 @@ presets.seed = '{"32.38":{"x":32,"y":38,"state":1,"nextState":1,"wasChecked":fal
 presets.oscillator = '{"33.17":{"x":33,"y":17,"state":1,"nextState":1,"wasChecked":false},"46.17":{"x":46,"y":17,"state":1,"nextState":1,"wasChecked":false},"26.18":{"x":26,"y":18,"state":1,"nextState":1,"wasChecked":false},"27.18":{"x":27,"y":18,"state":1,"nextState":1,"wasChecked":false},"52.18":{"x":52,"y":18,"state":1,"nextState":1,"wasChecked":false},"53.18":{"x":53,"y":18,"state":1,"nextState":1,"wasChecked":false},"25.19":{"x":25,"y":19,"state":1,"nextState":1,"wasChecked":false},"26.19":{"x":26,"y":19,"state":1,"nextState":1,"wasChecked":false},"27.19":{"x":27,"y":19,"state":1,"nextState":1,"wasChecked":false},"31.19":{"x":31,"y":19,"state":1,"nextState":1,"wasChecked":false},"32.19":{"x":32,"y":19,"state":1,"nextState":1,"wasChecked":false},"47.19":{"x":47,"y":19,"state":1,"nextState":1,"wasChecked":false},"48.19":{"x":48,"y":19,"state":1,"nextState":1,"wasChecked":false},"52.19":{"x":52,"y":19,"state":1,"nextState":1,"wasChecked":false},"53.19":{"x":53,"y":19,"state":1,"nextState":1,"wasChecked":false},"54.19":{"x":54,"y":19,"state":1,"nextState":1,"wasChecked":false},"31.20":{"x":31,"y":20,"state":1,"nextState":1,"wasChecked":false},"32.20":{"x":32,"y":20,"state":1,"nextState":1,"wasChecked":false},"34.20":{"x":34,"y":20,"state":1,"nextState":1,"wasChecked":false},"35.20":{"x":35,"y":20,"state":1,"nextState":1,"wasChecked":false},"44.20":{"x":44,"y":20,"state":1,"nextState":1,"wasChecked":false},"45.20":{"x":45,"y":20,"state":1,"nextState":1,"wasChecked":false},"47.20":{"x":47,"y":20,"state":1,"nextState":1,"wasChecked":false},"48.20":{"x":48,"y":20,"state":1,"nextState":1,"wasChecked":false},"33.21":{"x":33,"y":21,"state":1,"nextState":1,"wasChecked":false},"46.21":{"x":46,"y":21,"state":1,"nextState":1,"wasChecked":false},"19.25":{"x":19,"y":25,"state":1,"nextState":1,"wasChecked":false},"60.25":{"x":60,"y":25,"state":1,"nextState":1,"wasChecked":false},"18.26":{"x":18,"y":26,"state":1,"nextState":1,"wasChecked":false},"19.26":{"x":19,"y":26,"state":1,"nextState":1,"wasChecked":false},"60.26":{"x":60,"y":26,"state":1,"nextState":1,"wasChecked":false},"61.26":{"x":61,"y":26,"state":1,"nextState":1,"wasChecked":false},"18.27":{"x":18,"y":27,"state":1,"nextState":1,"wasChecked":false},"19.27":{"x":19,"y":27,"state":1,"nextState":1,"wasChecked":false},"60.27":{"x":60,"y":27,"state":1,"nextState":1,"wasChecked":false},"61.27":{"x":61,"y":27,"state":1,"nextState":1,"wasChecked":false},"19.31":{"x":19,"y":31,"state":1,"nextState":1,"wasChecked":false},"20.31":{"x":20,"y":31,"state":1,"nextState":1,"wasChecked":false},"59.31":{"x":59,"y":31,"state":1,"nextState":1,"wasChecked":false},"60.31":{"x":60,"y":31,"state":1,"nextState":1,"wasChecked":false},"19.32":{"x":19,"y":32,"state":1,"nextState":1,"wasChecked":false},"20.32":{"x":20,"y":32,"state":1,"nextState":1,"wasChecked":false},"59.32":{"x":59,"y":32,"state":1,"nextState":1,"wasChecked":false},"60.32":{"x":60,"y":32,"state":1,"nextState":1,"wasChecked":false},"17.33":{"x":17,"y":33,"state":1,"nextState":1,"wasChecked":false},"21.33":{"x":21,"y":33,"state":1,"nextState":1,"wasChecked":false},"58.33":{"x":58,"y":33,"state":1,"nextState":1,"wasChecked":false},"62.33":{"x":62,"y":33,"state":1,"nextState":1,"wasChecked":false},"20.34":{"x":20,"y":34,"state":1,"nextState":1,"wasChecked":false},"59.34":{"x":59,"y":34,"state":1,"nextState":1,"wasChecked":false},"20.35":{"x":20,"y":35,"state":1,"nextState":1,"wasChecked":false},"59.35":{"x":59,"y":35,"state":1,"nextState":1,"wasChecked":false},"20.44":{"x":20,"y":44,"state":1,"nextState":1,"wasChecked":false},"59.44":{"x":59,"y":44,"state":1,"nextState":1,"wasChecked":false},"20.45":{"x":20,"y":45,"state":1,"nextState":1,"wasChecked":false},"59.45":{"x":59,"y":45,"state":1,"nextState":1,"wasChecked":false},"17.46":{"x":17,"y":46,"state":1,"nextState":1,"wasChecked":false},"21.46":{"x":21,"y":46,"state":1,"nextState":1,"wasChecked":false},"58.46":{"x":58,"y":46,"state":1,"nextState":1,"wasChecked":false},"62.46":{"x":62,"y":46,"state":1,"nextState":1,"wasChecked":false},"19.47":{"x":19,"y":47,"state":1,"nextState":1,"wasChecked":false},"20.47":{"x":20,"y":47,"state":1,"nextState":1,"wasChecked":false},"59.47":{"x":59,"y":47,"state":1,"nextState":1,"wasChecked":false},"60.47":{"x":60,"y":47,"state":1,"nextState":1,"wasChecked":false},"19.48":{"x":19,"y":48,"state":1,"nextState":1,"wasChecked":false},"20.48":{"x":20,"y":48,"state":1,"nextState":1,"wasChecked":false},"59.48":{"x":59,"y":48,"state":1,"nextState":1,"wasChecked":false},"60.48":{"x":60,"y":48,"state":1,"nextState":1,"wasChecked":false},"18.52":{"x":18,"y":52,"state":1,"nextState":1,"wasChecked":false},"19.52":{"x":19,"y":52,"state":1,"nextState":1,"wasChecked":false},"60.52":{"x":60,"y":52,"state":1,"nextState":1,"wasChecked":false},"61.52":{"x":61,"y":52,"state":1,"nextState":1,"wasChecked":false},"18.53":{"x":18,"y":53,"state":1,"nextState":1,"wasChecked":false},"19.53":{"x":19,"y":53,"state":1,"nextState":1,"wasChecked":false},"60.53":{"x":60,"y":53,"state":1,"nextState":1,"wasChecked":false},"61.53":{"x":61,"y":53,"state":1,"nextState":1,"wasChecked":false},"19.54":{"x":19,"y":54,"state":1,"nextState":1,"wasChecked":false},"60.54":{"x":60,"y":54,"state":1,"nextState":1,"wasChecked":false},"33.58":{"x":33,"y":58,"state":1,"nextState":1,"wasChecked":false},"46.58":{"x":46,"y":58,"state":1,"nextState":1,"wasChecked":false},"31.59":{"x":31,"y":59,"state":1,"nextState":1,"wasChecked":false},"32.59":{"x":32,"y":59,"state":1,"nextState":1,"wasChecked":false},"34.59":{"x":34,"y":59,"state":1,"nextState":1,"wasChecked":false},"35.59":{"x":35,"y":59,"state":1,"nextState":1,"wasChecked":false},"44.59":{"x":44,"y":59,"state":1,"nextState":1,"wasChecked":false},"45.59":{"x":45,"y":59,"state":1,"nextState":1,"wasChecked":false},"47.59":{"x":47,"y":59,"state":1,"nextState":1,"wasChecked":false},"48.59":{"x":48,"y":59,"state":1,"nextState":1,"wasChecked":false},"25.60":{"x":25,"y":60,"state":1,"nextState":1,"wasChecked":false},"26.60":{"x":26,"y":60,"state":1,"nextState":1,"wasChecked":false},"27.60":{"x":27,"y":60,"state":1,"nextState":1,"wasChecked":false},"31.60":{"x":31,"y":60,"state":1,"nextState":1,"wasChecked":false},"32.60":{"x":32,"y":60,"state":1,"nextState":1,"wasChecked":false},"47.60":{"x":47,"y":60,"state":1,"nextState":1,"wasChecked":false},"48.60":{"x":48,"y":60,"state":1,"nextState":1,"wasChecked":false},"52.60":{"x":52,"y":60,"state":1,"nextState":1,"wasChecked":false},"53.60":{"x":53,"y":60,"state":1,"nextState":1,"wasChecked":false},"54.60":{"x":54,"y":60,"state":1,"nextState":1,"wasChecked":false},"26.61":{"x":26,"y":61,"state":1,"nextState":1,"wasChecked":false},"27.61":{"x":27,"y":61,"state":1,"nextState":1,"wasChecked":false},"52.61":{"x":52,"y":61,"state":1,"nextState":1,"wasChecked":false},"53.61":{"x":53,"y":61,"state":1,"nextState":1,"wasChecked":false},"33.62":{"x":33,"y":62,"state":1,"nextState":1,"wasChecked":false},"46.62":{"x":46,"y":62,"state":1,"nextState":1,"wasChecked":false}}';
 presets.riley = '{"173.41":{"x":173,"y":41,"state":1,"nextState":1,"wasChecked":false},"174.42":{"x":174,"y":42,"state":1,"nextState":1,"wasChecked":false},"170.43":{"x":170,"y":43,"state":1,"nextState":1,"wasChecked":false},"174.43":{"x":174,"y":43,"state":1,"nextState":1,"wasChecked":false},"171.44":{"x":171,"y":44,"state":1,"nextState":1,"wasChecked":false},"172.44":{"x":172,"y":44,"state":1,"nextState":1,"wasChecked":false},"173.44":{"x":173,"y":44,"state":1,"nextState":1,"wasChecked":false},"174.44":{"x":174,"y":44,"state":1,"nextState":1,"wasChecked":false},"170.47":{"x":170,"y":47,"state":1,"nextState":1,"wasChecked":false},"171.48":{"x":171,"y":48,"state":1,"nextState":1,"wasChecked":false},"172.49":{"x":172,"y":49,"state":1,"nextState":1,"wasChecked":false},"172.50":{"x":172,"y":50,"state":1,"nextState":1,"wasChecked":false},"171.51":{"x":171,"y":51,"state":1,"nextState":1,"wasChecked":false},"172.51":{"x":172,"y":51,"state":1,"nextState":1,"wasChecked":false},"173.55":{"x":173,"y":55,"state":1,"nextState":1,"wasChecked":false},"174.56":{"x":174,"y":56,"state":1,"nextState":1,"wasChecked":false},"170.57":{"x":170,"y":57,"state":1,"nextState":1,"wasChecked":false},"174.57":{"x":174,"y":57,"state":1,"nextState":1,"wasChecked":false},"171.58":{"x":171,"y":58,"state":1,"nextState":1,"wasChecked":false},"172.58":{"x":172,"y":58,"state":1,"nextState":1,"wasChecked":false},"173.58":{"x":173,"y":58,"state":1,"nextState":1,"wasChecked":false},"174.58":{"x":174,"y":58,"state":1,"nextState":1,"wasChecked":false},"136.67":{"x":136,"y":67,"state":1,"nextState":1,"wasChecked":false},"137.68":{"x":137,"y":68,"state":1,"nextState":1,"wasChecked":false},"133.69":{"x":133,"y":69,"state":1,"nextState":1,"wasChecked":false},"137.69":{"x":137,"y":69,"state":1,"nextState":1,"wasChecked":false},"134.70":{"x":134,"y":70,"state":1,"nextState":1,"wasChecked":false},"135.70":{"x":135,"y":70,"state":1,"nextState":1,"wasChecked":false},"136.70":{"x":136,"y":70,"state":1,"nextState":1,"wasChecked":false},"137.70":{"x":137,"y":70,"state":1,"nextState":1,"wasChecked":false},"43.78":{"x":43,"y":78,"state":1,"nextState":1,"wasChecked":false},"44.79":{"x":44,"y":79,"state":1,"nextState":1,"wasChecked":false},"40.80":{"x":40,"y":80,"state":1,"nextState":1,"wasChecked":false},"44.80":{"x":44,"y":80,"state":1,"nextState":1,"wasChecked":false},"41.81":{"x":41,"y":81,"state":1,"nextState":1,"wasChecked":false},"42.81":{"x":42,"y":81,"state":1,"nextState":1,"wasChecked":false},"43.81":{"x":43,"y":81,"state":1,"nextState":1,"wasChecked":false},"44.81":{"x":44,"y":81,"state":1,"nextState":1,"wasChecked":false}}';
 
+deadColors = ['#CBC5E3', '#E3C5CE', '#DDE3c5', '#C5E3DA'];
 
 view = new View(8);
 var block = 0;
@@ -204,7 +205,7 @@ function View(cellSize){
                         var count2 = n2.count;
 
                         if(neighborsToComeAlive.indexOf(count2) > -1){
-                            
+                            //the cell should come alive
                             var cellRef = this.activeCells[narr[j].x + "." + narr[j].y]
                             cellRef.nextState = 1;
                             this.updatedCells[narr[j].x + "." + narr[j].y] = cellRef;
@@ -244,6 +245,9 @@ function View(cellSize){
         //Returns number of living neighbors
         return [];
     }
+    this.generate = function(){
+        $('#in').val(JSON.stringify(this.activeCells));
+    }
 }
 
 function RenderAgent(cellsHigh, cellsWide, cellSize){
@@ -263,6 +267,10 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
     this.topleft = [0,0];
     this.bottomright = [cellsWide, cellsHigh];
 
+    this.color = deadColors[0];
+
+    this.iteration = 0;
+
 
     this.renderCells = function(activeCells){
         //load the context onto the board
@@ -280,7 +288,7 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
                     var py = this.cellh * (cell.y - this.topleft[1]);
                     this.context.fillRect(px, py, this.cellw, this.cellh);
                 } else if (activeCells[key].state == 2){
-                    this.context.fillStyle = "#B8B8B8";
+                    this.context.fillStyle =  this.color;
                     var px = this.cellw * (cell.x - this.topleft[0]);
                     var py = this.cellh * (cell.y - this.topleft[1]);
                     this.context.fillRect(px, py, this.cellw, this.cellh);
@@ -291,6 +299,8 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
         }
         //save the context for next time
         this.context.save();
+        this.iteration++;
+        this.color = deadColors[Math.floor(this.iteration / 100) % deadColors.length];
     }
     this.clearAll = function(){
         this.context.fillStyle = 'rgba(255,255,255,1)';
@@ -327,17 +337,22 @@ function getPosition(event)
 
 function addFromIn(){
 	var lin = $('#in').val();
-	console.log(lin);
-	var lines = lin.split(/\r\n|\r|\n/g);
+	//console.log(lin);
 	//console.log(lines);
-	for(i = 0; i < lines.length; i++){
-        if(lines[i].charAt(0) != '#'){
-    		var coords = lines[i].split(" ");
-    		//console.log(coords);
-    		view.addCell(parseInt(coords[0]) + 40, parseInt(coords[1])+ 40, 1);
+    if(lin.charAt(0) == "{"){
+        obj = JSON.parse(lin);
+        view.activeCells = obj;
+    } else {
+        var lines = lin.split(/\r\n|\r|\n/g);
+        for(i = 0; i < lines.length; i++){
+            if(lines[i].charAt(0) != '#'){
+                var coords = lines[i].split(" ");
+                //console.log(coords);
+                view.addCell(parseInt(coords[0]) + 40, parseInt(coords[1])+ 40, 1);
+            }
         }
-	}
-	view.drawView();
+    }
+    view.drawView();
 }
 window.onkeydown = function (e) {
     var code = e.keyCode ? e.keyCode : e.which;
