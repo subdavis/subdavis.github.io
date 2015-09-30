@@ -12,21 +12,23 @@ body {
 }
 #controls {
     /*float: left;*/
-     opacity: .85;
+    opacity: .85;
     position: fixed;
-    right: 30px;
-    top: 5%;
+    right: 0px;
+    top: 0px;
     background: lightblue;
-    padding: 15px;
-    height: 85%;
+    height: 100%;
+}
+#control-container {
+    padding:10px;
 }
 
 canvas {
     background: #fff;
-
+    border-style: solid;
     margin-left: 10px;
 }
 button {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }

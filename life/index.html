@@ -9,28 +9,36 @@
         <br>
         
         <div id="controls">
-            Controls<br>
-            <button id="pause" onclick="pause()" value="Play/Pause">Pause</button><br>
-            <button id="random" onclick="randomize()">Randomize</button><br>
-            <button id="clear" onclick="view.resetCells()">Clear</button><br>
-            <button id="step" onclick="view.stepRoom()">Step</button><br>
-            Presets<br>
-            <button id="glider" onclick="loadPreset('glider')">Glider Gun</button><br>
-            <button id="seed" onclick="loadPreset('seed')">Infinite Seed</button><br>
-            <button id="osc" onclick="loadPreset('oscillator')">Oscillator</button><br>
-            Load From File<br>
-			<textarea rows="5" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
-            <button id="setIn" onclick="addFromIn()">Load</button>
-            <button id='generate' onclick='view.generate()'>Output State</button><br>
-            Edit View<br>
-            <input type="text" size="3" id="zoom" value="15"></input>
-            <button id="setZoom" onclick="setZoom()">Set Zoom</button><br>
-            <input type="text" size="3" id="time" value="100"></input>
-            <button id="setStepTime" onclick="setStepTime()">Set Step</button><br>
-            <center><button id="bumpup" onclick="bump('up')">Up :w</button><br>
-            <button id="bumpleft" onclick="bump('left')">Left :a</button>
-            <button id="bumpright" onclick="bump('right')">Right :d</button><br>
-            <center><button id="bumpdown" onclick="bump('down')">Down :s</button></center>
+            <div id="control-container">
+                UI Mode<br>
+                <button id="infinite" onclick="setMode('inf')" value="inf">Infinite</button>
+                <button id="alive" onclick="setMode('alive')" value="alive">Outside = Alive</button><br>
+                <button id="dead" onclick="setMode('dead')" value="alive">Outside = Dead</button><br>
+                Controls<br>
+                <button id="pause" onclick="pause()" value="Pause">Pause</button><br>
+                <button id="clear" onclick="view.resetCells()">Clear</button><br>
+                <button id="step" onclick="view.stepRoom()">Step</button><br>
+                Presets<br>
+                <button id="random" onclick="randomize()">Randomize</button><br>
+                <button id="glider" onclick="loadPreset('glider')">Glider Gun</button><br>
+                <button id="seed" onclick="loadPreset('seed')">Infinite Seed</button><br>
+                <button id="osc" onclick="loadPreset('oscillator')">Oscillator</button><br>
+                Load From File<br>
+    			<textarea rows="5" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
+                <button id="setIn" onclick="addFromIn()">Load</button>
+                <button id='generate' onclick='view.generate()'>Output State</button><br>
+                Edit View<br>
+                <input type="text" size="3" id="zoom" value="15"></input>
+                <button id="setZoom" onclick="setZoom()">Set Zoom</button><br>
+                <input type="text" size="3" id="time" value="100"></input>
+                <button id="setStepTime" onclick="setStepTime()">Set Step</button><br>
+                <input type="text" size="3" id="cwid" value="50"></input>
+                <button id="setWidth" onclick="setWidth()" disabled>Set Width</button><br>
+                <center><button id="bumpup" onclick="bump('up')">Up :w</button><br>
+                <button id="bumpleft" onclick="bump('left')">Left :a</button>
+                <button id="bumpright" onclick="bump('right')">Right :d</button><br>
+                <center><button id="bumpdown" onclick="bump('down')">Down :s</button></center>
+            </div>
         </div>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
