@@ -1,8 +1,8 @@
-var stepTime = 100; //ms
-var checkRadius = 1;
-var neighborsToLive = [2,3];
-var neighborsToDie = [0,1,4,5,6,7,8];
-var neighborsToComeAlive = [3];
+var stepTime = 10; // in milliseconds
+var checkRadius = 1; // in cells
+var neighborsToLive = [2,3]; // in cells
+var neighborsToDie = [0,1,4,5,6,7,8]; //in cells
+var neighborsToComeAlive = [3]; // in cells
 //Config Settings.
 var presets = {}
 presets.glider = '{"46.36":{"x":46,"y":36,"state":1,"ns":1,"wc":false},"44.37":{"x":44,"y":37,"state":1,"ns":1,"wc":false},"46.37":{"x":46,"y":37,"state":1,"ns":1,"wc":false},"34.38":{"x":34,"y":38,"state":1,"ns":1,"wc":false},"35.38":{"x":35,"y":38,"state":1,"ns":1,"wc":false},"42.38":{"x":42,"y":38,"state":1,"ns":1,"wc":false},"43.38":{"x":43,"y":38,"state":1,"ns":1,"wc":false},"56.38":{"x":56,"y":38,"state":1,"ns":1,"wc":false},"57.38":{"x":57,"y":38,"state":1,"ns":1,"wc":false},"33.39":{"x":33,"y":39,"state":1,"ns":1,"wc":false},"37.39":{"x":37,"y":39,"state":1,"ns":1,"wc":false},"42.39":{"x":42,"y":39,"state":1,"ns":1,"wc":false},"43.39":{"x":43,"y":39,"state":1,"ns":1,"wc":false},"56.39":{"x":56,"y":39,"state":1,"ns":1,"wc":false},"57.39":{"x":57,"y":39,"state":1,"ns":1,"wc":false},"22.40":{"x":22,"y":40,"state":1,"ns":1,"wc":false},"23.40":{"x":23,"y":40,"state":1,"ns":1,"wc":false},"32.40":{"x":32,"y":40,"state":1,"ns":1,"wc":false},"38.40":{"x":38,"y":40,"state":1,"ns":1,"wc":false},"42.40":{"x":42,"y":40,"state":1,"ns":1,"wc":false},"43.40":{"x":43,"y":40,"state":1,"ns":1,"wc":false},"22.41":{"x":22,"y":41,"state":1,"ns":1,"wc":false},"23.41":{"x":23,"y":41,"state":1,"ns":1,"wc":false},"32.41":{"x":32,"y":41,"state":1,"ns":1,"wc":false},"36.41":{"x":36,"y":41,"state":1,"ns":1,"wc":false},"38.41":{"x":38,"y":41,"state":1,"ns":1,"wc":false},"39.41":{"x":39,"y":41,"state":1,"ns":1,"wc":false},"44.41":{"x":44,"y":41,"state":1,"ns":1,"wc":false},"46.41":{"x":46,"y":41,"state":1,"ns":1,"wc":false},"32.42":{"x":32,"y":42,"state":1,"ns":1,"wc":false},"38.42":{"x":38,"y":42,"state":1,"ns":1,"wc":false},"46.42":{"x":46,"y":42,"state":1,"ns":1,"wc":false},"33.43":{"x":33,"y":43,"state":1,"ns":1,"wc":false},"37.43":{"x":37,"y":43,"state":1,"ns":1,"wc":false},"34.44":{"x":34,"y":44,"state":1,"ns":1,"wc":false},"35.44":{"x":35,"y":44,"state":1,"ns":1,"wc":false}}';
@@ -12,15 +12,20 @@ presets.riley = '{"173.41":{"x":173,"y":41,"state":1,"ns":1,"wc":false},"174.42"
 //Color array to iterate through for dead cells
 deadColors = ['#CBC5E3', '#E3C5CE', '#DDE3c5', '#C5E3DA'];
 //Create the view.
-var defaultCellSize = $("#zoom").val();
-var defaultView = "inf";
-var isPaused = false;
+var defaultCellSize = 10; // 10x10 pixels for a cell
+var defaultView = "inf";  // infinite mode is default
+var isPaused = false;     //start it running.
 //create the view
 view = new View(defaultCellSize, defaultView);
+//Load the oscillator by default
+loadPreset('oscillator');
+//Draw the full state once, then only update it afterward.
 view.drawView();
 //Begin the logic loop
 setTimeout(stepModel, stepTime);
-
+/* -----------------
+Button Click Methods
+------------------*/
 function pause(){
     isPaused = !isPaused;
     $("#pause").html(isPaused ? "Play" : "Pause");
@@ -41,12 +46,6 @@ function loadPreset(name){
     view.resetCells();
     view.activeCells = JSON.parse(presets[name]);
     view.drawView();
-}
-function stepModel(){
-    if(!isPaused){
-        view.stepRoom();
-        setTimeout(stepModel, stepTime);
-    }
 }
 function setZoom(){
     var resumeOnFinish = !isPaused;
@@ -105,16 +104,44 @@ function setMode(mode){
     view.drawView();
     isPaused = false;
 }
-
+//Method can parse .lif and state dumps.
+function addFromIn(){
+  var lin = $('#in').val();
+  if(lin.charAt(0) == "{"){
+      obj = JSON.parse(lin);
+      view.activeCells = obj;
+  } else {
+      var lines = lin.split(/\r\n|\r|\n/g);
+      for(i = 0; i < lines.length; i++){
+          if(lines[i].charAt(0) != '#'){
+              var coords = lines[i].split(" ");
+              view.addCell(parseInt(coords[0]) + 40, parseInt(coords[1])+ 40, 1);
+          }
+      }
+  }
+  view.drawView();
+}
+/*----------------
+Internal functions.
+----------------*/
+function stepModel(){
+    if(!isPaused){
+        view.stepRoom();
+        setTimeout(stepModel, stepTime);
+    }
+}
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+}
 function ActiveCell(x, y, state){
     this.x = x;
     this.y = y;
     this.state = state;
     this.ns = state;
+    this.dc = view.renderAgent.color;
     //see if the cell has been checked for life/death yet.
     this.wc = false;
 }
-
 function View(cellSize, mapMode){
     this.mode = mapMode //inf, tor, alive, dead
     this.cellSize = cellSize; //width in pixels
@@ -122,7 +149,7 @@ function View(cellSize, mapMode){
     var leftMargin = 10; //leave room for the controls
     var pageWidth = $("#cwid").val() * cellSize;
     var pageHeight = $("#cwid").val() * cellSize;
-    
+
     if (this.mode == "inf"){
         //Get the page settings if infinite mode
         pageWidth = $(window).width();
@@ -143,7 +170,7 @@ function View(cellSize, mapMode){
     this.updatedCells = {};
 
     this.renderAgent = new RenderAgent(this.h, this.w, cellSize);
-    
+
     this.getCells = function(){
         return this.activeCells;
     }
@@ -243,28 +270,32 @@ function View(cellSize, mapMode){
         var keys = Object.keys(this.activeCells);
         for(var i=0;i<keys.length;i++){
             var cell = this.activeCells[keys[i]];
-            
-            if(cell.state == 1){ //if the cell is alive, check it for changes
+
+            if(cell.state == 1){ //if the cell is alive check it for changes
                 var n = this.getNeighbors(cell);
                 var narr = n.neighbors;
                 var count = n.count;
-                //console.log(n);
+                cell.wc = true; //I've now been checked.
                 //Decide if the current cell lives or dies.
                 if(neighborsToDie.indexOf(count) > -1){
                     //I die.  Change state, add to changed array.
                     cell.ns = 2;
+                    cell.dc = this.renderAgent.color;
                     this.updatedCells[keys[i]] = cell;
                 }
 
                 for(var j=0;j<narr.length;j++){
-
-                    if(!narr[j].wc){
+                  //set variable for the neighbor
+                  var cell2 = narr[j];
+                    // only run if this cell has not been checked before
+                    if( !narr[j].wc ){
                         //now run logic for every neighbor
-                        var n2 = this.getNeighbors(narr[j]);
-                        //var narr2 = n2.neighbors;
+                        var n2 = this.getNeighbors(cell2);
                         var count2 = n2.count;
-
-                        if(neighborsToComeAlive.indexOf(count2) > -1){
+                        //the cell has now been checked.
+                        cell2.wc = true;
+                        //check if it needs to come alive only if it's dead
+                        if(neighborsToComeAlive.indexOf(count2) > -1 && (cell2.state == 0 || cell2.state == 2)){
                             //the cell should come alive
                             var cellRef = this.activeCells[narr[j].x + "." + narr[j].y]
                             cellRef.ns = 1;
@@ -307,7 +338,9 @@ function View(cellSize, mapMode){
         $('#in').val(JSON.stringify(this.activeCells));
     }
 }
-
+//RenderAgent knows about the actual display.
+//This could be used for practically anything.
+//This is some damn good code.
 function RenderAgent(cellsHigh, cellsWide, cellSize){
     //get the canvas
     this.canvas = document.getElementById("main");
@@ -318,18 +351,19 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
     this.canvas.height = cellsHigh * cellSize; //in pixels
     this.width = this.canvas.width; //in pixels
     this.height = this.canvas.height; //in pixels
-    this.cellw = cellSize;
-    this.cellh = cellSize;
+    this.cellw = cellSize; // in pixels
+    this.cellh = cellSize; //in pixels
     this.context = this.canvas.getContext("2d");
-
-    this.topleft = [0,0];
-    this.bottomright = [cellsWide, cellsHigh];
-
+    //bounds of the current view.
+    this.topleft = [0,0]; //in cells
+    this.bottomright = [cellsWide, cellsHigh]; //in cells
+    //what color for state 2 are we currently using?
     this.color = deadColors[0];
-
+    //Variables for framerate
     this.iteration = 0;
-
-
+    this.framerate = $("#framerate");
+    this.lastTime = 0;
+    //Give it an array of cells to draw.  This method doesn't clear before drawing
     this.renderCells = function(activeCells){
         //load the context onto the board
         this.context.restore();
@@ -337,7 +371,7 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
         //iterate over ALL activeCells
         for(i = 0; i< keys.length; i++){
             var key = keys[i];
-            var cell = activeCells[key]; 
+            var cell = activeCells[key];
             //check the cell is in the view
             if(cell.x >= this.topleft[0] && cell.y >= this.topleft[1] && cell.x <= this.bottomright[0] && cell.y <= this.bottomright[1]){
                 if(activeCells[key].state == 1){
@@ -346,40 +380,46 @@ function RenderAgent(cellsHigh, cellsWide, cellSize){
                     var py = this.cellh * (cell.y - this.topleft[1]);
                     this.context.fillRect(px, py, this.cellw, this.cellh);
                 } else if (activeCells[key].state == 2){
-                    this.context.fillStyle =  this.color;
+                    this.context.fillStyle =  cell.dc;
                     var px = this.cellw * (cell.x - this.topleft[0]);
                     var py = this.cellh * (cell.y - this.topleft[1]);
                     this.context.fillRect(px, py, this.cellw, this.cellh);
                 }
             } else {
-                //what should I do if it isnt?
+                //what should I do if it isnt in the view?
             }
         }
         //save the context for next time
         this.context.save();
         this.iteration++;
+        //Every n iterations, change the state 2 color
         this.color = deadColors[Math.floor(this.iteration / 50) % deadColors.length];
+        //Every 5 ticks, update the framerate counter
+        if (this.iteration % 5 == 0){
+          var now = (new Date).getTime();
+          var timeSinceLast = now - this.lastTime
+          this.lastTime = now;
+          this.framerate.text(Math.floor(5 / (timeSinceLast / 1000)).toString());
+        }
     }
+    //Use this if clearing is needed.
     this.clearAll = function(){
         this.context.fillStyle = 'rgba(255,255,255,1)';
         this.context.fillRect(0,0,this.width, this.height);
     }
+    //Change the view window.  This is used for scrolling around.
     this.setWindow = function(topleft, bottomright){
         this.topleft = topleft;
         this.bottomright = bottomright;
         this.clearAll();
     }
+    //Get the cell a set of X Y coords are in. Works even if origin not at top left.
     this.getCellByCoords = function(x, y){
         var row = Math.floor(x / this.cellSize) + this.topleft[0]; //account for window scroll
         var col = Math.floor(y / this.cellSize) + this.topleft[1]; //account for window scroll
         return [row, col];
     }
 }
-
-function isInArray(value, array) {
-  return array.indexOf(value) > -1;
-}
-
 function getPosition(event)
 {
   var x = event.clientX;
@@ -392,28 +432,9 @@ function getPosition(event)
 
   view.tap(x, y, canvas);
 }
-
-function addFromIn(){
-	var lin = $('#in').val();
-	//console.log(lin);
-	//console.log(lines);
-    if(lin.charAt(0) == "{"){
-        obj = JSON.parse(lin);
-        view.activeCells = obj;
-    } else {
-        var lines = lin.split(/\r\n|\r|\n/g);
-        for(i = 0; i < lines.length; i++){
-            if(lines[i].charAt(0) != '#'){
-                var coords = lines[i].split(" ");
-                //console.log(coords);
-                view.addCell(parseInt(coords[0]) + 40, parseInt(coords[1])+ 40, 1);
-            }
-        }
-    }
-    view.drawView();
-}
 window.onkeydown = function (e) {
     var code = e.keyCode ? e.keyCode : e.which;
+    //only do this if the view mode is infinite.
     if (view.mode == "inf"){
         if (code === 87 || code === 38) { //up key
             bump('up');
@@ -423,6 +444,8 @@ window.onkeydown = function (e) {
             bump('down');
         }else if (code === 68 || code === 39) { //down key
             bump('right');
+        }else if (code === 32 ){
+            pause();
         }
     }
 };

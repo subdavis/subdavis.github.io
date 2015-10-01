@@ -3,7 +3,7 @@ body {
 #heading {
     font-size: x-large;
     color: #000000;
-    
+
 }
 #main{
     margin-left: auto;
@@ -21,6 +21,13 @@ body {
 }
 #control-container {
     padding:10px;
+}
+#framerate {
+  top: 0px;
+  left: 10px;
+  position: fixed;
+  opacity: .85;
+  font-weight: bold;
 }
 
 canvas {
