@@ -1,4 +1,4 @@
-var stepTime = 10; // in milliseconds
+var stepTime = $("#time").val(); // in milliseconds
 var checkRadius = 1; // in cells
 var neighborsToLive = [2,3]; // in cells
 var neighborsToDie = [0,1,4,5,6,7,8]; //in cells
@@ -12,7 +12,7 @@ presets.riley = '{"173.41":{"x":173,"y":41,"state":1,"ns":1,"wc":false},"174.42"
 //Color array to iterate through for dead cells
 deadColors = ['#CBC5E3', '#E3C5CE', '#DDE3c5', '#C5E3DA'];
 //Create the view.
-var defaultCellSize = 10; // 10x10 pixels for a cell
+var defaultCellSize = $("#zoom").val(); // 10x10 pixels for a cell
 var defaultView = "inf";  // infinite mode is default
 var isPaused = false;     //start it running.
 //create the view
