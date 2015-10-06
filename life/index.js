@@ -147,10 +147,10 @@ function View(cellSize, mapMode){
     this.cellSize = cellSize; //width in pixels
     var bottomMargin = 10; //leave pizxels on the ground
     var leftMargin = 10; //leave room for the controls
-    var pageWidth = $("#cwid").val() * cellSize;
-    var pageHeight = $("#cwid").val() * cellSize;
+    var pageWidth = $("#cwid").val() * cellSize; //pixels
+    var pageHeight = $("#cwid").val() * cellSize; //pixels
 
-    if (this.mode == "inf"){
+    if (this.mode == "inf"){//we can fullscreen for inf
         //Get the page settings if infinite mode
         pageWidth = $(window).width();
         pageHeight = $(window).height();
@@ -164,12 +164,12 @@ function View(cellSize, mapMode){
     }
 
     //Figure out how many cells to show on the page
-    this.w = Math.floor((pageWidth - leftMargin) / this.cellSize);    //# of cells to show
-    this.h = Math.floor((pageHeight - bottomMargin) / this.cellSize); //# of cells to show
+    this.w = Math.floor((pageWidth) / this.cellSize);    //# of cells to show
+    this.h = Math.floor((pageHeight) / this.cellSize); //# of cells to show
     this.activeCells = {};
     this.updatedCells = {};
 
-    this.renderAgent = new RenderAgent(this.h, this.w, cellSize);
+    this.renderAgent = new RenderAgent(this.w, this.h, cellSize);
 
     this.getCells = function(){
         return this.activeCells;
@@ -312,17 +312,33 @@ function View(cellSize, mapMode){
         var xi = cell.x;
         var yi = cell.y;
 
-        var resp = {}
-        resp.neighbors = []
+        var resp = {};
+        resp.neighbors = [];
         resp.count = 0;
 
         for(var i= xi-checkRadius; i<= xi+checkRadius; i++){
              for(var j= yi-checkRadius; j<= yi+checkRadius; j++){
-                if(!(i==xi && j==yi)){
-                    var neighbor = (this.activeCells[i + "." + j] ? this.activeCells[i + "." + j] : this.addCell(i, j, 0));
+                if(!(i==xi && j==yi)){//dont count yourself
+                    
+                    var neighbor; //location depends on the board mode.
+
+                    if(this.mode == "tor"){
+                        //toroidal mode.  MODULO BABY
+                        var nx = (i % this.w); //
+                        var ny = (j % this.h); //
+                        if (nx < 0) nx += this.w;
+                        if (ny < 0) ny += this.h;
+                        //console.log(nx +" " + ny);
+                        neighbor = (this.activeCells[nx + "." + ny] ? this.activeCells[nx + "." + ny] : this.addCell(nx, ny, 0));
+
+                    } else {
+                        neighbor = (this.activeCells[i + "." + j] ? this.activeCells[i + "." + j] : this.addCell(i, j, 0));
+                    } 
+                    
                     if(neighbor.state == 1){
                         resp.count++;
                     }
+                    
                     resp.neighbors.push(neighbor);
                     //console.log(neighbor);
                 }
@@ -341,7 +357,7 @@ function View(cellSize, mapMode){
 //RenderAgent knows about the actual display.
 //This could be used for practically anything.
 //This is some damn good code.
-function RenderAgent(cellsHigh, cellsWide, cellSize){
+function RenderAgent(cellsWide, cellsHigh, cellSize){
     //get the canvas
     this.canvas = document.getElementById("main");
     this.canvas.addEventListener("click", getPosition, false);
@@ -427,8 +443,9 @@ function getPosition(event)
 
   var canvas = document.getElementById("main");
 
-  x -= canvas.offsetLeft;
-  y -= canvas.offsetTop;
+  var borderwidth = 4;
+  x -= (canvas.offsetLeft + borderwidth);
+  y -= (canvas.offsetTop + borderwidth);
 
   view.tap(x, y, canvas);
 }

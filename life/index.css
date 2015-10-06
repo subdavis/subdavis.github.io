@@ -34,6 +34,7 @@ canvas {
     background: #fff;
     border-style: solid;
     margin-left: 10px;
+    border-width: 5px;
 }
 button {
     margin-top: 3px;
