@@ -152,8 +152,8 @@ function View(cellSize, mapMode){
 
     if (this.mode == "inf"){//we can fullscreen for inf
         //Get the page settings if infinite mode
-        pageWidth = $(window).width();
-        pageHeight = $(window).height();
+        pageWidth = $(window).width() - 10;
+        pageHeight = $(window).height() - 10;
         //Set the border of the Window
         $("#main").css("border-width", "0px");
         $("#setWidth").prop("disabled", true);
