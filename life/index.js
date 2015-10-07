@@ -43,6 +43,9 @@ function randomize(){
     view.drawView();
 }
 function loadPreset(name){
+    if(name == null){
+        name = $("#presetDropdown").val();
+    }
     view.resetCells();
     view.activeCells = JSON.parse(presets[name]);
     view.drawView();
@@ -152,19 +155,27 @@ function View(cellSize, mapMode){
 
     if (this.mode == "inf"){//we can fullscreen for inf
         //Get the page settings if infinite mode
-        pageWidth = $(window).width() - 10;
-        pageHeight = $(window).height() - 10;
+        pageWidth = $(window).width() - leftMargin;
+        pageHeight = $(window).height() - bottomMargin;
         //Set the border of the Window
         $("#main").css("border-width", "0px");
         $("#setWidth").prop("disabled", true);
+        $("#bumpup").prop("disabled", false);
+        $("#bumpdown").prop("disabled", false);
+        $("#bumpleft").prop("disabled", false);
+        $("#bumpright").prop("disabled", false);
     } else {
         //Set the border of the Window
         $("#main").css("border-width", "4px");
         $("#setWidth").prop("disabled", false);
+        $("#bumpup").prop("disabled", true);
+        $("#bumpdown").prop("disabled", true);
+        $("#bumpleft").prop("disabled", true);
+        $("#bumpright").prop("disabled", true);
     }
 
     //Figure out how many cells to show on the page
-    this.w = Math.floor((pageWidth) / this.cellSize);    //# of cells to show
+    this.w = Math.floor((pageWidth) / this.cellSize);  //# of cells to show
     this.h = Math.floor((pageHeight) / this.cellSize); //# of cells to show
     this.activeCells = {};
     this.updatedCells = {};
@@ -442,8 +453,8 @@ function getPosition(event)
   var y = event.clientY;
 
   var canvas = document.getElementById("main");
-
   var borderwidth = 4;
+  if (view.mode == "inf") borderwidth = 0;
   x -= (canvas.offsetLeft + borderwidth);
   y -= (canvas.offsetTop + borderwidth);
 

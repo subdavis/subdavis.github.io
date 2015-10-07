@@ -20,12 +20,15 @@
                 <button id="clear" onclick="view.resetCells()">Clear</button>
                 <button id="step" onclick="view.stepRoom()">Step</button><br>
                 Presets<br>
-                <button id="random" onclick="randomize()">Random</button>
-                <button id="glider" onclick="loadPreset('glider')">Glider Gun</button><br>
-                <button id="seed" onclick="loadPreset('seed')">Infinite Seed</button>
-                <button id="osc" onclick="loadPreset('oscillator')">Oscillator</button><br>
+                <button id="random" onclick="randomize()">Random</button><br>
+                <select id="presetDropdown" name="mydropdown">
+                    <option value="glider">Gosper Glider Gun</option>
+                    <option value="seed">Infinite Switch-Laying Generator</option>
+                    <option value="oscillator">Oscillator</option>
+                </select><br>
+                <button id="loadPreset" onclick="loadPreset(null)">Load Preset</button><br>
                 Load From File<br>
-    			      <textarea rows="5" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
+    			<textarea rows="5" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
                 <button id="setIn" onclick="addFromIn()">Load</button>
                 <button id='generate' onclick='view.generate()'>Output State</button><br>
                 Edit View<br>

@@ -19,6 +19,9 @@ body {
     background: lightblue;
     height: 100%;
 }
+#presetDropdown, #in {
+  width: 180px;
+}
 #control-container {
     padding:10px;
 }
