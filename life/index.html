@@ -10,34 +10,27 @@
         <div id="controls">
             <div id="control-container">
                 UI Mode<br>
-                <button id="infinite" onclick="setMode('inf')" value="inf">Infinite</button>
-                <button id='tor' onclick="setMode('tor')" value='tor'>Toroidal</button><br>
-                <button id="alive" onclick="setMode('alive')" value="alive">Outside = Alive</button><br>
-                <button id="dead" onclick="setMode('dead')" value="alive">Outside = Dead</button><br>
-                
-                Controls<br>
-                <button id="pause" onclick="pause()" value="Pause">Pause</button>
-                <button id="clear" onclick="view.resetCells()">Clear</button>
-                <button id="step" onclick="view.stepRoom()">Step</button><br>
-                Presets<br>
-                <button id="random" onclick="randomize()">Random</button><br>
+                <button class='spanButton' id="infinite" onclick="setMode('inf')" value="inf">Infinite</button><br>
+                <button class='spanButton' id='tor' onclick="setMode('tor')" value='tor'>Toroidal</button><br>
+                <button class='spanButton' id="alive" onclick="setMode('alive')" value="alive">Outside = Alive</button><br>
+                <button class='spanButton' id="dead" onclick="setMode('dead')" value="alive">Outside = Dead</button><br>
+                <br>Controls<br>
+                <button class='spanButton' id="pause" onclick="pause()" value="Pause">Pause</button>
+                <button class='spanButton' id="clear" onclick="view.resetCells()">Clear</button>
+                <button class='spanButton' id="step" onclick="view.stepRoom()" disabled>Step</button><br>
+                <br>Presets<br>
+                <button class='spanButton' id="random" onclick="randomize()">Random</button><br>
                 <select id="presetDropdown" name="mydropdown">
                     <option value="glider">Gosper Glider Gun</option>
                     <option value="seed">Infinite Switch-Laying Generator</option>
                     <option value="oscillator">Oscillator</option>
+                    <option value="riley">Riley Breeder</option>
+                    <option value="spaceship">SpaceShip</option>
                 </select><br>
-                <button id="loadPreset" onclick="loadPreset(null)">Load Preset</button><br>
-                Load From File<br>
-    			<textarea rows="5" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
-                <button id="setIn" onclick="addFromIn()">Load</button>
-                <button id='generate' onclick='view.generate()'>Output State</button><br>
-                Edit View<br>
-                <input type="text" size="3" id="zoom" value="10"></input>
-                <button id="setZoom" onclick="setZoom()">Set Zoom</button><br>
-                <input type="text" size="3" id="time" value="100"></input>
-                <button id="setStepTime" onclick="setStepTime()">Set Step</button><br>
-                <input type="text" size="3" id="cwid" value="50"></input>
-                <button id="setWidth" onclick="setWidth()" disabled>Set Width</button><br>
+                <button class='spanButton' id="loadPreset" onclick="loadPreset(null)">Load Preset</button><br>
+                <br>Advanced Controls<br>
+                <button class='spanButton' id="advanced" onclick="$('#advanced-controls').fadeToggle()">Advanced Controls</button>
+                <br><br>
                 <center>
                   <button id="bumpup" onclick="bump('up')">Up :w</button><br>
                   <button id="bumpleft" onclick="bump('left')">Left :a</button>
@@ -47,7 +40,34 @@
                 <p id="framerate">0</p></span>
             </div>
         </div>
-	      <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <div id="advanced-controls">
+            <div id="advanced-container">
+                Edit View<br>
+                <input type="text" size="3" id="zoom" value="10"></input>
+                    <button class='spanMini' id="setZoom" onclick="setZoom()">Set Zoom</button><br>
+                <input type="text" size="3" id="time" value="100"></input>
+                    <button class='spanMini' id="setStepTime" onclick="setStepTime()">Set Step</button><br>
+                <input type="text" size="3" id="cwid" value="50"></input>
+                    <button class='spanMini'  id="setWidth" onclick="setWidth()" disabled>Set Width</button><br>
+                <br>Edit Game Rules<br>
+                <input type="text" size="3" id="radius" value="1"></input> Radius<br>
+                <input type="text" size="3" id="lonliness" value="2"></input> Lonliness Thresh<br>
+                <input type="text" size="3" id="overPop" value="3"></input> Overpop Thresh<br>
+                <input type="text" size="3" id="gMin" value="3"></input> Generation Min<br>
+                <input type="text" size="3" id="gMax" value="3"></input> Generation Max<br>
+                    <button class='spanButton'  id="setRules" onclick="setRules()">Set Rules</button><br>
+                <br>Load From File<br>
+                <textarea rows="12" placeholder="Paste .lif file OR saved state" id="in"></textarea><br>
+                <button class='spanButton' id="setIn" onclick="addFromIn()">Load</button>
+                <button class='spanButton' id='generate' onclick='view.generate()'>Output State</button><br>
+                <br>
+                <font size='2'>Get More Templates @
+                    <br>
+                    <a href="http://www.conwaylife.com/wiki/Main_Page">conwaylife.com/wiki</a>
+                </font>
+            </div>
+        </div>
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

@@ -9,8 +9,10 @@ presets.glider = '{"46.36":{"x":46,"y":36,"state":1,"ns":1,"wc":false},"44.37":{
 presets.seed = '{"32.38":{"x":32,"y":38,"state":1,"ns":1,"wc":false},"31.37":{"x":31,"y":37,"state":0,"ns":0,"wc":false},"31.38":{"x":31,"y":38,"state":0,"ns":0,"wc":false},"31.39":{"x":31,"y":39,"state":0,"ns":0,"wc":false},"32.37":{"x":32,"y":37,"state":0,"ns":0,"wc":false},"32.39":{"x":32,"y":39,"state":0,"ns":0,"wc":false},"33.37":{"x":33,"y":37,"state":1,"ns":1,"wc":false},"33.38":{"x":33,"y":38,"state":0,"ns":0,"wc":false},"33.39":{"x":33,"y":39,"state":0,"ns":0,"wc":false},"30.36":{"x":30,"y":36,"state":0,"ns":0,"wc":false},"30.37":{"x":30,"y":37,"state":0,"ns":0,"wc":false},"30.38":{"x":30,"y":38,"state":0,"ns":0,"wc":false},"31.36":{"x":31,"y":36,"state":0,"ns":0,"wc":false},"32.36":{"x":32,"y":36,"state":0,"ns":0,"wc":false},"30.39":{"x":30,"y":39,"state":0,"ns":0,"wc":false},"30.40":{"x":30,"y":40,"state":0,"ns":0,"wc":false},"31.40":{"x":31,"y":40,"state":0,"ns":0,"wc":false},"32.40":{"x":32,"y":40,"state":0,"ns":0,"wc":false},"33.36":{"x":33,"y":36,"state":0,"ns":0,"wc":false},"33.40":{"x":33,"y":40,"state":0,"ns":0,"wc":false},"34.36":{"x":34,"y":36,"state":0,"ns":0,"wc":false},"34.37":{"x":34,"y":37,"state":1,"ns":1,"wc":false},"34.38":{"x":34,"y":38,"state":1,"ns":1,"wc":false},"34.39":{"x":34,"y":39,"state":0,"ns":0,"wc":false},"34.40":{"x":34,"y":40,"state":0,"ns":0,"wc":false},"35.36":{"x":35,"y":36,"state":1,"ns":1,"wc":false},"36.36":{"x":36,"y":36,"state":1,"ns":1,"wc":false},"36.37":{"x":36,"y":37,"state":1,"ns":1,"wc":false},"36.38":{"x":36,"y":38,"state":1,"ns":1,"wc":false},"36.34":{"x":36,"y":34,"state":1,"ns":1,"wc":false},"34.34":{"x":34,"y":34,"state":1,"ns":1,"wc":false},"33.34":{"x":33,"y":34,"state":1,"ns":1,"wc":false},"32.34":{"x":32,"y":34,"state":1,"ns":1,"wc":false},"32.35":{"x":32,"y":35,"state":1,"ns":1,"wc":false}}';
 presets.oscillator = '{"33.17":{"x":33,"y":17,"state":1,"ns":1,"wc":false},"46.17":{"x":46,"y":17,"state":1,"ns":1,"wc":false},"26.18":{"x":26,"y":18,"state":1,"ns":1,"wc":false},"27.18":{"x":27,"y":18,"state":1,"ns":1,"wc":false},"52.18":{"x":52,"y":18,"state":1,"ns":1,"wc":false},"53.18":{"x":53,"y":18,"state":1,"ns":1,"wc":false},"25.19":{"x":25,"y":19,"state":1,"ns":1,"wc":false},"26.19":{"x":26,"y":19,"state":1,"ns":1,"wc":false},"27.19":{"x":27,"y":19,"state":1,"ns":1,"wc":false},"31.19":{"x":31,"y":19,"state":1,"ns":1,"wc":false},"32.19":{"x":32,"y":19,"state":1,"ns":1,"wc":false},"47.19":{"x":47,"y":19,"state":1,"ns":1,"wc":false},"48.19":{"x":48,"y":19,"state":1,"ns":1,"wc":false},"52.19":{"x":52,"y":19,"state":1,"ns":1,"wc":false},"53.19":{"x":53,"y":19,"state":1,"ns":1,"wc":false},"54.19":{"x":54,"y":19,"state":1,"ns":1,"wc":false},"31.20":{"x":31,"y":20,"state":1,"ns":1,"wc":false},"32.20":{"x":32,"y":20,"state":1,"ns":1,"wc":false},"34.20":{"x":34,"y":20,"state":1,"ns":1,"wc":false},"35.20":{"x":35,"y":20,"state":1,"ns":1,"wc":false},"44.20":{"x":44,"y":20,"state":1,"ns":1,"wc":false},"45.20":{"x":45,"y":20,"state":1,"ns":1,"wc":false},"47.20":{"x":47,"y":20,"state":1,"ns":1,"wc":false},"48.20":{"x":48,"y":20,"state":1,"ns":1,"wc":false},"33.21":{"x":33,"y":21,"state":1,"ns":1,"wc":false},"46.21":{"x":46,"y":21,"state":1,"ns":1,"wc":false},"19.25":{"x":19,"y":25,"state":1,"ns":1,"wc":false},"60.25":{"x":60,"y":25,"state":1,"ns":1,"wc":false},"18.26":{"x":18,"y":26,"state":1,"ns":1,"wc":false},"19.26":{"x":19,"y":26,"state":1,"ns":1,"wc":false},"60.26":{"x":60,"y":26,"state":1,"ns":1,"wc":false},"61.26":{"x":61,"y":26,"state":1,"ns":1,"wc":false},"18.27":{"x":18,"y":27,"state":1,"ns":1,"wc":false},"19.27":{"x":19,"y":27,"state":1,"ns":1,"wc":false},"60.27":{"x":60,"y":27,"state":1,"ns":1,"wc":false},"61.27":{"x":61,"y":27,"state":1,"ns":1,"wc":false},"19.31":{"x":19,"y":31,"state":1,"ns":1,"wc":false},"20.31":{"x":20,"y":31,"state":1,"ns":1,"wc":false},"59.31":{"x":59,"y":31,"state":1,"ns":1,"wc":false},"60.31":{"x":60,"y":31,"state":1,"ns":1,"wc":false},"19.32":{"x":19,"y":32,"state":1,"ns":1,"wc":false},"20.32":{"x":20,"y":32,"state":1,"ns":1,"wc":false},"59.32":{"x":59,"y":32,"state":1,"ns":1,"wc":false},"60.32":{"x":60,"y":32,"state":1,"ns":1,"wc":false},"17.33":{"x":17,"y":33,"state":1,"ns":1,"wc":false},"21.33":{"x":21,"y":33,"state":1,"ns":1,"wc":false},"58.33":{"x":58,"y":33,"state":1,"ns":1,"wc":false},"62.33":{"x":62,"y":33,"state":1,"ns":1,"wc":false},"20.34":{"x":20,"y":34,"state":1,"ns":1,"wc":false},"59.34":{"x":59,"y":34,"state":1,"ns":1,"wc":false},"20.35":{"x":20,"y":35,"state":1,"ns":1,"wc":false},"59.35":{"x":59,"y":35,"state":1,"ns":1,"wc":false},"20.44":{"x":20,"y":44,"state":1,"ns":1,"wc":false},"59.44":{"x":59,"y":44,"state":1,"ns":1,"wc":false},"20.45":{"x":20,"y":45,"state":1,"ns":1,"wc":false},"59.45":{"x":59,"y":45,"state":1,"ns":1,"wc":false},"17.46":{"x":17,"y":46,"state":1,"ns":1,"wc":false},"21.46":{"x":21,"y":46,"state":1,"ns":1,"wc":false},"58.46":{"x":58,"y":46,"state":1,"ns":1,"wc":false},"62.46":{"x":62,"y":46,"state":1,"ns":1,"wc":false},"19.47":{"x":19,"y":47,"state":1,"ns":1,"wc":false},"20.47":{"x":20,"y":47,"state":1,"ns":1,"wc":false},"59.47":{"x":59,"y":47,"state":1,"ns":1,"wc":false},"60.47":{"x":60,"y":47,"state":1,"ns":1,"wc":false},"19.48":{"x":19,"y":48,"state":1,"ns":1,"wc":false},"20.48":{"x":20,"y":48,"state":1,"ns":1,"wc":false},"59.48":{"x":59,"y":48,"state":1,"ns":1,"wc":false},"60.48":{"x":60,"y":48,"state":1,"ns":1,"wc":false},"18.52":{"x":18,"y":52,"state":1,"ns":1,"wc":false},"19.52":{"x":19,"y":52,"state":1,"ns":1,"wc":false},"60.52":{"x":60,"y":52,"state":1,"ns":1,"wc":false},"61.52":{"x":61,"y":52,"state":1,"ns":1,"wc":false},"18.53":{"x":18,"y":53,"state":1,"ns":1,"wc":false},"19.53":{"x":19,"y":53,"state":1,"ns":1,"wc":false},"60.53":{"x":60,"y":53,"state":1,"ns":1,"wc":false},"61.53":{"x":61,"y":53,"state":1,"ns":1,"wc":false},"19.54":{"x":19,"y":54,"state":1,"ns":1,"wc":false},"60.54":{"x":60,"y":54,"state":1,"ns":1,"wc":false},"33.58":{"x":33,"y":58,"state":1,"ns":1,"wc":false},"46.58":{"x":46,"y":58,"state":1,"ns":1,"wc":false},"31.59":{"x":31,"y":59,"state":1,"ns":1,"wc":false},"32.59":{"x":32,"y":59,"state":1,"ns":1,"wc":false},"34.59":{"x":34,"y":59,"state":1,"ns":1,"wc":false},"35.59":{"x":35,"y":59,"state":1,"ns":1,"wc":false},"44.59":{"x":44,"y":59,"state":1,"ns":1,"wc":false},"45.59":{"x":45,"y":59,"state":1,"ns":1,"wc":false},"47.59":{"x":47,"y":59,"state":1,"ns":1,"wc":false},"48.59":{"x":48,"y":59,"state":1,"ns":1,"wc":false},"25.60":{"x":25,"y":60,"state":1,"ns":1,"wc":false},"26.60":{"x":26,"y":60,"state":1,"ns":1,"wc":false},"27.60":{"x":27,"y":60,"state":1,"ns":1,"wc":false},"31.60":{"x":31,"y":60,"state":1,"ns":1,"wc":false},"32.60":{"x":32,"y":60,"state":1,"ns":1,"wc":false},"47.60":{"x":47,"y":60,"state":1,"ns":1,"wc":false},"48.60":{"x":48,"y":60,"state":1,"ns":1,"wc":false},"52.60":{"x":52,"y":60,"state":1,"ns":1,"wc":false},"53.60":{"x":53,"y":60,"state":1,"ns":1,"wc":false},"54.60":{"x":54,"y":60,"state":1,"ns":1,"wc":false},"26.61":{"x":26,"y":61,"state":1,"ns":1,"wc":false},"27.61":{"x":27,"y":61,"state":1,"ns":1,"wc":false},"52.61":{"x":52,"y":61,"state":1,"ns":1,"wc":false},"53.61":{"x":53,"y":61,"state":1,"ns":1,"wc":false},"33.62":{"x":33,"y":62,"state":1,"ns":1,"wc":false},"46.62":{"x":46,"y":62,"state":1,"ns":1,"wc":false}}';
 presets.riley = '{"173.41":{"x":173,"y":41,"state":1,"ns":1,"wc":false},"174.42":{"x":174,"y":42,"state":1,"ns":1,"wc":false},"170.43":{"x":170,"y":43,"state":1,"ns":1,"wc":false},"174.43":{"x":174,"y":43,"state":1,"ns":1,"wc":false},"171.44":{"x":171,"y":44,"state":1,"ns":1,"wc":false},"172.44":{"x":172,"y":44,"state":1,"ns":1,"wc":false},"173.44":{"x":173,"y":44,"state":1,"ns":1,"wc":false},"174.44":{"x":174,"y":44,"state":1,"ns":1,"wc":false},"170.47":{"x":170,"y":47,"state":1,"ns":1,"wc":false},"171.48":{"x":171,"y":48,"state":1,"ns":1,"wc":false},"172.49":{"x":172,"y":49,"state":1,"ns":1,"wc":false},"172.50":{"x":172,"y":50,"state":1,"ns":1,"wc":false},"171.51":{"x":171,"y":51,"state":1,"ns":1,"wc":false},"172.51":{"x":172,"y":51,"state":1,"ns":1,"wc":false},"173.55":{"x":173,"y":55,"state":1,"ns":1,"wc":false},"174.56":{"x":174,"y":56,"state":1,"ns":1,"wc":false},"170.57":{"x":170,"y":57,"state":1,"ns":1,"wc":false},"174.57":{"x":174,"y":57,"state":1,"ns":1,"wc":false},"171.58":{"x":171,"y":58,"state":1,"ns":1,"wc":false},"172.58":{"x":172,"y":58,"state":1,"ns":1,"wc":false},"173.58":{"x":173,"y":58,"state":1,"ns":1,"wc":false},"174.58":{"x":174,"y":58,"state":1,"ns":1,"wc":false},"136.67":{"x":136,"y":67,"state":1,"ns":1,"wc":false},"137.68":{"x":137,"y":68,"state":1,"ns":1,"wc":false},"133.69":{"x":133,"y":69,"state":1,"ns":1,"wc":false},"137.69":{"x":137,"y":69,"state":1,"ns":1,"wc":false},"134.70":{"x":134,"y":70,"state":1,"ns":1,"wc":false},"135.70":{"x":135,"y":70,"state":1,"ns":1,"wc":false},"136.70":{"x":136,"y":70,"state":1,"ns":1,"wc":false},"137.70":{"x":137,"y":70,"state":1,"ns":1,"wc":false},"43.78":{"x":43,"y":78,"state":1,"ns":1,"wc":false},"44.79":{"x":44,"y":79,"state":1,"ns":1,"wc":false},"40.80":{"x":40,"y":80,"state":1,"ns":1,"wc":false},"44.80":{"x":44,"y":80,"state":1,"ns":1,"wc":false},"41.81":{"x":41,"y":81,"state":1,"ns":1,"wc":false},"42.81":{"x":42,"y":81,"state":1,"ns":1,"wc":false},"43.81":{"x":43,"y":81,"state":1,"ns":1,"wc":false},"44.81":{"x":44,"y":81,"state":1,"ns":1,"wc":false}}';
+presets.spaceship = '{"38.29":{"x":38,"y":29,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"39.29":{"x":39,"y":29,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.29":{"x":40,"y":29,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"37.30":{"x":37,"y":30,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"36.31":{"x":36,"y":31,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.32":{"x":40,"y":32,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"41.32":{"x":41,"y":32,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"37.33":{"x":37,"y":33,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"38.33":{"x":38,"y":33,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.33":{"x":40,"y":33,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.34":{"x":43,"y":34,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"44.34":{"x":44,"y":34,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"45.34":{"x":45,"y":34,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.35":{"x":40,"y":35,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.35":{"x":43,"y":35,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"44.35":{"x":44,"y":35,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"47.35":{"x":47,"y":35,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"48.35":{"x":48,"y":35,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"31.36":{"x":31,"y":36,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.36":{"x":40,"y":36,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"41.36":{"x":41,"y":36,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.36":{"x":43,"y":36,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"47.36":{"x":47,"y":36,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"48.36":{"x":48,"y":36,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"30.37":{"x":30,"y":37,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"33.37":{"x":33,"y":37,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.37":{"x":40,"y":37,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.37":{"x":43,"y":37,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"44.37":{"x":44,"y":37,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"29.38":{"x":29,"y":38,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"33.38":{"x":33,"y":38,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"29.39":{"x":29,"y":39,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"41.39":{"x":41,"y":39,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"44.39":{"x":44,"y":39,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"29.40":{"x":29,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"32.40":{"x":32,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"33.40":{"x":33,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"35.40":{"x":35,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"36.40":{"x":36,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"37.40":{"x":37,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"41.40":{"x":41,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"45.40":{"x":45,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"46.40":{"x":46,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"48.40":{"x":48,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"49.40":{"x":49,"y":40,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"32.41":{"x":32,"y":41,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"36.41":{"x":36,"y":41,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"39.41":{"x":39,"y":41,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.41":{"x":40,"y":41,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.41":{"x":43,"y":41,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"46.41":{"x":46,"y":41,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"46.42":{"x":46,"y":42,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"47.42":{"x":47,"y":42,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"50.42":{"x":50,"y":42,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"34.43":{"x":34,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"35.43":{"x":35,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"36.43":{"x":36,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"37.43":{"x":37,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"41.43":{"x":41,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"47.43":{"x":47,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"51.43":{"x":51,"y":43,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"34.44":{"x":34,"y":44,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"35.44":{"x":35,"y":44,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"37.44":{"x":37,"y":44,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"39.44":{"x":39,"y":44,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"50.44":{"x":50,"y":44,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"34.45":{"x":34,"y":45,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.45":{"x":40,"y":45,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"47.45":{"x":47,"y":45,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"48.45":{"x":48,"y":45,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.46":{"x":40,"y":46,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"41.46":{"x":41,"y":46,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"42.46":{"x":42,"y":46,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"35.47":{"x":35,"y":47,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"36.47":{"x":36,"y":47,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"42.47":{"x":42,"y":47,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.47":{"x":43,"y":47,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"45.47":{"x":45,"y":47,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"35.48":{"x":35,"y":48,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"36.48":{"x":36,"y":48,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.48":{"x":40,"y":48,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"45.48":{"x":45,"y":48,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"40.49":{"x":40,"y":49,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"42.50":{"x":42,"y":50,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"44.50":{"x":44,"y":50,"state":1,"ns":1,"dc":"#E3C5CE","wc":false},"43.51":{"x":43,"y":51,"state":1,"ns":1,"dc":"#E3C5CE","wc":false}}';
+
 //Color array to iterate through for dead cells
-deadColors = ['#CBC5E3', '#E3C5CE', '#DDE3c5', '#C5E3DA'];
+deadColors = ['#DDE3c5','#E3C5CE','#CBC5E3','#C5E3DA'];
 //Create the view.
 var defaultCellSize = $("#zoom").val(); // 10x10 pixels for a cell
 var defaultView = "inf";  // infinite mode is default
@@ -30,12 +32,49 @@ function pause(){
     isPaused = !isPaused;
     $("#pause").html(isPaused ? "Play" : "Pause");
     if(!isPaused){
+        $("#step").prop("disabled", true);
         stepModel();
+    } else {
+        $("#step").prop("disabled", false);
     }
 }
 function setStepTime(){
     var newTime = $("#time").val();
     stepTime = newTime;
+}
+function setRules(){
+    isPaused = true;
+    var r = parseInt($("#radius").val());
+    var l = parseInt($("#lonliness").val());
+    var o = parseInt($("#overPop").val());
+    var gmin = parseInt($("#gMin").val());
+    var gmax = parseInt($("#gMax").val());
+
+    if ( r <= 10 && r >= 1){
+        if ( l > 0 && l <= o && l < (4*r*r + 4*r)){
+            if (0 < gmin && gmin <= gmax && gmax < (4*r*r + 4*r)){
+                //the paramaters are good.  Set them
+                checkRadius = r;
+                neighborsToLive = [];
+                neighborsToComeAlive = [];
+                neighborsToDie = [];
+
+                for(i = gmin; i<=gmax ; i++){
+                    neighborsToComeAlive.push(i);
+                }
+                for(i=0; i < l; i++){
+                    neighborsToDie.push(i);
+                }
+                for(i=o+1; i <= (4*r*r + 4*r); i++){
+                    neighborsToDie.push(i);
+                }
+                for(i=l; i<=o; i++){
+                    neighborsToLive.push(i);
+                }
+            }
+        }
+    }
+    isPaused = false;
 }
 function randomize(){
     view.resetCells();
@@ -51,7 +90,6 @@ function loadPreset(name){
     view.drawView();
 }
 function setZoom(){
-    var resumeOnFinish = !isPaused;
     isPaused = true;
     var zoom = $("#zoom").val();
     var activeCellCopy = view.activeCells;
@@ -59,9 +97,8 @@ function setZoom(){
     view = {};
     view = new View(zoom, viewMode);
     view.activeCells = activeCellCopy;
-    isPaused = !resumeOnFinish;
     view.drawView();
-    if (resumeOnFinish) stepModel();
+    isPaused = false;
 }
 function scroll(topleft, bottomright){
     view.renderAgent.setWindow(topleft, bottomright);
@@ -96,7 +133,7 @@ function setWidth(){
     isPaused = true;
     var viewMode = view.mode;
     view = {};
-    view = new View(defaultCellSize, viewMode);
+    view = new View($("#zoom").val(), viewMode);
     view.drawView();
     isPaused = false;
 }
@@ -118,7 +155,7 @@ function addFromIn(){
       for(i = 0; i < lines.length; i++){
           if(lines[i].charAt(0) != '#'){
               var coords = lines[i].split(" ");
-              view.addCell(parseInt(coords[0]) + 40, parseInt(coords[1])+ 40, 1);
+              view.addCell(parseInt(coords[0]) + 20, parseInt(coords[1])+ 20, 1);
           }
       }
   }
@@ -166,6 +203,7 @@ function View(cellSize, mapMode){
         $("#bumpright").prop("disabled", false);
     } else {
         //Set the border of the Window
+        $("#main").css("border-style", "solid");
         $("#main").css("border-width", "4px");
         $("#setWidth").prop("disabled", false);
         $("#bumpup").prop("disabled", true);
@@ -214,20 +252,34 @@ function View(cellSize, mapMode){
             }
         }
     }
-    this.tap = function(x, y, canvas){
+    this.tap = function(x, y, canvas, op){
         var pair = this.renderAgent.getCellByCoords(x, y);
         var row = pair[0];
         var col = pair[1];
         var key = row + "." + col
-        if (this.activeCells[key]){
-            if (this.activeCells[key].state == 1){
-                this.activeCells[key].ns = 2;
+        if (op == "toggle"){
+            if (this.activeCells[key]){
+                if (this.activeCells[key].state == 1){
+                    this.activeCells[key].ns = 2;
+                } else {
+                    this.activeCells[key].ns = 1;
+                }
+                this.updatedCells[key] = this.activeCells[key];
             } else {
-                this.activeCells[key].ns = 1;
+                this.updatedCells[key] = this.addCell(row, col, 1);
             }
-            this.updatedCells[key] = this.activeCells[key];
-        } else {
-            this.updatedCells[key] = this.addCell(row, col, 1);
+        } else if (op == "on"){
+            if (this.activeCells[key]){
+                this.activeCells[key].ns = 1;
+                this.updatedCells[key] = this.activeCells[key];
+            } else {
+                this.updatedCells[key] = this.addCell(row, col, 1);
+            }
+        } else if (op == "off"){
+            if (this.activeCells[key]){
+                this.activeCells[key].ns = 0;
+                this.updatedCells[key] = this.activeCells[key];
+            }
         }
         this.updateView();
     }
@@ -411,6 +463,11 @@ function RenderAgent(cellsWide, cellsHigh, cellSize){
                     var px = this.cellw * (cell.x - this.topleft[0]);
                     var py = this.cellh * (cell.y - this.topleft[1]);
                     this.context.fillRect(px, py, this.cellw, this.cellh);
+                } else if (activeCells[key].state == 0){
+                    this.context.fillStyle =  "#FFFFFF";
+                    var px = this.cellw * (cell.x - this.topleft[0]);
+                    var py = this.cellh * (cell.y - this.topleft[1]);
+                    this.context.fillRect(px, py, this.cellw, this.cellh);
                 }
             } else {
                 //what should I do if it isnt in the view?
@@ -457,8 +514,17 @@ function getPosition(event)
   if (view.mode == "inf") borderwidth = 0;
   x -= (canvas.offsetLeft + borderwidth);
   y -= (canvas.offsetTop + borderwidth);
-
-  view.tap(x, y, canvas);
+  //What kind of click was it?
+  if (event.ctrlKey){
+    //toggle cell off.
+    view.tap(x, y, canvas, "off");
+  } else if (event.shiftKey){
+    //toggle cell on
+    view.tap(x, y, canvas, "on");
+  } else {
+    //regular click
+    view.tap(x, y, canvas, "toggle");
+  }
 }
 window.onkeydown = function (e) {
     var code = e.keyCode ? e.keyCode : e.which;
