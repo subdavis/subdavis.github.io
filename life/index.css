@@ -24,6 +24,7 @@ body {
 }
 #control-container {
     padding:10px;
+    overflow-y:auto;
 }
 #framerate {
   top: 0px;
