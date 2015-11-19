@@ -138,11 +138,9 @@ function setWidth(){
     isPaused = false;
 }
 function setMode(mode){
-    isPaused = true;
     view = {};
     view = new View(defaultCellSize, mode);
     view.drawView();
-    isPaused = false;
 }
 //Method can parse .lif and state dumps.
 function addFromIn(){
