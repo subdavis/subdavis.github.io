@@ -71,9 +71,9 @@ function setRules(){
                 for(i=l; i<=o; i++){
                     neighborsToLive.push(i);
                 }
-            }
-        }
-    }
+            } else alert("Rule Broken!");
+        } else alert("Rule Broken!");
+    } else alert("Rule Broken!");
     isPaused = false;
 }
 function randomize(){
@@ -382,7 +382,7 @@ function View(cellSize, mapMode){
         for(var i= xi-checkRadius; i<= xi+checkRadius; i++){
              for(var j= yi-checkRadius; j<= yi+checkRadius; j++){
                 if(!(i==xi && j==yi)){//dont count yourself
-                    
+
                     var neighbor; //location depends on the board mode.
 
                     if(this.mode == "tor"){
@@ -396,12 +396,12 @@ function View(cellSize, mapMode){
 
                     } else {
                         neighbor = (this.activeCells[i + "." + j] ? this.activeCells[i + "." + j] : this.addCell(i, j, 0));
-                    } 
-                    
+                    }
+
                     if(neighbor.state == 1){
                         resp.count++;
                     }
-                    
+
                     resp.neighbors.push(neighbor);
                     //console.log(neighbor);
                 }
