@@ -8,7 +8,7 @@ var stepTime = 50;
 var CELLS_WIDE = 40;
 var WHITE = {"red" : 179, "green": 217, "blue":255};
 var DEFAULT = {"red" : 255, "green": 255, "blue":255};
-var INCREMENT = .95;
+var INCREMENT = .93;
 var MAX_LOOP = 20;
 
 function stepModel(){
@@ -92,7 +92,7 @@ function random_colorize(width, height){
             var original = randomColor();
             var color = mix(original, WHITE, .5);
             color = mix(color, DEFAULT, .5);
-            //color = mix(color, WHITE);
+            color = mix(color, DEFAULT, .8);
             var cell = {x:i, y:j, color: color, top: color, pure: original, pulse:false};
             if (rand < pulse_prob){
                 var dir = Math.random();
