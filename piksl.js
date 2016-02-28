@@ -14,7 +14,7 @@ var DIRECTION_PROB = .5;
 var INCREMENT = .95;
 var MAX_LOOP = 50;
 var COLOR_SHIFT = true;
-var SHIFT_TO = {"red" : 183, "green": 0, "blue":255};
+var SHIFT_TO = {"red" : 215, "green": 115, "blue":255};
 
 // initializer
 $(document).ready(function(){
@@ -35,7 +35,7 @@ function randomColor(){
     var blue = Math.floor(Math.random() * 255);
     var color = {"red" : red, "green" : green, "blue" : blue}
     if (COLOR_SHIFT) {
-        color = mix(SHIFT_TO, color, .3);
+        color = mix(SHIFT_TO, color, .4);
     }
     return color;
 }
