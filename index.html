@@ -53,6 +53,7 @@
         margin:0;
         background-color:#000000;
         color:#FFFFFF;
+        overflow: hidden;
       }
       .header{
         line-height:70px;
@@ -60,14 +61,20 @@
       }
       .frame{
         margin-top:70px;
-        margin-right:auto;
+        margin-right:-300;
         margin-left:auto;
         background-size: 600px 600px;
         background-image: url("frame_opt.png");
-        background-color:#000000;
+/*        background-color:#000000;*/
         width:600px;
         height:600px;
         background-repeat: no-repeat;
+        position: fixed;
+        right:50%;
+        top:10%;
+      }
+      #piksel-canvas{
+        z-index: 1;
       }
       .element{
         padding-top:142px;
@@ -89,6 +96,17 @@
         margin-left:auto;
         margin-right:auto;
       }
+      .footer {
+        position: fixed;
+        left: 10;
+        bottom: 5;
+        color: #565656;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+      }
+      .footer a{
+        color: #565656;
+      }
       .purple{
         color:#D773FF;
         font-weight:bold;
@@ -104,7 +122,7 @@
     <script type="text/javascript" src="piksl.js"></script>
   </head>
   <body onload="load()">
-    <canvas id="piksel-canvas" style="width:100%;height:98%;"></canvas>
+    <canvas id="piksel-canvas" style="width:100%;height:100%;"></canvas>
     <div class="frame">
       <div class="element">Brandon Davis</div>
       <div class="info">
@@ -126,6 +144,9 @@
         <center><a href="https://keybase.io/bdavis/key.asc">
         <img class="key" src="key.png" style="width:50;height:23;"/></a></center>
       </div>
+    </div>
+    <div class='footer'>
+      <a href="http://github.com/subdavis/piksl" >Piksl JS on GitHub </a>
     </div>
   </body>
 </html>
