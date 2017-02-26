@@ -7,11 +7,15 @@ a:visited {
   color: #D773FF;
   text-decoration: none;
 }
+p {
+  text-align: justify;
+  color:#c3c2c5;
+}
 html, body{
   margin:0;
   background-color:#000000;
   color:#c3c2c5;
-  overflow: hidden;
+  /*overflow: hidden;*/
   font-family: 'Open Sans', sans-serif;
 }
 .accounts {
@@ -30,20 +34,13 @@ html, body{
   display:block;
 }
 .frame{
-  margin-top:100px;
-  margin-right:-300;
-  margin-left:auto;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
   /*background-size: 600px 600px;*/
   /*background-image: url("frame_opt.png");*/
-  width:600px;
-  height:600px;
+  width:390px;
   background-repeat: no-repeat;
-  position: fixed;
-  right:50%;
-  top:5%;
-}
-#piksel-canvas{
-  z-index: 1;
 }
 .element{
   /*padding-top:142px;*/
