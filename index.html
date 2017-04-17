@@ -27,6 +27,7 @@
     <!-- SEO-->
     <meta name="description" content="Computer Science student at UNC. Minecrafter and former operator of mc.redspin.net.  Raspberry Pi and Linux enthusiast. Find me at hackathons."/>
     <meta name="keywords" content="redspin, minecraft, mc, subdavis, justsub, brandon, davis, unc, HackNC">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- OTHER -->
     <meta charset="utf-8"/>
@@ -63,7 +64,7 @@
         }
         .header-img {
             width: 30%;
-            margin: 0px auto;
+            margin: 40px auto;
         }
         td {
             font-size: 20px;
@@ -86,16 +87,22 @@
         body a {
           color: blue;
         }
+
+        @media screen and (max-width: 800px) {
+            .wrapper {
+                width: 90%;
+            }
+            td {
+                display: block;
+            }
+        }
     </style>
   </head>
   <body>
     <div class="wrapper">
-        <div class="header-img">
-            <img src="img/mun.jpg"/ width="100%">
-        </div>
         <div class="section about">
             <h1>Brandon Davis</h1>
-            <p>I'm just an undergrad at UNC Chapel Hill getting nostalgic as I near graduation.  I love programming for good and for fun.  There's satisfaction in creating.  Not everything I make is professional :)</p>
+            <p>I'm just an undergrat in North Carolina getting nostalgic about my impending graduation.  I ❤ experimenting, exploring new places, and reading about space travel.  There's satisfaction in creation and simple design.  Not all my projects are professional.</p>
         </div>
         <div class="section links">
             <table>
@@ -119,10 +126,6 @@
                     <td><a href="https://subdavis.com/key.txt">https://subdavis.com/key.txt</a></td>
                 </tr>
                 <tr>
-                    <td>Coinbase</td>
-                    <td><a href="https://coinbase.com/subdavis">https://coinbase.com/subdavis</a></td>
-                </tr>
-                <tr>
                     <td>Steam</td>
                     <td><a href="https://steamcommunity.com/id/subdavis">https://steamcommunity.com/id/subdavis</a></td>
                 </tr>
@@ -132,7 +135,11 @@
                 </tr>
                 <tr>
                     <td>email</td>
-                    <td>brandon [at] subdavis [dot] com</td>
+                    <td>
+                        <a href="#">brandon 
+                        <span style="display:none;">GET OUT OF HERE, SPAMMERS!!</span>
+                        [at] subdavis [dot] com</a>
+                    </td>  
                 </tr>
                 
                 <tr>
@@ -195,6 +202,11 @@
                     </td>
                 </tr>
             </table>
+        </div>
+        <div class="header-img">
+            <a href="https://apod.nasa.gov/apod/astropix.html">
+                <img src="img/mun.jpg"/ width="100%" alt="Astronomy pic of the day"/>
+            </a>
         </div>
     </div>
   </body>
