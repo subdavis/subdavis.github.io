@@ -5,7 +5,15 @@ body {
 }
 h1 {
   font-size: 38px;
-  /*margin-bottom: 0px;*/
+  border-bottom: 2px solid #444;
+}
+.me {
+  text-align: right;
+}
+.me img {
+  border-radius: 50%;
+  max-width: 140px;
+  right: 0;
 }
 .purple {
   color: #a100ff;
@@ -20,6 +28,7 @@ h1 {
 .header-img {
     width: 30%;
     margin: 40px auto;
+    opacity: .8;
 }
 .table-section {}
 td {
@@ -29,15 +38,18 @@ td {
     word-wrap: break-word;
 }
 td.cell-title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
-    padding:20px 0px;
+    padding: 20px 0px;
     /*text-align: center;*/
 }
 td .section-title {
-    padding: 10px;
+    padding: 5px 15px;
     background-color: #cdb6db;
     border-radius: 10px;
+    /*background: linear-gradient(to right, #cdb6db , transparent);*/
+    border: 2px solid #444;
+    text-align: center;
 }
 td.row-title {
   text-align: right;
@@ -67,5 +79,11 @@ td a.project-link {
     }
     tr td:first-child { 
         font-weight: 600;
+    }
+    .me {
+      display: none;
+    }
+    .about {
+      width: 100%;
     }
 }
