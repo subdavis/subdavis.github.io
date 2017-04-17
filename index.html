@@ -66,16 +66,18 @@
             width: 30%;
             margin: 40px auto;
         }
+        .table-section {}
         td {
             font-size: 20px;
             padding: 6px 20px;
             vertical-align: top;
             text-align: justify;
+            overflow-x: wrap
         }
         td.cell-title {
             font-size: 30px;
             font-weight: 700;
-            padding: 20px 0px;
+            padding:20px 0px;
         }
         td a {
             font-family: monospace;
@@ -93,7 +95,7 @@
                 width: 90%;
             }
             td {
-                display: block;
+                display: inline-block;
             }
         }
     </style>
@@ -102,105 +104,113 @@
     <div class="wrapper">
         <div class="section about">
             <h1>Brandon Davis</h1>
-            <p>I'm just an undergrat in North Carolina getting nostalgic about my impending graduation.  I ❤ experimenting, exploring new places, and reading about space travel.  There's satisfaction in creation and simple design.  Not all my projects are professional.</p>
+            <p>I'm just an undergrad in North Carolina getting nostalgic about my impending graduation.  I ❤ experimenting, exploring new places, and reading about space travel.  There's satisfaction in creation and simple design.  Not all my projects are professional.</p>
         </div>
         <div class="section links">
             <table>
-                <tr>
-                    <td class="cell-title">Links</td>
-                </tr>
-                <tr>
-                    <td>GitHub</td>
-                    <td><a href="https://github.com/subdavis">https://github.com/subdavis</a></td>
-                </tr>
-                <tr>
-                    <td>Twitter</td>
-                    <td><a href="https://twitter.com/subdavis">https://twitter.com/subdavis</a></td>
-                </tr>
-                <tr>
-                    <td>Facebook</td>
-                    <td><a href="https://facebook.com/subdavis">https://facebook.com/subdavis</a></td>
-                </tr>
-                <tr>
-                    <td>pub key</td>
-                    <td><a href="https://subdavis.com/key.txt">https://subdavis.com/key.txt</a></td>
-                </tr>
-                <tr>
-                    <td>Steam</td>
-                    <td><a href="https://steamcommunity.com/id/subdavis">https://steamcommunity.com/id/subdavis</a></td>
-                </tr>
-                <tr>
-                    <td>Snapchat</td>
-                    <td><a href="https://www.snapchat.com/add/subdavis">https://www.snapchat.com/add/subdavis</a></td>
-                </tr>
-                <tr>
-                    <td>email</td>
-                    <td>
-                        <a href="#">brandon 
-                        <span style="display:none;">GET OUT OF HERE, SPAMMERS!!</span>
-                        [at] subdavis [dot] com</a>
-                    </td>  
-                </tr>
                 
                 <tr>
-                    <td class="cell-title">Professional</td>
+                    <td class="cell-title" colspan="2">Links</td>
                 </tr>
 
+                <tbody class="table-section">
+                    <tr>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/subdavis">https://github.com/subdavis</a></td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><a href="https://twitter.com/subdavis">https://twitter.com/subdavis</a></td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td><a href="https://facebook.com/subdavis">https://facebook.com/subdavis</a></td>
+                    </tr>
+                    <tr>
+                        <td>pub key</td>
+                        <td><a href="https://subdavis.com/key.txt">https://subdavis.com/key.txt</a></td>
+                    </tr>
+                    <tr>
+                        <td>Steam</td>
+                        <td><a href="https://steamcommunity.com/id/subdavis">https://steamcommunity.com/id/subdavis</a></td>
+                    </tr>
+                    <tr>
+                        <td>Snapchat</td>
+                        <td><a href="https://www.snapchat.com/add/subdavis">https://www.snapchat.com/add/subdavis</a></td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>
+                            <a href="#">brandon 
+                            <span style="display:none;">GET OUT OF HERE, SPAMMERS!!</span>
+                            [at] subdavis [dot] com</a>
+                        </td>  
+                    </tr>
+                </tbody>
+                
                 <tr>
-                    <td>resume</td>
-                    <td><a href="https://subdavis.com/resume.pdf">https://subdavis.com/resume.pdf</a></td>
-                </tr>
-                <tr>
-                    <td>LinkedIn</td>
-                    <td><a href="https://www.linkedin.com/in/subdavis/">https://www.linkedin.com/in/subdavis/</a></td>
+                    <td class="cell-title" colspan="2">Professional</td>
                 </tr>
 
-                <tr>
-                    <td class="cell-title">Projects</td>
-                </tr>
+                <tbody class="table-section">
+                    <tr>
+                        <td>resume</td>
+                        <td><a href="https://subdavis.com/resume.pdf">https://subdavis.com/resume.pdf</a></td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/subdavis/">https://www.linkedin.com/in/subdavis/</a></td>
+                    </tr>
+                </tbody>
 
                 <tr>
-                    <td>HackNC</td>
-                    <td>
-                        <a class="project-link" href="https://hacknc.com/">https://hacknc.com/</a>
-                        In the summer and fall of 2016, I lead a team to build the website and registration system for HackNC, the annual hackathon at UNC Chapel Hill.
-                    </td>
+                    <td class="cell-title" colspan="2">Projects</td>
                 </tr>
-                <tr>
-                    <td>Accessible Reddit</td>
-                    <td>
-                        <a class="project-link" href="/redditAccessible">https://subdavis.com/redditAccessible/</a>
-                        A chrome extension that seeks to make reddit.com accessible to the visually impaired, physically disabled, and anyone who would benefit from a simple switch interface to reddit.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Ray Tracer</td>
-                    <td>
-                        <a class="project-link" href="https://github.com/suBDavis/raytracer">https://github.com/suBDavis/raytracer</a>
-                        I implemented a basic ray tracer in C++ to render spheres and planes with reflective surfaces and colors.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Conway's Game</td>
-                    <td>
-                        <a  class="project-link" href="/life">https://subdavis.com/life</a>
-                        I implemented an infinite version of the classic CGoL in native javascript. This is one of the first blocks of code I was ever proud of. Recycled the rendere into piksl.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Farewell Sim.</td>
-                    <td>
-                        <a class="project-link" href="/farewell-simulator">https://subdavis.com/farewell-simulator/</a>
-                        At Global Game Jam 2017, I worked with a team to build this game in 48 hours. Having no game dev experience, we worked in javascript to create a browser based street crossing game.
-                    </td>
-                </tr>
-                <tr>
-                    <td>MemeTrades.com</td>
-                    <td>
-                        <a class="project-link" href="https://memetrades.com">https://memetrades.com</a>
-                        This is a pretend stock market trading platform for memes. The backend for this app was challenging, as it had to process transactions synchronously for data consistency, but needed to serve content asyncronously in order to keep up with client requests and scale horizontally.
-                    </td>
-                </tr>
+
+                <tbody class="table-section">
+                    <tr>
+                        <td>HackNC</td>
+                        <td>
+                            <a class="project-link" href="https://hacknc.com/">https://hacknc.com/</a>
+                            In the summer and fall of 2016, I lead a team to build the website and registration system for HackNC, the annual hackathon at UNC Chapel Hill.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accessible Reddit</td>
+                        <td>
+                            <a class="project-link" href="/redditAccessible">https://subdavis.com/redditAccessible/</a>
+                            A chrome extension that seeks to make reddit.com accessible to the visually impaired, physically disabled, and anyone who would benefit from a simple switch interface to reddit.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ray Tracer</td>
+                        <td>
+                            <a class="project-link" href="https://github.com/suBDavis/raytracer">https://github.com/suBDavis/raytracer</a>
+                            I implemented a basic ray tracer in C++ to render spheres and planes with reflective surfaces and colors.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Conway's Game</td>
+                        <td>
+                            <a  class="project-link" href="/life">https://subdavis.com/life</a>
+                            I implemented an infinite version of the classic CGoL in native javascript. This is one of the first blocks of code I was ever proud of. Recycled the renderer into piksl.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Farewell Sim.</td>
+                        <td>
+                            <a class="project-link" href="/farewell-simulator">https://subdavis.com/farewell-simulator/</a>
+                            At Global Game Jam 2017, I worked with a team to build this game in 48 hours. Having no game dev experience, we worked in javascript to create a browser based street crossing game.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MemeTrades.com</td>
+                        <td>
+                            <a class="project-link" href="https://memetrades.com">https://memetrades.com</a>
+                            This is a pretend stock market trading platform for memes. The back end for this app was challenging, as it had to process transactions synchronously for data consistency, but needed to serve content asynchronously in order to keep up with client requests and scale horizontally.
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="header-img">
