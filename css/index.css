@@ -1,7 +1,7 @@
 body {
-    line-height: 1.5;
-    color: #444;
-    font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   font-size: 38px;
@@ -11,7 +11,7 @@ h1 {
   text-align: right;
 }
 .me img {
-  border-radius: 50%;
+  border-radius: 30%;
   max-width: 140px;
   right: 0;
 }
@@ -19,71 +19,74 @@ h1 {
   color: #a100ff;
 }
 .wrapper {
-    width: 800px;
-    margin: 10px auto;
+  width: 800px;
+  margin: 10px auto;
 }
 .wrapper p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .header-img {
-    width: 30%;
-    margin: 40px auto;
-    opacity: .8;
+  width: 24%;
+  margin: 40px auto;
+  opacity: .8;
 }
 .table-section {}
 td {
-    font-size: 20px;
-    padding: 6px 20px;
-    vertical-align: top;
-    word-wrap: break-word;
+  font-size: 20px;
+  padding: 6px 20px;
+  vertical-align: top;
+  word-wrap: break-word;
 }
 td.cell-title {
-    font-size: 24px;
-    font-weight: 700;
-    padding: 20px 0px;
-    /*text-align: center;*/
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 0px;
+  /*text-align: center;*/
 }
 td .section-title {
-    padding: 5px 15px;
-    background-color: #cdb6db;
-    border-radius: 10px;
-    /*background: linear-gradient(to right, #cdb6db , transparent);*/
-    border: 2px solid #444;
-    text-align: center;
+  padding: 5px 15px;
+  background-color: #c4c0c4;
+  border-radius: 10px;
+  /*background: linear-gradient(to right, #cdb6db , transparent);*/
+  border: 2px solid #444;
+  /*text-align: center;*/
 }
 td.row-title {
   text-align: right;
 }
 td a {
-    font-family: monospace;
-    color: #a100ff;
+  font-family: monospace;
+  color: #790097
+}
+td a:hover {
+  font-weight: 700;
 }
 td a.project-link {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {
-    .wrapper {
-        width: 90%;
-    }
-    table {
-      table-layout: fixed;
-      width: 100%;
-    }
-    td, td.row-title {
-        display: block;
-        font-size: 18px;
-        padding: 6px 0px;
-        text-align: left;
-    }
-    tr td:first-child { 
-        font-weight: 600;
-    }
-    .me {
-      display: none;
-    }
-    .about {
-      width: 100%;
-    }
+  .wrapper {
+    width: 90%;
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  td, td.row-title {
+    display: block;
+    font-size: 18px;
+    padding: 6px 0px;
+    text-align: left;
+  }
+  tr td:first-child { 
+    font-weight: 600;
+  }
+  .me {
+    display: none;
+  }
+  .about {
+    width: 100%;
+  }
 }
