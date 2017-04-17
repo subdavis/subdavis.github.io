@@ -3,6 +3,10 @@ body {
     color: #444;
     font-family: 'Open Sans', sans-serif;
 }
+h1 {
+  font-size: 38px;
+  /*margin-bottom: 0px;*/
+}
 .purple {
   color: #a100ff;
 }
@@ -28,6 +32,15 @@ td.cell-title {
     font-size: 30px;
     font-weight: 700;
     padding:20px 0px;
+    /*text-align: center;*/
+}
+td .section-title {
+    padding: 10px;
+    background-color: #cdb6db;
+    border-radius: 10px;
+}
+td.row-title {
+  text-align: right;
 }
 td a {
     font-family: monospace;
@@ -46,10 +59,11 @@ td a.project-link {
       table-layout: fixed;
       width: 100%;
     }
-    td {
+    td, td.row-title {
         display: block;
         font-size: 18px;
         padding: 6px 0px;
+        text-align: left;
     }
     tr td:first-child { 
         font-weight: 600;
