@@ -1,87 +1,57 @@
-a:link {
-  color: #D773FF;
-  text-decoration: none;
-  font-weight:bold;
+body {
+    line-height: 1.5;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
 }
-a:visited {
-  color: #D773FF;
-  text-decoration: none;
+.purple {
+  color: #a100ff;
 }
-p {
-  text-align: justify;
-  color:#c3c2c5;
+.wrapper {
+    width: 800px;
+    margin: 10px auto;
 }
-html, body{
-  margin:0;
-  background-color:#000000;
-  color:#c3c2c5;
-  /*overflow: hidden;*/
-  font-family: 'Open Sans', sans-serif;
+.wrapper p {
+    font-size: 20px;
 }
-.accounts {
-  text-align:justify;
+.header-img {
+    width: 30%;
+    margin: 40px auto;
 }
-.accounts > a{
-  color: #c3c2c5;
-  font-size: 22px;
-  text-align:justify;
+.table-section {}
+td {
+    font-size: 20px;
+    padding: 6px 20px;
+    vertical-align: top;
+    word-wrap: break-word;
 }
-.accounts > a:hover{
+td.cell-title {
+    font-size: 30px;
+    font-weight: 700;
+    padding:20px 0px;
+}
+td a {
+    font-family: monospace;
+    color: #a100ff;
+}
+td a.project-link {
+    display: block;
+    margin-bottom: 10px;
+}
 
-}
-.header{
-  line-height:70px;
-  display:block;
-}
-.frame{
-  margin-top: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  /*background-size: 600px 600px;*/
-  /*background-image: url("frame_opt.png");*/
-  width:390px;
-  background-repeat: no-repeat;
-}
-.element{
-  /*padding-top:142px;*/
-  margin-left:auto;
-  margin-right:auto;
-  font-size:58px;
-  width:390px;
-  color:#B0B0B0;
-  /*font-family:'Press Start 2P';*/
-  font-family: 'Baloo Bhaina', sans-serif;
-  line-height: 30px;
-}
-.info{
-  font-size:16px;
-  line-height: 28px;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
-  /*margin-top: 5px;*/
-  width:390px;
-  text-align:justify;
-  margin-left:auto;
-  margin-right:auto;
-}
-.footer {
-  position: fixed;
-  left: 10;
-  bottom: 5;
-  color: #565656;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-}
-.footer a{
-  color: #565656;
-}
-.purple{
-  color: #D773FF;
-  font-weight:bold;
-}
-img{
-  opacity:.6;
-}
-img:hover{
-  opacity:.8;
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+    }
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+    td {
+        display: block;
+        font-size: 18px;
+        padding: 6px 0px;
+    }
+    tr td:first-child { 
+        font-weight: 600;
+    }
 }
