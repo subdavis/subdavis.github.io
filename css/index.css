@@ -11,12 +11,12 @@ h1 {
   text-align: right;
 }
 .me img {
-  border-radius: 30%;
-  max-width: 140px;
+  border-radius: 10px;
+  max-width: 120px;
   right: 0;
 }
 .purple {
-  color: #a100ff;
+  color: #00589b;
 }
 .wrapper {
   width: 800px;
@@ -26,7 +26,7 @@ h1 {
   font-size: 20px;
 }
 .header-img {
-  width: 24%;
+  width: 20%;
   margin: 40px auto;
   opacity: .8;
 }
@@ -45,7 +45,8 @@ td.cell-title {
 }
 td .section-title {
   padding: 5px 15px;
-  background-color: #c4c0c4;
+  padding-left: 210px;
+  background-color: #cccccc;
   border-radius: 10px;
   /*background: linear-gradient(to right, #cdb6db , transparent);*/
   border: 2px solid #444;
@@ -56,7 +57,7 @@ td.row-title {
 }
 td a {
   font-family: monospace;
-  color: #790097
+  color: #00589b;
 }
 td a:hover {
   font-weight: 700;
@@ -79,6 +80,10 @@ td a.project-link {
     font-size: 18px;
     padding: 6px 0px;
     text-align: left;
+  }
+  td .section-title {
+    text-align: center;
+    padding-left: 15px;
   }
   tr td:first-child { 
     font-weight: 600;
