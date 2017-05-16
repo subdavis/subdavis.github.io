@@ -4,66 +4,47 @@ https://keybase.io/bdavis
 
 I hereby claim:
 
-  * I am an admin of http://redspin.net
+  * I am an admin of https://subdavis.com
   * I am bdavis (https://keybase.io/bdavis) on keybase.
-  * I have a public key with fingerprint CC68 8837 8F04 FA3B A283  F8CE DFC3 F87A 918D 014F
+  * I have a public key ASDY0pEMPkZ6E9mTXPHaVgGIpPwNvvgCq0X21DkYXfCO7Ao
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
     "body": {
         "key": {
-            "fingerprint": "cc6888378f04fa3ba283f8cedfc3f87a918d014f",
+            "eldest_kid": "0120d8d2910c3e467a13d9935cf1da560188a4fc0dbef802ab45f6d439185df08eec0a",
             "host": "keybase.io",
-            "key_id": "dfc3f87a918d014f",
-            "kid": "0101af81f65a59b6f5b07af1a0ceb95cbf9f8cadf5644fa5c4ea93435f493e637c990a",
+            "kid": "0120d8d2910c3e467a13d9935cf1da560188a4fc0dbef802ab45f6d439185df08eec0a",
             "uid": "e6e51e8c1317e2df46d70ffbecb34700",
             "username": "bdavis"
         },
-        "revoke": {
-            "sig_ids": [
-                "c2a118c8cd8573de9fce9d1e36b1785b348462e713ac3b27f688b7fe8aea19a60f"
-            ]
-        },
         "service": {
-            "hostname": "redspin.net",
-            "protocol": "http:"
+            "hostname": "subdavis.com",
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1423417702,
-    "expire_in": 157680000,
-    "prev": "6a3431106f85a149cbf070a81791e8f8fbd06af02182351207128dbdc12094a0",
-    "seqno": 11,
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.20"
+    },
+    "ctime": 1494948595,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1494948583,
+        "hash": "f7f693459bb4365b0bac84a900e9546a5b7dcd0564f50669b03b5b85d08c912aab4756cc4f472595dbb15ff39320e42e185d7631f312715bf50c93ed825d763a",
+        "seqno": 1087981
+    },
+    "prev": "8c593795116665145d1938720e2575b7a461e28d8961589f1c17d5e81fec6378",
+    "seqno": 26,
     "tag": "signature"
 }
 
-which yields the PGP signature:
+which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.1
-Comment: https://keybase.io/crypto
-
-yMJeAnicbZJZaFVHHMZv1ESMcUMRtUHI4J40zpxt5tw+KPqQYqot4oppr7Mmx8Rz
-ruecXA3x1kIrKsUlVbBVElwR9E1JIlhKagtJFBEXEM2LuIGIYkQ0canOCfrWeZnt
-m9//m2/m3zHDU8UF/fMrnu3/czctuPz3ocbUiltHVTNggWgC6WZQL4c65fm1MsyG
-nh+DNODcIYSYmChoKWoyahBTES6F4rrH1EVEQGQpUAHqgig5oTGMRrLSC/SanmQ8
-oVf/R18/tAERRFQRpByb2i5zlM0gpgpRyCVzbc6Uq+tRoWzH0g5sbknqmpZpK8s1
-pWNi7rqQalzjEE460kaScGQiLA2hLEdgqBSTnJkWhjARRjL06Uap1UzQnBeBfAUI
-ZS6ol8n9I69WW45Aeh3gBkWIcMIFsbEppKu4dAWSpsMQJrYmEssxJEYm5SYzsNJZ
-MawkoZIilzpQge81W9fLeXwInmT0qXYoRZT1/EpfxtpUNgzigAcNeqMujrPpxFPc
-lE2EmyXLfEJkmOcL/T76QE6GkRf4II20ksdewkSWYVoIY2hUALkl64Uy4yUKGzsE
-6paUkTmNdKhOECHoKGJTZLk6ZYghJQi7OjxFFBPQoQoaiBimjQyIkUEEE1wPXYsm
-KUZykx9oNtI+aa1m6tx8GjeGEuQvdtWMSBUUp4oKhyVfLFU8avznj1dtjPxQfaPj
-3ReVpb+dftW3c/9X7bPOLlkAr/SVvZpa9GvNrmudmaDsVHziVOuP4982VZ17sLpu
-X1v/1K175p0AM3r2vKx5vKg1v7tzR2ZSe8v67m03Dx7eiIsy16dnj88ZDHrLu08u
-LFt+aOV3f+zcW9XWu6K9pGn77SPXGvoGJi58dP3g4F/N3+4a/eLO66U/Pyq8MKa4
-tKf8v1W3ijrujSUH8j2Xyhc/ndxWBRvOjvundkrJsjfN7/OF04Yvm3RmID3Y+sPa
-++zL7h0Te2f+VDL6YsuTlufbNq9R80ruHy+c29HQ2rlvZsvD9C/g9xkDGwoGhpWO
-rV40wTq89vbyrtdXuzJidv/Vb9bBace+Pn938CPDKUQc
-=FO3F
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2NKRDD5GehPZk1zx2lYBiKT8Db74AqtF9tQ5GF3wjuwKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDhkMjkxMGMzZTQ2N2ExM2Q5OTM1Y2YxZGE1NjAxODhhNGZjMGRiZWY4MDJhYjQ1ZjZkNDM5MTg1ZGYwOGVlYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDhkMjkxMGMzZTQ2N2ExM2Q5OTM1Y2YxZGE1NjAxODhhNGZjMGRiZWY4MDJhYjQ1ZjZkNDM5MTg1ZGYwOGVlYzBhIiwidWlkIjoiZTZlNTFlOGMxMzE3ZTJkZjQ2ZDcwZmZiZWNiMzQ3MDAiLCJ1c2VybmFtZSI6ImJkYXZpcyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoic3ViZGF2aXMuY29tIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjAifSwiY3RpbWUiOjE0OTQ5NDg1OTUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NDk0ODU4MywiaGFzaCI6ImY3ZjY5MzQ1OWJiNDM2NWIwYmFjODRhOTAwZTk1NDZhNWI3ZGNkMDU2NGY1MDY2OWIwM2I1Yjg1ZDA4YzkxMmFhYjQ3NTZjYzRmNDcyNTk1ZGJiMTVmZjM5MzIwZTQyZTE4NWQ3NjMxZjMxMjcxNWJmNTBjOTNlZDgyNWQ3NjNhIiwic2Vxbm8iOjEwODc5ODF9LCJwcmV2IjoiOGM1OTM3OTUxMTY2NjUxNDVkMTkzODcyMGUyNTc1YjdhNDYxZTI4ZDg5NjE1ODlmMWMxN2Q1ZTgxZmVjNjM3OCIsInNlcW5vIjoyNiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxED9GaGdLPlJeeV7BaRz1VgC3ozEmCMeN3B8pwArlTlIIOcsrA4sAgvXj8+oLZEQNJAYhQ/An73lBhV/KQVvGK4NqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg5Mqb/68dMwwxnE3S/uauupZ9ni/r4kq6fS2fe6TN/r6jdGFnzQICp3ZlcnNpb24B
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -71,4 +52,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/bdavis
 
 ==================================================================
-
