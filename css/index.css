@@ -8,6 +8,13 @@ h1 {
   font-size: 38px;
   border-bottom: 2px solid #444;
 }
+h2 {
+  margin: 0px;
+  font-size: inherit;
+}
+li {
+  display: inline-block;
+}
 .me {
   text-align: right;
 }
