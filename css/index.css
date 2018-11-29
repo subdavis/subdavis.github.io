@@ -4,7 +4,7 @@ body {
 }
 h1 {
   font-size: 38px;
-  border-bottom: 2px solid #444;
+  border-bottom: 2px solid #4f4c47;
 }
 h2 {
   margin: 0px;
@@ -24,17 +24,17 @@ li {
   margin-top: 30px;
 }
 .accent-color {
-  color: #64A97B;
+  color: #f07fb6;
   font-family: monospace;
 }
 .text-color {
-  color: #D4ED9D;
+  color: #b5e2df;
 }
 .background-color {
   background-color: #3D3931;
 }
 .section-color {
-  background-color: #3A5465;
+  background-color: #4f4c47;
 }
 .wrapper {
   width: 800px;
