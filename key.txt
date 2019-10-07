@@ -1,6 +1,6 @@
 You can find my PGP key on the MIT keyservers:
 
-    https://pgp.mit.edu/pks/lookup?search=brandon@subdavis.com&op=index&fingerprint=on
+    http://pool.sks-keyservers.net/pks/lookup?op=get&search=0x098ABBEBCF1FB633
 
 Run this to import my key from the command line:
 
@@ -8,7 +8,7 @@ Run this to import my key from the command line:
 
 Fingerprint:
 
-    4369 1700 3147 2AC6 85A1  2A8D 098A BBEB CF1F B633
+    4369 1700 3147 2AC6 85A1 2A8D 098A BBEB CF1F B633
 
 Raw key:
 
