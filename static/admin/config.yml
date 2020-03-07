@@ -10,7 +10,7 @@ collections:
     label: 'Project'
     format: 'json'
     folder: 'assets/content/project'
-    create: true,
+    create: true
     editor:
       preview: false
     fields:
