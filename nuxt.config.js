@@ -50,7 +50,7 @@ export default {
         // you must have it in your node_modules to actually import
         {
           set: '@fortawesome/free-brands-svg-icons',
-          icons: ['faGithub', 'faLinkedin', 'faTwitter', 'faKeybase']
+          icons: ['faGithub', 'faLinkedin', 'faSnapchatGhost', 'faKeybase', 'faGoodreads']
         }
       ]
     }]
