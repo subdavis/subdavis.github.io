@@ -11,6 +11,7 @@ module.exports = {
     colors: {
       primary: colors.purple,
       secondary: colors.gray,
+      accent: colors.pink,
       white: colors.white
     }
   },

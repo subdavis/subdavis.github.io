@@ -1,5 +1,5 @@
 <template functional>
-  <div class="flex flex-row m-4 mr-10">
+  <div class="flex flex-row my-4 mr-4">
     <img
       class="card-image z-10 my-4"
       :src="require(`~/assets/img/${props.img}`)"
@@ -9,7 +9,7 @@
         z-0 flex flex-col rounded bg-secondary-400
         border-secondary-900 p-3 pl-16 -ml-12"
     >
-      <div class="text-secondary-900 text-xl font-bold">
+      <div class="text-secondary-900 text-lg font-bold">
         <a
           v-if="props.href"
           :href="props.href"
@@ -31,9 +31,9 @@
   min-width: 100px;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 0.4rem;
   object-fit: cover;
   background-color: theme('colors.secondary.100');
-  border: 2px solid theme('colors.primary.800');
+  border: 3px solid theme('colors.primary.800');
 }
 </style>

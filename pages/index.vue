@@ -6,7 +6,6 @@
         blurb bg-primary-800 w-fill flex
         flex-col justify-center
         pl-10 pr-6 lg:pr-0
-        pt-10 lg:pt-16
         text-secondary-200"
     >
       <div class="profile mb-2">
@@ -31,7 +30,8 @@
     </div>
     <div class="slice" />
     <div class="main lg:h-screen lg:overflow-auto w-full">
-      <div class="container flex flex-col items-center py-0 lg:py-12 xl:p-12">
+      <div class="container flex flex-col py-0 px-4 lg:my-4 xl:px-12">
+        <sub-title text="Projects" />
         <project-template
           img="site.png"
           title="This Website!"
@@ -128,6 +128,8 @@
             as a persistence layer to avoid configuring more comptdlex document stores.
             I used this tool during HackNC 2016."
         />
+        <sub-title text="External Links" />
+        <webring />
       </div>
     </div>
   </div>
@@ -137,12 +139,17 @@
 import Links from '@/components/Links.vue'
 import ProjectTemplate from '@/components/ProjectTemplate.vue'
 import Toolbar from '@/components/Toolbar.vue'
+import Webring from '@/components/Webring.vue'
+
+import SubTitle from '@/components/SubTitle.vue'
 
 export default {
   components: {
     Links,
     ProjectTemplate,
-    Toolbar
+    SubTitle,
+    Toolbar,
+    Webring
   }
 }
 </script>
