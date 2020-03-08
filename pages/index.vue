@@ -6,6 +6,7 @@
         blurb bg-primary-800 w-fill flex
         flex-col justify-center
         pl-10 pr-6 lg:pr-0
+        pt-6 lg:pt-0
         text-secondary-200"
     >
       <div class="profile mb-2">
@@ -15,7 +16,7 @@
         Brandon Davis
       </h1>
       <h2 class="text-xl font-bold text-secondary-500 mb-2">
-        brandon@subdavis.com
+        brandon@<span style="display: none;">&nbsp;</span>subdavis.com
       </h2>
       <h3
         class="blurb-paragraph text-sm md:text-base"
