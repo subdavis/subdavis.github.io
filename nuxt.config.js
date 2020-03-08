@@ -64,5 +64,8 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  purgeCSS: {
+    whitelistPatterns: [/-fa$/, /^fa-/],
   }
 }
