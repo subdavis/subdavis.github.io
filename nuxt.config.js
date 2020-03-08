@@ -22,8 +22,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -36,25 +35,26 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Doc: https://github.com/nuxt-community/fontawesome-module
+    ['@nuxtjs/fontawesome', {
+      component: 'fa',
+      useLayers: false,
+      icons: {
+        brands: [
+          'faGithub',
+          'faLinkedin',
+          'faSnapchatGhost',
+          'faKeybase',
+          'faGoodreads'
+        ]
+      }
+    }]
   ],
   /*
   ** Nuxt.js modules
   */
-  modules: [
-    ['nuxt-fontawesome', {
-      component: 'fa', 
-      imports: [
-        //import 2 icons from set 
-        // please note this is PRO set in this example, 
-        // you must have it in your node_modules to actually import
-        {
-          set: '@fortawesome/free-brands-svg-icons',
-          icons: ['faGithub', 'faLinkedin', 'faSnapchatGhost', 'faKeybase', 'faGoodreads']
-        }
-      ]
-    }]
-  ],
+  modules: [],
   /*
   ** Build configuration
   */

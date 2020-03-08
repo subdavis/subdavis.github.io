@@ -1,5 +1,5 @@
 <template functional>
-  <div class="flex flex-row m-4 mr-10" >
+  <div class="flex flex-row m-4 mr-10">
     <img
       class="card-image z-10 my-4"
       :src="require(`~/assets/img/${props.img}`)"
@@ -19,7 +19,7 @@
         </a>
         <span v-else>{{ props.title }}</span>
       </div>
-      <div class="text-secondary-800 text-base">
+      <div class="text-secondary-800 text-sm md:text-base">
         {{ props.text }}
       </div>
     </div>

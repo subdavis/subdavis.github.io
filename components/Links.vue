@@ -1,5 +1,5 @@
 <template>
-  <div class="my-4 inline-flex flex-row items-center">
+  <div id="links" class="my-4 inline-flex flex-row items-center text-xl">
     <a class="mr-3" href="https://github.com/subdavis">
       <fa :icon="['fab', 'github']" />
     </a>
@@ -17,7 +17,7 @@
       class="gpg inline-flex flex-row items-center"
     >
       <fa :icon="['fab', 'keybase']" />
-      <span class="ml-2 text-sm font-mono">
+      <span class="ml-2 mt-1 text-sm font-mono">
         <span>098A</span>
         <span>BBEB</span>
         <span>CF1F</span>
@@ -30,9 +30,5 @@
 <style scoped>
 .gpg:hover > span > span {
   text-decoration: underline;
-}
-
-svg {
-  width: 1em;
 }
 </style>

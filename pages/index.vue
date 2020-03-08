@@ -3,8 +3,10 @@
     <toolbar />
     <div
       class="
-        pt-16 blurb bg-primary-800 w-fill flex
-        flex-col justify-center pl-10
+        blurb bg-primary-800 w-fill flex
+        flex-col justify-center
+        pl-10 pr-6 lg:pr-0
+        pt-10 lg:pt-16
         text-secondary-200"
     >
       <div class="profile mb-2">
@@ -17,7 +19,7 @@
         brandon@subdavis.com
       </h2>
       <h3
-        class="blurb-paragraph text-base"
+        class="blurb-paragraph text-sm md:text-base"
         role="complementary"
       >
         I'm just a UNC alum transplanted to D.C. and masquerading as a
@@ -27,10 +29,9 @@
       </h3>
       <links />
     </div>
-    <div class="slice">&nbsp;</div>
+    <div class="slice" />
     <div class="main lg:h-screen lg:overflow-auto w-full">
-      <div class="container flex flex-col items-center py-12 xl:p-12">
-
+      <div class="container flex flex-col items-center py-0 lg:py-12 xl:p-12">
         <project-template
           img="site.png"
           title="This Website!"
@@ -40,7 +41,6 @@
             and Nuxt.  My last personal site was a table-layout throwback
             intended to render well in text-based browsers like lynx and links."
         />
-
         <project-template
           img="uptime.png"
           title="Self-Host Anything"
@@ -51,7 +51,6 @@
             configure docker and systemd to work together.  /r/selfhosted
             provided a lot of inspiration."
         />
-
         <project-template
           img="girder.png"
           title="Girder Web Components"
@@ -61,7 +60,6 @@
             Vue.js design patterns for the sake of downstream developer ease-of-use
             and feature modularity."
         />
-
         <project-template
           img="tdm.png"
           title="Videothing and TDM"
@@ -71,7 +69,6 @@
             include rendering performance and managing code complexity, as traditional
             MVC patterns often lead to performance bottlenecks."
         />
-
         <project-template
           img="tusk.png"
           title="Keepass Tusk"
@@ -83,7 +80,6 @@
             Firefox.  I've since abandoned the project due to difficulties
             with cloud storage APIs, particularly Google Drive."
         />
-
         <project-template
           img="hacknc.png"
           title="HackNC"
@@ -94,7 +90,6 @@
             design I was involved in, and my first time working alongside a
             talented dsgraphic designer."
         />
-
         <project-template
           img="spinbetter.gif"
           title="Ray Tracer"
@@ -104,7 +99,6 @@
             tracing is computationally expensive, I also created a low-resolution
             ASCII renderer to do scene setup from the command line."
         />
-
         <project-template
           img="life.png"
           title="Conway's Game of Life"
@@ -114,7 +108,6 @@
             I was ever proud of, and the project was my first foray into browser
             animation with canvases."
         />
-
         <project-template
           img="jank.png"
           title="OpenCV Flight Simulator"
@@ -125,7 +118,6 @@
             thrown together at Bitcamp where judges didn't even bother to look at us
             because we weren't competing for any sponsored prizes.  But I'm not bitter."
         />
-
         <project-template
           img="hacknotify.png"
           title="HackNotify"
@@ -136,7 +128,6 @@
             as a persistence layer to avoid configuring more comptdlex document stores.
             I used this tool during HackNC 2016."
         />
-
       </div>
     </div>
   </div>
