@@ -53,7 +53,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/imagemin-module
-    '@nuxtjs/imagemin',
+    // '@nuxtjs/imagemin',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
