@@ -1,5 +1,5 @@
 <template functional>
-  <div class="flex flex-row my-4 mr-4">
+  <div class="flex flex-row my-4">
     <img
       class="card-image z-10 my-4"
       :src="require(`~/assets/img/${props.img}`)"
@@ -31,7 +31,7 @@
   min-width: 100px;
   width: 100px;
   height: 100px;
-  border-radius: 0.4rem;
+  border-radius: 50%;
   object-fit: cover;
   background-color: theme('colors.secondary.100');
   border: 3px solid theme('colors.primary.800');

@@ -1,5 +1,5 @@
 <template>
-  <div class="m-4 ml-0 flex items-center">
+  <div class="my-4 ml-0 flex items-center">
     <div class="w-8 text-secondary-700">
       <pfund />
     </div>

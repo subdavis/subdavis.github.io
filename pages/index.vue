@@ -31,7 +31,7 @@
     </div>
     <div class="slice" />
     <div class="main lg:h-screen lg:overflow-auto w-full">
-      <div class="container flex flex-col py-0 px-4 lg:my-4 xl:px-12">
+      <div class="container flex flex-col m-auto lg:m-0 px-4 pb-4 lg:mt-4 xl:px-12">
         <sub-title text="Projects" />
         <project-template
           img="site.png"
