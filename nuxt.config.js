@@ -2,7 +2,7 @@ const title = 'Brandon Davis';
 const description = `UNC alum and software engineer.
   I love experimenting with code, discovering new places,
   and reading about space exploration`;
-const image = 'https://subdavis.com/img/mun.jpg';
+const image = 'https://subdavis.com/img/li.jpg';
 const url = 'https://subdavis.com';
 
 export default {

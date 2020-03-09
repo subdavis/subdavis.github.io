@@ -1,0 +1,112 @@
+body {
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 38px;
+  border-bottom: 2px solid #4f4c47;
+}
+h2 {
+  margin: 0px;
+  font-size: inherit;
+}
+li {
+  display: inline-block;
+}
+.me {
+  text-align: right;
+}
+.me img {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  right: 0;
+  margin-top: 30px;
+}
+.accent-color {
+  color: #f07fb6;
+  font-family: monospace;
+}
+.text-color {
+  color: #b5e2df;
+}
+.background-color {
+  background-color: #3D3931;
+}
+.section-color {
+  background-color: #4f4c47;
+}
+.wrapper {
+  width: 800px;
+  margin: 10px auto;
+}
+.wrapper p {
+  font-size: 20px;
+}
+.header-img {
+  width: 20%;
+  margin: 40px auto;
+  opacity: .8;
+}
+.table-section {}
+td {
+  font-size: 20px;
+  padding: 6px 20px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+td.cell-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 0px;
+  /*text-align: center;*/
+}
+td .section-title {
+  padding: 5px 15px;
+  padding-left: 230px;
+  border-radius: 10px;
+  // border: 2px solid #444;
+  /*text-align: center;*/
+}
+td.row-title {
+  text-align: right;
+}
+td a {
+  font-family: monospace;
+}
+td a:hover {
+  font-weight: 700;
+}
+td a.project-link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  td, td.row-title {
+    display: block;
+    font-size: 18px;
+    padding: 6px 0px;
+    text-align: left;
+  }
+  td .section-title {
+    text-align: center;
+    padding-left: 15px;
+  }
+  tr td:first-child { 
+    font-weight: 600;
+  }
+  .me {
+    display: none;
+  }
+  .about {
+    width: 100%;
+  }
+}

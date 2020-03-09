@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/bdavis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://subdavis.com
+  * I am bdavis (https://keybase.io/bdavis) on keybase.
+  * I have a public key ASDY0pEMPkZ6E9mTXPHaVgGIpPwNvvgCq0X21DkYXfCO7Ao
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d8d2910c3e467a13d9935cf1da560188a4fc0dbef802ab45f6d439185df08eec0a",
+            "host": "keybase.io",
+            "kid": "0120d8d2910c3e467a13d9935cf1da560188a4fc0dbef802ab45f6d439185df08eec0a",
+            "uid": "e6e51e8c1317e2df46d70ffbecb34700",
+            "username": "bdavis"
+        },
+        "service": {
+            "hostname": "subdavis.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.20"
+    },
+    "ctime": 1494948595,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1494948583,
+        "hash": "f7f693459bb4365b0bac84a900e9546a5b7dcd0564f50669b03b5b85d08c912aab4756cc4f472595dbb15ff39320e42e185d7631f312715bf50c93ed825d763a",
+        "seqno": 1087981
+    },
+    "prev": "8c593795116665145d1938720e2575b7a461e28d8961589f1c17d5e81fec6378",
+    "seqno": 26,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2NKRDD5GehPZk1zx2lYBiKT8Db74AqtF9tQ5GF3wjuwKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDhkMjkxMGMzZTQ2N2ExM2Q5OTM1Y2YxZGE1NjAxODhhNGZjMGRiZWY4MDJhYjQ1ZjZkNDM5MTg1ZGYwOGVlYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDhkMjkxMGMzZTQ2N2ExM2Q5OTM1Y2YxZGE1NjAxODhhNGZjMGRiZWY4MDJhYjQ1ZjZkNDM5MTg1ZGYwOGVlYzBhIiwidWlkIjoiZTZlNTFlOGMxMzE3ZTJkZjQ2ZDcwZmZiZWNiMzQ3MDAiLCJ1c2VybmFtZSI6ImJkYXZpcyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoic3ViZGF2aXMuY29tIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjAifSwiY3RpbWUiOjE0OTQ5NDg1OTUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NDk0ODU4MywiaGFzaCI6ImY3ZjY5MzQ1OWJiNDM2NWIwYmFjODRhOTAwZTk1NDZhNWI3ZGNkMDU2NGY1MDY2OWIwM2I1Yjg1ZDA4YzkxMmFhYjQ3NTZjYzRmNDcyNTk1ZGJiMTVmZjM5MzIwZTQyZTE4NWQ3NjMxZjMxMjcxNWJmNTBjOTNlZDgyNWQ3NjNhIiwic2Vxbm8iOjEwODc5ODF9LCJwcmV2IjoiOGM1OTM3OTUxMTY2NjUxNDVkMTkzODcyMGUyNTc1YjdhNDYxZTI4ZDg5NjE1ODlmMWMxN2Q1ZTgxZmVjNjM3OCIsInNlcW5vIjoyNiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxED9GaGdLPlJeeV7BaRz1VgC3ozEmCMeN3B8pwArlTlIIOcsrA4sAgvXj8+oLZEQNJAYhQ/An73lBhV/KQVvGK4NqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg5Mqb/68dMwwxnE3S/uauupZ9ni/r4kq6fS2fe6TN/r6jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bdavis
+
+==================================================================
