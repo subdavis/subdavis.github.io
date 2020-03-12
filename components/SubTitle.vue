@@ -4,7 +4,7 @@
       <pfund />
     </div>
     <span class="ml-2 text-lg font-bold text-secondary-700 italic">{{ text }}</span>
-    <span class="grad rounded flex-grow ml-4" style="height: 4px"></span>
+    <span class="grad rounded flex-grow ml-4" style="height: 4px" />
   </div>
 </template>
 
@@ -12,7 +12,12 @@
 import Pfund from '@/components/svgs/Pfund.vue'
 export default {
   components: { Pfund },
-  props: ['text']
+  props: {
+    text: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 

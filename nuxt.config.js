@@ -1,9 +1,9 @@
-const title = 'Brandon Davis';
+const title = 'Brandon Davis'
 const description = `UNC alum and software engineer.
   I love experimenting with code, discovering new places,
-  and reading about space exploration`;
-const image = 'https://subdavis.com/img/li.jpg';
-const url = 'https://subdavis.com';
+  and reading about space exploration`
+const image = 'https://subdavis.com/img/li.jpg'
+const url = 'https://subdavis.com'
 
 export default {
   mode: 'universal',
@@ -17,7 +17,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: description },
       // facebook
-      { property: 'og:title', content:  title },
+      { property: 'og:title', content: title },
       { property: 'og:site_name', content: 'subdavis.com' },
       { property: 'og:description', content: description },
       { property: 'og:image', content: image },
@@ -29,7 +29,7 @@ export default {
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: image },
-      { name: 'twitter:url', content: url },
+      { name: 'twitter:url', content: url }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -88,6 +88,6 @@ export default {
     }
   },
   purgeCSS: {
-    whitelistPatterns: [/-fa$/, /^fa-/],
+    whitelistPatterns: [/-fa$/, /^fa-/]
   }
 }

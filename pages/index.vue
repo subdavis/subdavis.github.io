@@ -130,7 +130,7 @@
             I used this tool during HackNC 2016."
         />
         <sub-title text="External Links" />
-        <webring />
+        <external-links />
       </div>
     </div>
   </div>
@@ -140,7 +140,7 @@
 import Links from '@/components/Links.vue'
 import ProjectTemplate from '@/components/ProjectTemplate.vue'
 import Toolbar from '@/components/Toolbar.vue'
-import Webring from '@/components/Webring.vue'
+import ExternalLinks from '@/components/ExternalLinks.vue'
 
 import SubTitle from '@/components/SubTitle.vue'
 
@@ -150,7 +150,7 @@ export default {
     ProjectTemplate,
     SubTitle,
     Toolbar,
-    Webring
+    ExternalLinks
   }
 }
 </script>
