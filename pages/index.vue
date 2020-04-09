@@ -43,6 +43,20 @@
             intended to render well in text-based browsers like lynx and links."
         />
         <project-template
+          img="bannerkobo.png"
+          title="kobodl"
+          href="https://github.com/subdavis/kobo-book-downloader"
+          text="kobodl is a command-line tool and web service to download and
+            remove DRM from books purchased from kobo.com. I forked it from another project
+            to add audiobook support, multi-user support, a web interface,
+            and create proper distribution packages with pypi and docker."
+        >
+          <template>
+            <img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/kobo-book-downloader">
+            <img alt="Pypi downloads" src="https://img.shields.io/pypi/dm/kobodl" class="pl-3">
+          </template>
+        </project-template>
+        <project-template
           img="uptime.png"
           title="Self-Host Anything"
           href="https://github.com/subdavis/selfhosted"
@@ -51,7 +65,11 @@
             up, and represents a lot of time and research about how to best
             configure docker and systemd to work together.  /r/selfhosted
             provided a lot of inspiration."
-        />
+        >
+          <template>
+            <img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/selfhosted">
+          </template>
+        </project-template>
         <project-template
           img="girder.png"
           title="Girder Web Components"
@@ -60,7 +78,12 @@
             interactivity with Kitware's Girder DMS.  They violate traditional
             Vue.js design patterns for the sake of downstream developer ease-of-use
             and feature modularity."
-        />
+        >
+          <template>
+            <img alt="GitHub stars" src="https://img.shields.io/github/stars/girder/girder_web_components">
+            <img alt="Pypi downloads" src="https://img.shields.io/npm/dm/@girder/components" class="pl-3">
+          </template>
+        </project-template>
         <project-template
           img="tdm.png"
           title="Videothing and TDM"
@@ -80,7 +103,11 @@
             original project lost steam. You can install Tusk for Chrome or
             Firefox.  I've since abandoned the project due to difficulties
             with cloud storage APIs, particularly Google Drive."
-        />
+        >
+          <template>
+            <img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/tusk">
+          </template>
+        </project-template>
         <project-template
           img="hacknc.png"
           title="HackNC"

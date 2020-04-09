@@ -9,7 +9,7 @@
         z-0 flex flex-col rounded bg-secondary-400
         border-secondary-900 p-3 pl-16 -ml-12"
     >
-      <div class="text-secondary-900 text-lg font-bold">
+      <div class="text-secondary-900 text-lg font-bold flex flex-row items-center">
         <a
           v-if="props.href"
           :href="props.href"
@@ -18,6 +18,9 @@
           {{ props.title }}
         </a>
         <span v-else>{{ props.title }}</span>
+        <div class="card-title-slot px-3">
+          <slot />
+        </div>
       </div>
       <div class="text-secondary-800 text-sm md:text-base">
         {{ props.text }}
@@ -35,5 +38,8 @@
   object-fit: cover;
   background-color: theme('colors.secondary.100');
   border: 3px solid theme('colors.primary.800');
+}
+.card-title-slot {
+  display: inline-flex;
 }
 </style>
