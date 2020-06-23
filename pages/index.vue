@@ -153,7 +153,7 @@
           text="This is a command-line tool for sending SMS notifications to
             hackathon participants based on live-updating Google sheets.  At the
             time, I was interested in 'serverless' apps that used Google sheets
-            as a persistence layer to avoid configuring more comptdlex document stores.
+            as a persistence layer to avoid configuring more complex document stores.
             I used this tool during HackNC 2016."
         />
         <sub-title text="External Links" />
