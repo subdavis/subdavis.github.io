@@ -15,10 +15,10 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Install and Build 🔧
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: '12'
-        run: |
+      - run: |
           yarn install
           yarn build
 
