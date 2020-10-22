@@ -6,7 +6,7 @@ const image = 'https://subdavis.com/img/li.jpg'
 const url = 'https://subdavis.com'
 
 export default {
-  mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
