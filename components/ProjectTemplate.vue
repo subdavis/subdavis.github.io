@@ -18,6 +18,7 @@
           {{ props.title }}
         </a>
         <span v-else>{{ props.title }}</span>
+        <span class="font-normal ml-2 text-sm text-secondary-800">[{{ props.subtitle }}]</span>
         <div class="card-title-slot px-3">
           <slot />
         </div>

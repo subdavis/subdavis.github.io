@@ -22,20 +22,17 @@
         class="blurb-paragraph text-sm md:text-base"
         role="complementary"
       >
-        I'm just a UNC alum transplanted to D.C. and masquerading as a
-        software developer. I ❤ good journalism, experimenting with code,
-        discovering new places, and reading about space exploration.
-        I find joy in creation and simple design.
+        Web developer, apparently. <br>❤️ FOSS. 🐏 Go Heels!
       </h3>
       <links />
     </div>
-    <div class="slice" />
     <div class="main lg:h-screen lg:overflow-auto w-full">
-      <div class="container flex flex-col m-auto lg:m-0 px-4 pb-4 lg:mt-4 xl:px-12">
+      <div class="container flex flex-col m-auto lg:m-0 px-8 pb-4 lg:mt-4 xl:px-12">
         <sub-title text="Projects" />
         <project-template
           img="site.png"
           title="This Website!"
+          subtitle="Vue.js, Nuxt, Tailwind"
           href="https://github.com/subdavis/subdavis.github.io"
           text="This website was built with Vue.js, Tailwind CSS, and Nuxt.
             I created it as a way to get familiar with the capabilities of Tailwind
@@ -43,51 +40,52 @@
             intended to render well in text-based browsers like lynx and links."
         />
         <project-template
+          img="wio.png"
+          title="WorkspacesIO"
+          subtitle="Python, FastApi, Vue 3"
+          href="https://github.com/subdavis/workspaces-io"
+          text="WorkspacesIO is a data management tool built on MinIO, ElasticSearch,
+          and Filestash.app that provides excellent browser and command line interfaces
+          for managing data collections called workspaces.  It uses AWS STS tokens
+          to provide coarse-grained access control that allows client tooling
+          to interact directly with the storage backend."
+        />
+        <project-template
           img="bannerkobo.png"
           title="kobodl"
+          subtitle="Python, Flask, Tailwind CSS"
           href="https://github.com/subdavis/kobo-book-downloader"
           text="kobodl is a command-line tool and web service to download and
             remove DRM from books purchased from kobo.com. I forked it from another project
             to add audiobook support, multi-user support, a web interface,
             and create proper distribution packages with pypi and docker."
-        >
-          <template>
-            <img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/kobo-book-downloader">
-            <img alt="Pypi downloads" src="https://img.shields.io/pypi/dm/kobodl" class="pl-3">
-          </template>
-        </project-template>
+        />
         <project-template
           img="uptime.png"
           title="Self-Host Anything"
+          subtitle="Systemd, Docker"
           href="https://github.com/subdavis/selfhosted"
           text="This is a git repository where I keep systemd configurations for all
             the services I self-host.  It's also a tutorial for how to set these services
             up, and represents a lot of time and research about how to best
             configure docker and systemd to work together.  /r/selfhosted
             provided a lot of inspiration."
-        >
-          <template>
-            <img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/selfhosted">
-          </template>
-        </project-template>
+        />
         <project-template
           img="girder.png"
           title="Girder Web Components"
+          subtitle="Vue.js, Vuetify"
           href="https://gwc.girder.org"
           text="GWC is a library of Vuetify + Vue.js components that provide
             interactivity with Kitware's Girder DMS.  They violate traditional
             Vue.js design patterns for the sake of downstream developer ease-of-use
             and feature modularity."
-        >
-          <template>
-            <img alt="GitHub stars" src="https://img.shields.io/github/stars/girder/girder_web_components">
-            <img alt="Pypi downloads" src="https://img.shields.io/npm/dm/@girder/components" class="pl-3">
-          </template>
-        </project-template>
+        />
         <project-template
-          img="tdm.png"
-          title="Videothing and TDM"
-          href="https://girder.github.io/tdm/"
+          img="fish.png"
+          title="VIAME Web"
+          subtitle="Vue.js, Vuetify, Typescript"
+          href="https://github.com/VIAME/VIAME-web"
           text="I am currently engaged in several projects that involve displaying
             and editing track annotations over video in the browser.  Challenges
             include rendering performance and managing code complexity, as traditional
@@ -96,6 +94,7 @@
         <project-template
           img="tusk.png"
           title="Keepass Tusk"
+          subtitle="JavaScript, Webpack"
           href="https://subdavis.com/tusk"
           text="Tusk is a browser extension for filling passwords from a
             KeePass database stored in the cloud. I didn't start this project
@@ -103,14 +102,11 @@
             original project lost steam. You can install Tusk for Chrome or
             Firefox.  I've since abandoned the project due to difficulties
             with cloud storage APIs, particularly Google Drive."
-        >
-          <template>
-            <img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/tusk">
-          </template>
-        </project-template>
+        />
         <project-template
           img="hacknc.png"
           title="HackNC"
+          subtitle="Pug, Grunt, CSS"
           href="https://fall2016.hacknc.com/"
           text="In the summer and fall of 2016, I lead the development team to
             build the website for HackNC, the annual undergraduate-run
@@ -121,6 +117,7 @@
         <project-template
           img="spinbetter.gif"
           title="Ray Tracer"
+          subtitle="C++"
           href="https://github.com/suBDavis/raytracer"
           text="I implemented a basic ray tracer in C++ to render spheres
             and planes with reflective surfaces and colors.  Because ray
@@ -130,6 +127,7 @@
         <project-template
           img="life.png"
           title="Conway's Game of Life"
+          subtitle="JavaScript"
           href="https://subdavis.com/life"
           text="I implemented an infinite version of the classic Conway's Game
             in native javascript. This is one of the first pieces of code
@@ -139,6 +137,7 @@
         <project-template
           img="jank.png"
           title="OpenCV Flight Simulator"
+          subtitle="C++, Python"
           href="https://www.youtube.com/watch?v=CkQPBO49I04&feature=youtu.be"
           text="Hardly worth mentioning, except that it was so much fun.  My friend
             and I hacked a joystick out of pipe cleaners and puff balls and used
@@ -149,6 +148,7 @@
         <project-template
           img="hacknotify.png"
           title="HackNotify"
+          subtitle="Python, Google Sheets"
           href="https://github.com/HackNC/hacknotify"
           text="This is a command-line tool for sending SMS notifications to
             hackathon participants based on live-updating Google sheets.  At the
