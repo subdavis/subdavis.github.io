@@ -16,7 +16,7 @@
           class="underline inline"
         >{{ props.title }}</a>
         <span v-else>{{ props.title }}</span>
-        <div class="text-sm text-secondary-700 block sm:inline sm:ml-2">[{{ props.subtitle }}]</div>
+        <div class="text-sm text-primary-800 block sm:inline sm:ml-2">[{{ props.subtitle }}]</div>
       </div>
       <div class="text-secondary-800 text-sm md:text-base">
         {{ props.text }}

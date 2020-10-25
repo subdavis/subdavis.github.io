@@ -4,7 +4,7 @@
     <div
       class="
         blurb bg-primary-800 w-fill flex
-        flex-col justify-center
+        flex-col justify-center items-center lg:items-start
         pl-10 pr-6 lg:pr-0
         pt-6 lg:pt-0
         text-secondary-200"
@@ -27,7 +27,7 @@
       <links />
     </div>
     <div class="main lg:h-screen lg:overflow-auto w-full">
-      <div class="container flex flex-col m-auto lg:m-0 px-8 pb-4 lg:mt-4 xl:px-12">
+      <div class="container flex flex-col mx-auto px-8 pb-4 lg:mt-4 xl:px-12">
         <sub-title text="Projects" />
         <project-template
           img="site.png"
