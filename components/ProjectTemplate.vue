@@ -9,19 +9,14 @@
         z-0 flex flex-col rounded bg-secondary-400
         border-secondary-900 p-3 pl-16 -ml-12"
     >
-      <div class="text-secondary-900 text-lg font-bold flex flex-row items-center">
+      <div class="text-secondary-900 text-lg font-bold items-center">
         <a
           v-if="props.href"
           :href="props.href"
-          class="underline"
-        >
-          {{ props.title }}
-        </a>
+          class="underline inline"
+        >{{ props.title }}</a>
         <span v-else>{{ props.title }}</span>
-        <span class="font-normal ml-2 text-sm text-secondary-800">[{{ props.subtitle }}]</span>
-        <div class="card-title-slot px-3">
-          <slot />
-        </div>
+        <div class="text-sm text-secondary-700 block sm:inline sm:ml-2">[{{ props.subtitle }}]</div>
       </div>
       <div class="text-secondary-800 text-sm md:text-base">
         {{ props.text }}
