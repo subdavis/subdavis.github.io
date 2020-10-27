@@ -189,29 +189,16 @@ export default {
   border-radius: 50%;
 }
 
-.slice {
-  min-height: 45px;
-  background: linear-gradient(177deg,
-      theme('colors.primary.800') 0%,
-      theme('colors.primary.800') 50%,
-      rgba(255,255,255,0) 50%);
+.blurb {
+  background: linear-gradient(340deg,
+    theme('colors.primary.800'),
+    theme('colors.accent.800'));
 }
 
 @screen lg {
   .blurb {
     min-width: 400px;
     max-width: 400px;
-  }
-
-  .slice {
-    width: 80px;
-    min-height: 100vh;
-    max-height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(87deg,
-      theme('colors.primary.800') 0%,
-      theme('colors.primary.800') 50%,
-      rgba(255,255,255,1) 50%);
   }
 }
 </style>
