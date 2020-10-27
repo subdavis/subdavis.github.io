@@ -51,7 +51,7 @@
           to interact directly with the storage backend."
         />
         <project-template
-          img="bannerkobo.png"
+          img="kobodl.png"
           title="kobodl"
           subtitle="Python, Flask, Tailwind CSS"
           href="https://github.com/subdavis/kobo-book-downloader"
@@ -61,7 +61,7 @@
             and create proper distribution packages with pypi and docker."
         />
         <project-template
-          img="uptime.png"
+          img="selfhosted.png"
           title="Self-Host Anything"
           subtitle="Systemd, Docker"
           href="https://github.com/subdavis/selfhosted"
