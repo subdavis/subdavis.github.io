@@ -48,6 +48,7 @@ export default {
   */
   plugins: [
   ],
+  render: { resourceHints: false },
   /*
   ** Nuxt.js dev-modules
   */
