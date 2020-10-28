@@ -1,9 +1,9 @@
 <template>
   <div class="my-4 ml-0 flex items-center">
-    <div class="w-8 text-secondary-700">
+    <div class="w-8 text-secondary-300">
       <pfund />
     </div>
-    <span class="ml-2 text-lg font-bold text-secondary-700 italic">{{ text }}</span>
+    <span class="ml-2 text-lg font-bold text-secondary-300 italic">{{ text }}</span>
     <span class="grad rounded flex-grow ml-4" style="height: 4px" />
   </div>
 </template>

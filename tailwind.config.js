@@ -12,7 +12,8 @@ module.exports = {
       primary: colors.purple,
       secondary: colors.gray,
       accent: colors.pink,
-      white: colors.white
+      white: colors.white,
+      black: colors.black
     }
   },
   variants: {},
