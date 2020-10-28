@@ -35,19 +35,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
-  css: [],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+
   render: { resourceHints: false },
   /*
   ** Nuxt.js dev-modules
@@ -74,21 +62,10 @@ export default {
       }
     }]
   ],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [],
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  },
+
   purgeCSS: {
+    // https://github.com/nuxt/nuxt.js/issues/6565
+    // https://github.com/vaso2/nuxt-fontawesome/issues/9
     whitelistPatterns: [/-fa$/, /^fa-/]
   }
 }
