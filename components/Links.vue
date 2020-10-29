@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div id="links" class="my-4 inline-flex flex-row items-center text-xl">
     <a class="mr-3" href="https://github.com/subdavis">
       <fa :icon="['fab', 'github']" />
