@@ -41,6 +41,7 @@ export default {
   render: { resourceHints: false },
 
   hooks: {
+    // Purge javascript
     // https://github.com/nuxt/nuxt.js/issues/2822
     'generate:page': (page) => {
       const doc = cheerio.load(page.html)
