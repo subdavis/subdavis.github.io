@@ -1,3 +1,5 @@
+const cheerio = require('cheerio');
+
 const title = 'Brandon Davis'
 const description = `UNC alum and software engineer.
   I love experimenting with code, discovering new places,
@@ -37,6 +39,16 @@ export default {
   },
 
   render: { resourceHints: false },
+
+  hooks: {
+    // https://github.com/nuxt/nuxt.js/issues/2822
+    'generate:page': (page) => {
+      const doc = cheerio.load(page.html)
+      doc('body script').remove()
+      doc('link[rel=preload]').remove()
+      page.html = doc.html()
+    }
+  },
   /*
   ** Nuxt.js dev-modules
   */

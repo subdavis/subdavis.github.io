@@ -16,6 +16,18 @@ module.exports = {
       black: colors.black
     }
   },
+  // https://github.com/nuxt-community/tailwindcss-module/issues/111
+  purge: [
+    './pages/**/*.vue',
+    './components/**/*.vue',
+    './plugins/**/*.vue',
+    './static/**/*.vue',
+    './store/**/*.vue'
+  ],
   variants: {},
-  plugins: []
+  plugins: [],
+  // https://tailwindcss.com/docs/upcoming-changes#purge-layers-by-default
+  future: {
+    purgeLayersByDefault: true
+  }
 }
