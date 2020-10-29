@@ -21,8 +21,7 @@ module.exports = {
     './pages/**/*.vue',
     './components/**/*.vue',
     './plugins/**/*.vue',
-    './static/**/*.vue',
-    './store/**/*.vue'
+    './static/**/*.vue'
   ],
   variants: {},
   plugins: [],
