@@ -1,3 +1,5 @@
+const cheerio = require('cheerio');
+
 const title = 'Brandon Davis'
 const description = `UNC alum and software engineer.
   I love experimenting with code, discovering new places,
@@ -35,20 +37,19 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
-  css: [],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+
   render: { resourceHints: false },
+
+  hooks: {
+    // Purge javascript
+    // https://github.com/nuxt/nuxt.js/issues/2822
+    'generate:page': (page) => {
+      const doc = cheerio.load(page.html)
+      doc('body script').remove()
+      doc('link[rel=preload]').remove()
+      page.html = doc.html()
+    }
+  },
   /*
   ** Nuxt.js dev-modules
   */
@@ -74,21 +75,10 @@ export default {
       }
     }]
   ],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [],
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  },
+
   purgeCSS: {
+    // https://github.com/nuxt/nuxt.js/issues/6565
+    // https://github.com/vaso2/nuxt-fontawesome/issues/9
     whitelistPatterns: [/-fa$/, /^fa-/]
   }
 }
