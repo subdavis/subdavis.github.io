@@ -111,7 +111,7 @@
           img="tusk.png"
           title="Keepass Tusk"
           subtitle="JavaScript, Webpack"
-          href="https://subdavis.com/tusk"
+          href="https://subdavis.com/Tusk"
           text="Tusk is a browser extension for filling passwords from a
             KeePass database stored in the cloud. I didn't start this project
             (it began as CKP) but I created a fork with a new UI since the
