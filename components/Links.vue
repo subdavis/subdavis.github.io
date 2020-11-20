@@ -3,14 +3,14 @@
     <a class="mr-3" href="https://github.com/subdavis">
       <fa :icon="['fab', 'github']" />
     </a>
+    <a class="mr-3" href="https://twitter.com/subdavis">
+      <fa :icon="['fab', 'twitter']" />
+    </a>
     <a class="mr-3" href="https://www.linkedin.com/in/subdavis/">
       <fa :icon="['fab', 'linkedin']" />
     </a>
     <a class="mr-3" href="https://www.goodreads.com/user/show/103087534-brandon">
       <fa :icon="['fab', 'goodreads']" />
-    </a>
-    <a class="mr-3" href="https://www.snapchat.com/add/subdavis">
-      <fa :icon="['fab', 'snapchat-ghost']" />
     </a>
     <a
       href="https://keybase.io/bdavis"

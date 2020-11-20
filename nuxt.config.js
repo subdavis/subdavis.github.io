@@ -67,8 +67,8 @@ export default {
       icons: {
         brands: [
           'faGithub',
+          'faTwitter',
           'faLinkedin',
-          'faSnapchatGhost',
           'faKeybase',
           'faGoodreads'
         ]
