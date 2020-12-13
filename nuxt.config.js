@@ -47,6 +47,14 @@ export default {
       const doc = cheerio.load(page.html)
       doc('body script').remove()
       doc('link[rel=preload]').remove()
+      doc('body').append(`
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT15TTB3YP"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GT15TTB3YP');
+        </script>`.replace('\n', ''));
       page.html = doc.html()
     }
   },
@@ -73,12 +81,12 @@ export default {
           'faGoodreads'
         ]
       }
-    }]
+    }],
   ],
 
   purgeCSS: {
     // https://github.com/nuxt/nuxt.js/issues/6565
     // https://github.com/vaso2/nuxt-fontawesome/issues/9
     whitelistPatterns: [/-fa$/, /^fa-/]
-  }
+  },
 }
