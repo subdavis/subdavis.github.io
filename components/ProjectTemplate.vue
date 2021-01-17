@@ -3,6 +3,7 @@
     <img
       class="card-image z-10 my-4"
       :src="require(`~/assets/img/${props.img}`)"
+      :style="{ objectFit: props.objectFit || 'cover' }"
     >
     <div
       class="
@@ -36,7 +37,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  object-fit: cover;
+  padding: 2px;
   background-color: theme('colors.secondary.100');
   border: 3px solid theme('colors.primary.500');
 }

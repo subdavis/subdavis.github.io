@@ -38,10 +38,7 @@
             I created it as a way to get familiar with the capabilities of Tailwind
             and Nuxt.  My last personal site was a table-layout throwback
             intended to render well in text-based browsers like lynx and links."
-        >
-          <!-- <img class="mr-2" alt="GitHub last commit" src="https://img.shields.io/github/last-commit/subdavis/subdavis.github.io">
-          <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/subdavis/subdavis.github.io/github%20pages"> -->
-        </project-template>
+        />
         <project-template
           img="wio.png"
           title="WorkspacesIO"
@@ -52,10 +49,17 @@
           for managing data collections called workspaces.  It uses AWS STS tokens
           to provide coarse-grained access control that allows client tooling
           to interact directly with the storage backend."
-        >
-          <!-- <img class="mr-2" alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/subdavis/workspaces-io/CI">
-          <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/workspacesio"> -->
-        </project-template>
+        />
+        <project-template
+          img="seedtools.png"
+          object-fit="contain"
+          title="Libgen Seedtools"
+          subtitle="Python, Click"
+          href="https://github.com/subdavis/libgen-seedtools"
+          text="Libgen Seedtools is a small command line application to help would-be seeders
+          find the most urgently needed files to seed, download them, and add them to a
+          torrent server.  It will eventually support IPFS and servers other than transmission."
+        />
         <project-template
           img="kobodl.png"
           title="kobodl"
@@ -65,11 +69,7 @@
             remove DRM from books purchased from kobo.com. I forked it from another project
             to add audiobook support, multi-user support, a web interface,
             and create proper distribution packages with pypi and docker."
-        >
-          <!-- <a class="mr-2" href="https://github.com/subdavis/kobo-book-downloader/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/subdavis/kobo-book-downloader"></a>
-          <img class="mr-2" alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/kobodl">
-          <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/subdavis/kobodl"> -->
-        </project-template>
+        />
         <project-template
           img="selfhosted.png"
           title="Self-Host Anything"
@@ -80,10 +80,7 @@
             up, and represents a lot of time and research about how to best
             configure docker and systemd to work together.  /r/selfhosted
             provided a lot of inspiration."
-        >
-          <!-- <img class="mr-2" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/subdavis/selfhosted">
-          <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/subdavis/selfhosted/master"> -->
-        </project-template>
+        />
         <project-template
           img="girder.png"
           title="Girder Web Components"
@@ -103,10 +100,7 @@
             and editing track annotations over video in the browser.  Challenges
             include rendering performance and managing code complexity, as traditional
             MVC patterns often lead to performance bottlenecks."
-        >
-          <!-- <img class="mr-2" alt="npm (tag)" src="https://img.shields.io/npm/v/vue-media-annotator/latest">
-          <img class="mr-2" alt="Docker Pulls" src="https://img.shields.io/docker/pulls/kitware/viame-web"> -->
-        </project-template>
+        />
         <project-template
           img="tusk.png"
           title="Keepass Tusk"
@@ -118,9 +112,7 @@
             original project lost steam. You can install Tusk for Chrome or
             Firefox.  I've since abandoned the project due to difficulties
             with cloud storage APIs, particularly Google Drive."
-        >
-          <!-- <img alt="Chrome Web Store" src="https://img.shields.io/chrome-web-store/rating-count/fmhmiaejopepamlcjkncpgpdjichnecm"> -->
-        </project-template>
+        />
         <project-template
           img="hacknc.png"
           title="HackNC"
