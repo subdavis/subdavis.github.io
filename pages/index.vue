@@ -87,9 +87,7 @@
           subtitle="Vue.js, Vuetify"
           href="https://gwc.girder.org"
           text="GWC is a library of Vuetify + Vue.js components that provide
-            interactivity with Kitware's Girder DMS.  They violate traditional
-            Vue.js design patterns for the sake of downstream developer ease-of-use
-            and feature modularity."
+            interactivity with Kitware's Girder DMS."
         />
         <project-template
           img="fish.png"
