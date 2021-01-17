@@ -72,14 +72,13 @@
         />
         <project-template
           img="selfhosted.png"
-          title="Self-Host Anything"
-          subtitle="Systemd, Docker"
+          title="Hosted Service Configurations"
+          subtitle="Docker, Compose, Traefik"
           href="https://github.com/subdavis/selfhosted"
-          text="This is a git repository where I keep systemd configurations for all
-            the services I self-host.  It's also a tutorial for how to set these services
+          text="This is a git repository where I keep compose configurations for all
+            the services I host.  It's also a tutorial for how to set these services
             up, and represents a lot of time and research about how to best
-            configure docker and systemd to work together.  /r/selfhosted
-            provided a lot of inspiration."
+            configure docker and traefik.  /r/selfhosted provided a lot of inspiration."
         />
         <project-template
           img="girder.png"
