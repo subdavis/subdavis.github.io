@@ -81,14 +81,6 @@
             configure docker and traefik.  /r/selfhosted provided a lot of inspiration."
         />
         <project-template
-          img="girder.png"
-          title="Girder Web Components"
-          subtitle="Vue.js, Vuetify"
-          href="https://gwc.girder.org"
-          text="GWC is a library of Vuetify + Vue.js components that provide
-            interactivity with Kitware's Girder DMS."
-        />
-        <project-template
           img="fish.png"
           title="VIAME Web"
           subtitle="Vue.js, Vuetify, Typescript"
