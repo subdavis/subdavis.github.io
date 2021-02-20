@@ -13,10 +13,9 @@
       <fa :icon="['fab', 'goodreads']" />
     </a>
     <a
-      href="https://keybase.io/bdavis"
+      href="/history/key.txt"
       class="gpg inline-flex flex-row items-center"
     >
-      <fa :icon="['fab', 'keybase']" />
       <span class="ml-2 mt-1 text-sm font-mono">
         <span>098A</span>
         <span>BBEB</span>

@@ -1,10 +1,10 @@
 You can find my PGP key on the MIT keyservers:
 
-    http://pool.sks-keyservers.net/pks/lookup?op=get&search=0x098ABBEBCF1FB633
+    http://keys.gnupg.net/pks/lookup?op=get&search=0x098ABBEBCF1FB633
 
 Run this to import my key from the command line:
 
-    gpg --keyserver hkp://hkps.pool.sks-keyservers.net --recv-keys 098ABBEBCF1FB633
+    gpg --keyserver hkp://sks.pod02.fleetstreetops.com --recv-keys 098ABBEBCF1FB633
 
 Fingerprint:
 
@@ -13,8 +13,8 @@ Fingerprint:
 Raw key:
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: SKS 1.1.5
-Comment: Hostname: pgp.mit.edu
+Version: SKS 1.1.6
+Comment: Hostname: sks.pod02.fleetstreetops.com
 
 mQINBFjahSUBEADaC9aJ6VCG3fCGtL1SX8cUUibHwFQmzf3L2QnFwJAj7yCtUNVP1VKpbe8u
 /fJlKAXf5v26QAZkGh+jGMQJv/6f4iSLBsY4lxYV65Dj+JlkIra0RpTpCuei8IIYMPT6ub5b
