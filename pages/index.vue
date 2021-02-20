@@ -22,7 +22,7 @@
         class="blurb-paragraph text-sm md:text-base"
         role="complementary"
       >
-        Web developer, apparently. <br>❤️ FOSS. 🐏 Go Heels!
+        web developer, apparently.
       </h3>
       <links />
     </div>
