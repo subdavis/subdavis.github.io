@@ -17,10 +17,10 @@
       class="gpg inline-flex flex-row items-center"
     >
       <span class="ml-2 mt-1 text-sm font-mono">
-        <span>098A</span>
-        <span>BBEB</span>
-        <span>CF1F</span>
-        <span>B633</span>
+        <span>44DD</span>
+        <span>0B07</span>
+        <span>4C0F</span>
+        <span>6F91</span>
       </span>
     </a>
   </div>
