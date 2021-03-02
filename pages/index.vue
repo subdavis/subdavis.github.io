@@ -22,7 +22,7 @@
         class="blurb-paragraph text-sm md:text-base"
         role="complementary"
       >
-        web developer, apparently.
+        web developer, apparently.  he/him.  i love to get email from humans.
       </h3>
       <links />
     </div>
