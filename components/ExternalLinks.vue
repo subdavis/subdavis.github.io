@@ -32,14 +32,6 @@
     >
       thecoronavirus.page
     </a>
-    <a
-      class="ml-2 m-3 p-3 external-link bg-primary-500
-        hover:bg-primary-600 cursor-pointer
-        flex items-center justify-center border-2 border-primary-700"
-      href="https://www.penny-arcade.com/comic/2011/06/13/the-hippothalamus"
-    >
-      The Hippothalamus
-    </a>
   </div>
 </template>
 
