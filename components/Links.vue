@@ -3,9 +3,6 @@
     <a class="mr-3" href="https://github.com/subdavis">
       <fa :icon="['fab', 'github']" />
     </a>
-    <a class="mr-3" href="https://twitter.com/subdavis">
-      <fa :icon="['fab', 'twitter']" />
-    </a>
     <a class="mr-3" href="https://www.linkedin.com/in/subdavis/">
       <fa :icon="['fab', 'linkedin']" />
     </a>
