@@ -51,16 +51,6 @@
           to interact directly with the storage backend."
         />
         <project-template
-          img="seedtools.png"
-          object-fit="contain"
-          title="Libgen Seedtools"
-          subtitle="Python, Click"
-          href="https://github.com/subdavis/libgen-seedtools"
-          text="Libgen Seedtools is a small command line application to help would-be seeders
-          find the most urgently needed files to seed, download them, and add them to a
-          torrent server.  It will eventually support IPFS and servers other than transmission."
-        />
-        <project-template
           img="kobodl.png"
           title="kobodl"
           subtitle="Python, Flask, Tailwind CSS"
