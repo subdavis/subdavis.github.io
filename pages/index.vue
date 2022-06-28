@@ -10,7 +10,7 @@
         text-secondary-200"
     >
       <div class="profile mb-2">
-        <img src="~/assets/img/li.jpeg">
+        <img src="https://avatars.githubusercontent.com/u/4214172">
       </div>
       <h1 class="text-4xl font-bold -mb-3">
         Brandon Davis
