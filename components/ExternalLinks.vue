@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="flex flex-row flex-wrap ml-2 text-white">
     <a
       class="ml-2 m-3 p-3 external-link bg-primary-500
@@ -34,6 +34,8 @@
     </a>
   </div>
 </template>
+
+<script></script>
 
 <style scoped>
 .external-link {

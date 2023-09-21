@@ -24,7 +24,7 @@ export default {
 <style scoped>
 .grad {
   background: linear-gradient(81deg,
-    theme('colors.primary.800') 0%,
+    theme('colors.primary') 0%,
     rgba(255,88,133,1) 100%);
 }
 </style>

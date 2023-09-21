@@ -1,10 +1,10 @@
-<template functional>
+<template>
   <div class="flex flex-row my-4">
-    <img
+    <NuxtImg
       class="card-image z-10 my-4"
-      :src="require(`~/assets/img/${props.img}`)"
-      :style="{ objectFit: props.objectFit || 'cover' }"
-    >
+      :src="`/img/${img}`"
+      :style="{ objectFit: objectFit || 'cover' }"
+    />
     <div
       class="
         z-0 flex flex-col rounded bg-secondary-800
@@ -12,17 +12,17 @@
     >
       <div class="text-secondary-100 text-lg font-bold items-center">
         <a
-          v-if="props.href"
-          :href="props.href"
+          v-if="href"
+          :href="href"
           class="underline inline"
-        >{{ props.title }}</a>
-        <span v-else>{{ props.title }}</span>
+        >{{ title }}</a>
+        <span v-else>{{ title }}</span>
         <div class="text-sm text-primary-400 block sm:inline sm:ml-2">
-          [{{ props.subtitle }}]
+          [{{ subtitle }}]
         </div>
       </div>
       <div class="text-secondary-100 text-sm md:text-base">
-        {{ props.text }}
+        {{ text }}
       </div>
       <div class="mt-2 flex flex-row">
         <slot />
@@ -31,6 +31,17 @@
   </div>
 </template>
 
+<script setup>
+defineProps({
+  img: String,
+  title: String,
+  subtitle: String,
+  text: String,
+  href: String,
+  objectFit: String,
+})
+</script>
+
 <style scoped>
 .card-image {
   min-width: 100px;
@@ -38,7 +49,7 @@
   height: 100px;
   border-radius: 50%;
   padding: 2px;
-  background-color: theme('colors.secondary.100');
-  border: 3px solid theme('colors.primary.500');
+  background-color: theme('colors.secondary');
+  border: 3px solid theme('colors.primary');
 }
 </style>

@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div id="links" class="my-4 inline-flex flex-row items-center text-xl">
     <a class="mr-3" href="https://github.com/subdavis">
       <fa :icon="['fab', 'github']" />
@@ -22,6 +22,8 @@
     </a>
   </div>
 </template>
+
+<script></script>
 
 <style scoped>
 .gpg:hover > span > span {

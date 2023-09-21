@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col lg:flex-row">
-    <toolbar />
+    <Toolbar />
     <div
       class="
         blurb bg-primary-800 w-fill flex
@@ -146,29 +146,18 @@
             I used this tool during HackNC 2016."
         />
         <sub-title text="External Links" />
-        <external-links />
+        <ExternalLinks />
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import Links from '@/components/Links.vue'
 import ProjectTemplate from '@/components/ProjectTemplate.vue'
 import Toolbar from '@/components/Toolbar.vue'
 import ExternalLinks from '@/components/ExternalLinks.vue'
-
 import SubTitle from '@/components/SubTitle.vue'
-
-export default {
-  components: {
-    Links,
-    ProjectTemplate,
-    SubTitle,
-    Toolbar,
-    ExternalLinks
-  }
-}
 </script>
 
 <style scoped>
@@ -180,8 +169,8 @@ export default {
 
 .blurb {
   background: linear-gradient(340deg,
-    theme('colors.primary.800'),
-    theme('colors.accent.800'));
+    theme('colors.primary'),
+    theme('colors.accent'));
 }
 
 @screen lg {
