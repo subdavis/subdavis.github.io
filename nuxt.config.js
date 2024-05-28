@@ -34,7 +34,9 @@ export default {
       { name: 'twitter:url', content: url }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
       {
         defer: true,
         'data-domain': 'subdavis.com',
