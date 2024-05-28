@@ -34,7 +34,12 @@ export default {
       { name: 'twitter:url', content: url }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        defer: true,
+        'data-domain': 'subdavis.com',
+        src: 'https://plausible.subdavis.com/js/script.js'
+      }
     ]
   },
 

@@ -39,6 +39,12 @@
             and Nuxt.  My last personal site was a table-layout throwback
             intended to render well in text-based browsers like lynx and links."
         />
+        <!-- <project-template
+          img="bikegroups.png"
+          title="bikegroups.org"
+          subtitle="Next.js, Tailwind, Typescript"
+          href="https://bikegroups.org/"
+        /> -->
         <project-template
           img="wio.png"
           title="WorkspacesIO"
