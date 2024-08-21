@@ -39,8 +39,8 @@ export default {
     script: [
       {
         defer: true,
-        'data-domain': 'subdavis.com',
-        src: 'https://plausible.subdavis.com/js/script.js'
+        'data-website-id': 'bfadb547-f5e5-4a8e-9416-13340a2bfdfd',
+        src: 'https://umami.subdavis.com/script.js'
       }
     ]
   },
