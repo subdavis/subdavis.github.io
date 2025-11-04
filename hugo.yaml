@@ -1,0 +1,36 @@
+baseURL: "https://subdavis.com/"
+languageCode: "en-us"
+title: "Brandon Davis"
+disableKinds: ["taxonomy", "term", "RSS", "sitemap"]
+
+params:
+  description: "UNC alum and software engineer. I love experimenting with code, discovering new places, and reading about space exploration"
+  author: "Brandon Davis"
+  email: "brandon@subdavis.com"
+  image: "https://subdavis.com/img/li.jpg"
+  github: "subdavis"
+  twitter: "subdavis"
+  linkedin: "subdavis"
+  goodreads: "103087534-brandon"
+  gpg: "44DD0B074C0F6F91"
+  umami_website_id: "bfadb547-f5e5-4a8e-9416-13340a2bfdfd"
+  umami_src: "https://umami.subdavis.com/script.js"
+
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/notwatching/hugo_stats.json
+      target: css
+    - source: '(postcss|tailwind)\.config\.js'
+      target: css
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json
+    - disableWatch: true
+      source: tailwind.config.js
+      target: assets/notwatching/tailwind.config.js

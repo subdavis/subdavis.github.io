@@ -1,0 +1,35 @@
+<div class="flex flex-row my-4">
+  <img
+    class="card-image z-10 my-4"
+    src="/img/{{ .img }}"
+    alt="{{ .title }}"
+    style="object-fit: {{ .objectFit | default "cover" }};"
+  >
+  <div class="z-0 flex flex-col rounded bg-gray-800 border-gray-900 p-3 pl-16 -ml-12">
+    <div class="text-gray-100 text-lg font-bold items-center">
+      {{ if .href }}
+        <a href="{{ .href }}" class="underline inline">{{ .title }}</a>
+      {{ else }}
+        <span>{{ .title }}</span>
+      {{ end }}
+      <div class="text-sm text-purple-400 block sm:inline sm:ml-2">
+        [{{ .subtitle }}]
+      </div>
+    </div>
+    <div class="text-gray-100 text-sm md:text-base">
+      {{ .text }}
+    </div>
+  </div>
+</div>
+
+<style>
+.card-image {
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #f3f4f6;
+  border: 3px solid #a855f7;
+}
+</style>

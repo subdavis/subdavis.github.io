@@ -1,0 +1,83 @@
+projects:
+  - title: "This Website!"
+    subtitle: "Hugo, Tailwind"
+    img: "site.png"
+    href: "https://github.com/subdavis/subdavis.github.io"
+    text: "This website was built with Hugo and Tailwind CSS. I migrated from Vue.js and Nuxt to simplify the tech stack and eliminate the need for runtime JavaScript. My last personal site was a table-layout throwback intended to render well in text-based browsers like lynx and links."
+
+  - title: "WorkspacesIO"
+    subtitle: "Python, FastApi, Vue 3"
+    img: "wio.png"
+    href: "https://github.com/subdavis/workspaces-io"
+    text: "WorkspacesIO is a data management tool built on MinIO, ElasticSearch, and Filestash.app that provides excellent browser and command line interfaces for managing data collections called workspaces. It uses AWS STS tokens to provide coarse-grained access control that allows client tooling to interact directly with the storage backend."
+
+  - title: "kobodl"
+    subtitle: "Python, Flask, Tailwind CSS"
+    img: "kobodl.png"
+    href: "https://github.com/subdavis/kobo-book-downloader"
+    text: "kobodl is a command-line tool and web service to download and remove DRM from books purchased from kobo.com. I forked it from another project to add audiobook support, multi-user support, a web interface, and create proper distribution packages with pypi and docker."
+
+  - title: "Hosted Service Configurations"
+    subtitle: "Docker, Compose, Traefik"
+    img: "selfhosted.png"
+    href: "https://github.com/subdavis/selfhosted"
+    text: "This is a git repository where I keep compose configurations for all the services I host. It's also a tutorial for how to set these services up, and represents a lot of time and research about how to best configure docker and traefik. /r/selfhosted provided a lot of inspiration."
+
+  - title: "VIAME Web"
+    subtitle: "Vue.js, Vuetify, Typescript"
+    img: "fish.png"
+    href: "https://github.com/VIAME/VIAME-web"
+    text: "I am currently engaged in several projects that involve displaying and editing track annotations over video in the browser. Challenges include rendering performance and managing code complexity, as traditional MVC patterns often lead to performance bottlenecks."
+
+  - title: "Keepass Tusk"
+    subtitle: "JavaScript, Webpack"
+    img: "tusk.png"
+    href: "https://subdavis.com/Tusk"
+    text: "Tusk is a browser extension for filling passwords from a KeePass database stored in the cloud. I didn't start this project (it began as CKP) but I created a fork with a new UI since the original project lost steam. You can install Tusk for Chrome or Firefox. I've since abandoned the project due to difficulties with cloud storage APIs, particularly Google Drive."
+
+  - title: "HackNC"
+    subtitle: "Pug, Grunt, CSS"
+    img: "hacknc.png"
+    href: "https://fall2016.hacknc.com/"
+    text: "In the summer and fall of 2016, I lead the development team to build the website for HackNC, the annual undergraduate-run hackathon at UNC Chapel Hill. This is the first decent bit of web design I was involved in, and my first time working alongside a talented dsgraphic designer."
+
+  - title: "Ray Tracer"
+    subtitle: "C++"
+    img: "spinbetter.gif"
+    href: "https://github.com/suBDavis/raytracer"
+    text: "I implemented a basic ray tracer in C++ to render spheres and planes with reflective surfaces and colors. Because ray tracing is computationally expensive, I also created a low-resolution ASCII renderer to do scene setup from the command line."
+
+  - title: "Conway's Game of Life"
+    subtitle: "JavaScript"
+    img: "life.png"
+    href: "https://subdavis.com/life"
+    text: "I implemented an infinite version of the classic Conway's Game in native javascript. This is one of the first pieces of code I was ever proud of, and the project was my first foray into browser animation with canvases."
+
+  - title: "OpenCV Flight Simulator"
+    subtitle: "C++, Python"
+    img: "jank.png"
+    href: "https://www.youtube.com/watch?v=CkQPBO49I04&feature=youtu.be"
+    text: "Hardly worth mentioning, except that it was so much fun. My friend and I hacked a joystick out of pipe cleaners and puff balls and used OpenCV tracking to use it to steer a flight simulator. The project was thrown together at Bitcamp where judges didn't even bother to look at us because we weren't competing for any sponsored prizes. But I'm not bitter."
+
+  - title: "HackNotify"
+    subtitle: "Python, Google Sheets"
+    img: "hacknotify.png"
+    href: "https://github.com/HackNC/hacknotify"
+    text: "This is a command-line tool for sending SMS notifications to hackathon participants based on live-updating Google sheets. At the time, I was interested in 'serverless' apps that used Google sheets as a persistence layer to avoid configuring more complex document stores. I used this tool during HackNC 2016."
+
+external_links:
+  - title: "forrestli.com"
+    href: "http://forrestli.com"
+    color: "primary"
+  
+  - title: "hgreer.com"
+    href: "http://hgreer.com"
+    color: "accent"
+  
+  - title: "apod.nasa.gov"
+    href: "https://apod.nasa.gov/apod/astropix.html"
+    color: "secondary"
+  
+  - title: "thecoronavirus.page"
+    href: "https://thecoronavirus.page/"
+    color: "accent"

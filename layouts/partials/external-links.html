@@ -1,0 +1,21 @@
+<div class="flex flex-row flex-wrap ml-2 text-white">
+  {{ range .Site.Data.homepage.external_links }}
+  <a
+    class="ml-2 m-3 p-3 external-link
+      {{ if eq .color "primary" }}bg-purple-500 hover:bg-purple-600 border-2 border-purple-600{{ end }}
+      {{ if eq .color "accent" }}bg-pink-500 hover:bg-pink-600 border-2 border-pink-600{{ end }}
+      {{ if eq .color "secondary" }}bg-gray-600 hover:bg-gray-700 border-2 border-gray-700{{ end }}
+      cursor-pointer flex items-center justify-center"
+    href="{{ .href }}"
+  >
+    {{ .title }}
+  </a>
+  {{ end }}
+</div>
+
+<style>
+.external-link {
+  height: 50px;
+  border-radius: 0.4rem;
+}
+</style>
