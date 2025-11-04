@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{{ .Site.Title }}</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{{ .Site.Params.description }}">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:site_name" content="subdavis.com">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:image" content="{{ .Site.Params.image }}">
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
+  <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
+  <meta name="twitter:title" content="{{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ .Site.Params.image }}">
+  <meta name="twitter:url" content="{{ .Site.BaseURL }}">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  {{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "css.html" . }}
+  {{ end }}
+  
+  <!-- Umami Analytics -->
+  {{ if .Site.Params.umami_website_id }}
+  <script defer data-website-id="{{ .Site.Params.umami_website_id }}" src="{{ .Site.Params.umami_src }}"></script>
+  {{ end }}
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+</body>
+</html>

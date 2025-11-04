@@ -1,0 +1,15 @@
+<div class="my-4 ml-0 flex items-center">
+  <div class="w-8 text-gray-300">
+    {{ partial "pfund-svg.html" }}
+  </div>
+  <span class="ml-2 text-lg font-bold text-gray-300 italic">{{ .text }}</span>
+  <span class="grad rounded flex-grow ml-4" style="height: 4px"></span>
+</div>
+
+<style>
+.grad {
+  background: linear-gradient(81deg,
+    #6b21a8 0%,
+    rgba(255,88,133,1) 100%);
+}
+</style>
