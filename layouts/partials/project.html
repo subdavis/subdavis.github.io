@@ -6,7 +6,7 @@
     style="object-fit: {{ .objectFit | default "cover" }};"
   >
   <div class="z-0 flex flex-col rounded bg-gray-800 border-gray-900 p-3 pl-16 -ml-12">
-    <div class="text-gray-100 text-lg font-bold items-center">
+    <div class="text-gray-100 text-lg items-center">
       {{ if .href }}
         <a href="{{ .href }}" class="underline inline">{{ .title }}</a>
       {{ else }}
@@ -30,6 +30,5 @@
   border-radius: 50%;
   padding: 2px;
   background-color: #f3f4f6;
-  border: 3px solid #a855f7;
 }
 </style>

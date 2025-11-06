@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="my-4 max-w-3xl">
+  {{ partial "breadcrumb.html" . }}
+  <div class="flex justify-between items-center mb-8">
+    <h1 class="text-4xl font-bold text-gray-100">{{ .Title }}</h1>
+    
+  </div>
+  
+  {{ partial "posts-list.html" (dict "posts" .Pages) }}
+
+  <p class="my-6 text-purple-400">
+    {{ partial "rss.html" (dict "showText" true) }}
+  </div>
+</div>
+{{ end }}
+
+{{/*  CSS in assets/css/posts.css  */}} 

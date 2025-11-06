@@ -1,0 +1,42 @@
+
+.prose h2 {
+  @apply text-2xl font-bold text-gray-100 mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-bold text-gray-200 mt-6 mb-3;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply mb-4;
+}
+
+.prose ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose a {
+  @apply text-purple-400 hover:text-purple-300 underline;
+}
+
+.prose code {
+  @apply bg-gray-800 px-1 py-0.5 rounded text-sm;
+}
+
+.prose pre {
+  @apply bg-gray-800 p-4 rounded overflow-x-auto mb-4;
+}

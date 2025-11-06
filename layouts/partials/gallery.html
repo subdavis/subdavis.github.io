@@ -1,0 +1,53 @@
+{{/* Photo Grid */}}
+<div class="photo-grid mb-8">
+  {{ range .Resources.ByType "image" }}
+  <div class="photo-item">
+    <img src="{{ .RelPermalink }}" alt="{{ .Title }}" loading="lazy" />
+    {{ with .Title }}
+    <p class="photo-caption">{{ . }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+<style>
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .photo-item:hover img {
+    transform: scale(1.05);
+  }
+
+  .photo-caption {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

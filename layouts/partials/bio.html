@@ -1,0 +1,29 @@
+<div class="blurb bg-purple-800 w-full flex flex-col justify-center items-center pt-6 pb-3 text-gray-200">
+    <div class="profile mb-2">
+        <img src="https://avatars.githubusercontent.com/u/4214172" alt="{{ .Site.Title }}">
+    </div>
+    <h1 class="text-4xl font-bold -mb-1">
+        {{ .Site.Title }}
+    </h1>
+    <h2 class="text-xl font-bold text-gray-500 mb-2">
+        {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
+    </h2>
+    <h3 class="blurb-paragraph text-sm md:text-base" role="complementary">
+        web developer, apparently. he/him. i love to get email from humans.
+    </h3>
+    {{ partial "links.html" . }}
+</div>
+
+<style>
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.blurb {
+  background: linear-gradient(340deg,
+    var(--color-purple-800),
+    var(--color-pink-800));
+}
+</style>
