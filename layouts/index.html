@@ -1,55 +1,22 @@
+{{ define "header" }}
+   {{ partial "bio.html" . }}
+{{ end }}
+
 {{ define "main" }}
-<div class="flex flex-col lg:flex-row">
-  {{ partial "toolbar.html" . }}
-  
-  <div class="blurb bg-purple-800 w-fill flex flex-col justify-center items-center lg:items-start pl-10 pr-6 lg:pr-0 pt-6 lg:pt-0 text-gray-200">
-    <div class="profile mb-2">
-      <img src="https://avatars.githubusercontent.com/u/4214172" alt="{{ .Site.Title }}">
-    </div>
-    <h1 class="text-4xl font-bold">
-      {{ .Site.Title }}
-    </h1>
-    <h2 class="text-xl font-bold text-gray-500 mb-2">
-      {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
-    </h2>
-    <h3 class="blurb-paragraph text-sm md:text-base" role="complementary">
-      web developer, apparently. he/him. i love to get email from humans.
-    </h3>
-    {{ partial "links.html" . }}
+  <div class="my-6">
+  {{ partial "subtitle.html" (dict "text" "Recent Posts") }}
+
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ partial "posts-list.html" (dict "posts" $posts "limit" 4) }}
+
+
+  {{ partial "subtitle.html" (dict "text" "Projects") }}
+
+  {{ range .Site.Data.homepage.projects }}
+    {{ partial "project.html" . }}
+  {{ end }}
+
+  {{ partial "subtitle.html" (dict "text" "External Links") }}
+  {{ partial "external-links.html" . }}
   </div>
-  
-  <div class="main lg:h-screen lg:overflow-auto w-full bg-gray-900">
-    <div class="container flex flex-col mx-auto px-8 pb-4 lg:mt-4 xl:px-12">
-      {{ partial "subtitle.html" (dict "text" "Projects") }}
-      
-      {{ range .Site.Data.homepage.projects }}
-        {{ partial "project.html" . }}
-      {{ end }}
-      
-      {{ partial "subtitle.html" (dict "text" "External Links") }}
-      {{ partial "external-links.html" . }}
-    </div>
-  </div>
-</div>
-
-<style>
-.profile img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-}
-
-.blurb {
-  background: linear-gradient(340deg,
-    var(--color-purple-800),
-    var(--color-pink-800));
-}
-
-@media (min-width: 1024px) {
-  .blurb {
-    min-width: 400px;
-    max-width: 400px;
-  }
-}
-</style>
 {{ end }}

@@ -108,3 +108,5 @@
   --color-pink-800: #97266d;
   --color-pink-900: #702459;
 }
+
+@import "./post.css";
