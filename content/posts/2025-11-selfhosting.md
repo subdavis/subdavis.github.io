@@ -5,7 +5,7 @@ draft: true
 description: How I learned to do less and stop chasing shiny objects.
 ---
 
-At some point, every selfhosting enthusiast loses interest. After 6+ years of running ~20 applications on a home server, I value reliability and simplicity over everything else.
+At some point, every self-hosting enthusiast loses steam. After 6+ years of running ~20 applications on a home server, I value reliability and simplicity over just about everything else.
 
 **docker compose is probably all you need.**
 
@@ -75,12 +75,14 @@ I run dnsmasq on my Edgerouter, redirect all DNS queries to my adguard instance 
 
 Wireguard config has eaten more hours of my life than I care to say. The final straw was fiddling with MTU while dealing with packet loss over mobile networks (T Mobile). I noped out and set up Tailscale. Not a single problem since.
 
-## I have always regretted being "clever"
+## No more innovation tokens
 
 I started out using [CoreOS](https://en.wikipedia.org/wiki/Container_Linux) which turned out to be stupid because it was abandoned about 2 years after I adopted it. Never again will I look beyond Ubuntu.
 
 I also used to do [insane, truly unhinged shit](https://github.com/subdavis/selfhosted/blob/10f6aef418ffadcb3cefca16f3fad604abfb97a2/minio.service) with `systemd`. I believed that `docker compose` was not a valid substitue for an init system, whatever that means. Don't be like me.
 
-Unnecessary complexity is fine for learning, but be prepared to burn out on all that complexity. It's perfectly reasonable to tire of tinkering with complicated setups. Docker compose is not somehow a retreat to noob technology.
+Unnecessary complexity is fine for learning, but be prepared to burn out. It's perfectly reasonable to tire of tinkering with complicated setups. Docker compose is not somehow a retreat to noob technology.
+
+A particular choice may emerge out of a desire for novelty or fun or curiosity, but be clear-eyed, lest you confuse these indulgences with actual improvements.
 
 Keep it simple, stupid.
