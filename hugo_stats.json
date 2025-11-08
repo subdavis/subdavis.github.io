@@ -52,7 +52,6 @@
       "flex-col",
       "flex-grow",
       "flex-row",
-      "flex-shrink",
       "flex-wrap",
       "font-bold",
       "font-mono",
@@ -111,7 +110,6 @@
       "pt-8",
       "px-8",
       "rounded",
-      "shrink",
       "sm:inline",
       "sm:ml-2",
       "sm:text-xl",
@@ -135,13 +133,15 @@
       "underline",
       "w-5",
       "w-full",
-      "whitespace-nowrap",
       "xl:px-12",
       "z-0",
       "z-10"
     ],
     "ids": [
-      "links"
+      "hunting-for-ghost-feeds",
+      "its-just-rss",
+      "links",
+      "podcast-freedom-fleeting"
     ]
   }
 }
