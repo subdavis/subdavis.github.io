@@ -5,6 +5,7 @@
       "article",
       "body",
       "div",
+      "em",
       "footer",
       "h1",
       "h2",
@@ -138,6 +139,8 @@
       "z-10"
     ],
     "ids": [
+      "a-meditation-on-what-you-read-and-when",
+      "conscious-of-content",
       "hunting-for-ghost-feeds",
       "its-just-rss",
       "links",
