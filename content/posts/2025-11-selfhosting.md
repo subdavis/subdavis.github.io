@@ -17,7 +17,7 @@ Any conversation about the "right" setup should be grounded in goals. These are 
 * A bunch of network-reachable applications
 * Some reachable over public internet
 * Some behind SSO, IP Whitelist, or both
-* Running as <app>.subdavis.com
+* Running as `<app>.subdavis.com`
 * Plus DNS filtering via AdGuardHome
 
 I no longer value arcane wisdom earned through [suffering](https://immich.app/cursed-knowledge).
