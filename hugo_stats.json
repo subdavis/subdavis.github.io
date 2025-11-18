@@ -4,6 +4,8 @@
       "a",
       "article",
       "body",
+      "code",
+      "del",
       "div",
       "em",
       "footer",
@@ -21,12 +23,15 @@
       "ol",
       "p",
       "path",
+      "pre",
       "script",
       "span",
+      "strong",
       "style",
       "svg",
       "time",
-      "title"
+      "title",
+      "ul"
     ],
     "classes": [
       "-mb-1",
@@ -139,12 +144,19 @@
       "z-10"
     ],
     "ids": [
-      "a-meditation-on-what-you-read-and-when",
+      "10-year-old-hardware",
+      "a-little-bit-of-systemd-though",
       "conscious-of-content",
+      "everything-is-computer-docker-compose",
       "hunting-for-ghost-feeds",
       "its-just-rss",
       "links",
-      "podcast-freedom-fleeting"
+      "my-needs",
+      "no-more-innovation-tokens",
+      "podcast-freedom-fleeting",
+      "tired-of-fighting-dns",
+      "traefik-is-whatever-man",
+      "wireguard--tailscale-"
     ]
   }
 }

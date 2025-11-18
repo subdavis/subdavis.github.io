@@ -1,5 +1,5 @@
 ---
-title: Really Simple Syndication, or RSS
+title: RSS - Really Simple Syndication
 date: 2025-11-08
 draft: false
 description: The internet of the future is from 1999
