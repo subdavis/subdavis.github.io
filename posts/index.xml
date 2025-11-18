@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Brandon Davis</title><link>https://subdavis.com/posts/</link><description>Recent content in Posts on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Really Simple Syndication, or RSS</title><link>https://subdavis.com/posts/2025-11-rss-is-good/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-rss-is-good/</guid><description>&lt;p&gt;Podcasts are nice. They show up in chronological order, download in the background, and work the same in every app. In a world of algorithmic walled garden social &amp;ldquo;platforms&amp;rdquo;, this is a small miracle.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Brandon Davis</title><link>https://subdavis.com/posts/</link><description>Recent content in Posts on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 16 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Self-hosting Sustainably</title><link>https://subdavis.com/posts/2025-11-selfhosting/</link><pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-selfhosting/</guid><description>&lt;p&gt;At some point, every home server operator loses steam. After 6+ years running ~20 applications on a home server, I wish only for things to work properly and not waste my time.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re anything like me, &lt;strong&gt;docker compose is probably all you need.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/subdavis/selfhosted"&gt;Here is my full configuration&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="my-needs"&gt;My needs&lt;/h2&gt;
+&lt;p&gt;Any conversation about the &amp;ldquo;right&amp;rdquo; setup should be grounded in goals. These are mine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A bunch of network-reachable applications&lt;/li&gt;
+&lt;li&gt;Some reachable over public internet&lt;/li&gt;
+&lt;li&gt;Some behind SSO, IP Whitelist, or both&lt;/li&gt;
+&lt;li&gt;Running as &lt;code&gt;&amp;lt;app&amp;gt;.subdavis.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Plus DNS filtering via AdGuardHome&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I no longer value arcane wisdom earned through &lt;a href="https://immich.app/cursed-knowledge"&gt;suffering&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="10-year-old-hardware"&gt;10 year old hardware&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;An old 2010s Dell Optiplex Core i3, 8GB RAM&lt;/li&gt;
+&lt;li&gt;Rehoused in a Fractal Design Node 304 Mini-ITX&lt;/li&gt;
+&lt;li&gt;With a 4TB media HDD&lt;/li&gt;
+&lt;li&gt;And a 2-Drive 2TB RAID-1 MDADM array for more important data&lt;/li&gt;
+&lt;li&gt;And another 1TB HDD for backups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="everything-is-computer-docker-compose"&gt;Everything is &lt;del&gt;computer&lt;/del&gt; docker compose&lt;/h2&gt;
+&lt;p&gt;My basic philosophy is that I should be able to get this junk running on new or reimaged hardware in a couple hours if needed. I can &lt;code&gt;apt dist-upgrade&lt;/code&gt; worry-free. Docker&amp;rsquo;s restart policy has never betrayed me the way &lt;a href="https://nosystemd.org/"&gt;systemd repeatedly has.&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="a-little-bit-of-systemd-though"&gt;A little bit of systemd, though&lt;/h2&gt;
+&lt;p&gt;systemd starts dockerd, which takes care of bringing up the compose stack on restart or container failure. Docker handles dependency constraints with grace.&lt;/p&gt;
+&lt;p&gt;One extra need is for the external disks to be mounted properly before docker even tries to start. fstab can create race conditions, but systemd allows you to set mount dependencies on services, which is quite handy.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-conf" data-lang="conf"&gt;[Unit]
+Description=RAID1
+
+[Mount]
+What=/dev/md0
+Where=/media/primary
+Type=ext4
+Options=defaults,auto,noatime,exec
+
+[Install]
+WantedBy=docker.service
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="traefik-is-whatever-man"&gt;Traefik is whatever, man&lt;/h2&gt;
+&lt;p&gt;I use &lt;a href="https://traefik.io/traefik"&gt;traefik&lt;/a&gt;. I learned it back when I had more energy for such things. I geniunely like its tag-based config because it keeps my &lt;code&gt;docker-compose.yml&lt;/code&gt; modular and clean, but traefik config is verbose and annoying to troubleshoot. If I were starting over today I might try &lt;a href="https://caddyserver.com/"&gt;caddy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Still, the Letsencrypt support and Cloudflare companion have never let me down. Often, my new hostname has registered and is ready to serve traffic before the new app has even booted.&lt;/p&gt;
+&lt;h2 id="tired-of-fighting-dns"&gt;Tired of fighting DNS&lt;/h2&gt;
+&lt;p&gt;Maybe 6-8x per year, AdGuardHome goes down. Last year a slowly failing power supply lead to a lot of random system crashes. On this matter I have moved past depression to acceptance.&lt;/p&gt;
+&lt;p&gt;If you, too, feel traumatized by &lt;code&gt;dhcp-option=6&lt;/code&gt;, I recommend giving up on your end user device discovery dreams and dealing with DNS at the router instead.&lt;/p&gt;
+&lt;p&gt;I run dnsmasq on my Edgerouter, redirect all DNS queries to my adguard instance wit NAT, and have a NAT rule enable/disable switch I can throw to take my AdGuardHome instance out of the critical path of internet access. &lt;a href="https://github.com/subdavis/selfhosted/blob/main/docs/pihole-dnsmasq.md"&gt;I wrote about that here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(The NAT rule is necessary regardless of your config because plenty of IoT devices hard-code their DNS anyway. Looking at you, Philips Hue Bridge)&lt;/p&gt;
+&lt;h2 id="wireguard--tailscale-"&gt;Wireguard? 🙅 Tailscale? 👍&lt;/h2&gt;
+&lt;p&gt;Wireguard config has consumed many hours of my life. The final straw was tweaking MTU while dealing with packet loss over mobile networks (T Mobile). I noped out and set up Tailscale.&lt;/p&gt;
+&lt;h2 id="no-more-innovation-tokens"&gt;No more innovation tokens&lt;/h2&gt;
+&lt;p&gt;I started out using &lt;a href="https://en.wikipedia.org/wiki/Container_Linux"&gt;CoreOS&lt;/a&gt; which turned out to be foolish because it was abandoned about 2 years later.&lt;/p&gt;
+&lt;p&gt;I also used to do &lt;a href="https://github.com/subdavis/selfhosted/blob/10f6aef418ffadcb3cefca16f3fad604abfb97a2/minio.service"&gt;insane, truly unhinged shit&lt;/a&gt; with &lt;code&gt;systemd&lt;/code&gt;. I believed that &lt;code&gt;docker compose&lt;/code&gt; was not a valid substitue for an init system, whatever that means. Don&amp;rsquo;t be like me.&lt;/p&gt;
+&lt;p&gt;Unnecessary complexity is fine for learning. A particular choice may emerge out of a desire for novelty or fun or curiosity, but be clear-eyed, lest you confuse these indulgences with actual improvements. It&amp;rsquo;s perfectly reasonable to tire of tinkering with complicated setups. Using docker compose isn&amp;rsquo;t admitting defeat.&lt;/p&gt;
+&lt;p&gt;Keep it simple, stupid.&lt;/p&gt;</description></item><item><title>RSS - Really Simple Syndication</title><link>https://subdavis.com/posts/2025-11-rss-is-good/</link><pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-rss-is-good/</guid><description>&lt;p&gt;Podcasts are nice. They show up in chronological order, download in the background, and work the same in every app. In a world of algorithmic walled garden social &amp;ldquo;platforms&amp;rdquo;, this is a small miracle.&lt;/p&gt;
 &lt;p&gt;Why can&amp;rsquo;t more of the internet be like that? As &lt;a href="https://www.theatlantic.com/ideas/archive/2023/03/social-media-algorithms-twitter-meta-rss-reader/673282/"&gt;Yair Rosenberg wrote in 2023&lt;/a&gt;, you can take back control of what you see on the internet.&lt;/p&gt;
 &lt;h2 id="its-just-rss"&gt;It&amp;rsquo;s just RSS&lt;/h2&gt;
 &lt;p&gt;The technology of a hopeful future actually came out in 1999. It&amp;rsquo;s just &lt;a href="https://en.wikipedia.org/wiki/RSS"&gt;RSS&lt;/a&gt;. Every morning I fire up &lt;a href="https://netnewswire.com/"&gt;NetNewsWire&lt;/a&gt;. I pick something, open it up, and read it. Nobody tracks me. There are no cookie policies to accept. There&amp;rsquo;s no like button or comment section.&lt;/p&gt;
@@ -13,9 +64,7 @@
 &lt;p&gt;&lt;img src="./bluesky.png" alt="it even works on bluesky"&gt;&lt;/p&gt;
 &lt;h2 id="conscious-of-content"&gt;Conscious of content&lt;/h2&gt;
 &lt;p&gt;Adopting an RSS-first means of consuming the web takes work, and the setup user experience can be rough. The exercise, though, can be enlightening. You might have a sense of how much &lt;em&gt;time&lt;/em&gt; you spend on your phone in a day, but where is that time spent?&lt;/p&gt;
-&lt;p&gt;The content of my media diet have changed a bit in the last 6 months since I went all-in on RSS. It took real effort, but now, when I open my phone, I reach for my RSS reader rather than a browser or a social app. It feels like an improvement.&lt;/p&gt;</description></item><item><title>A few photos from Pittsburgh</title><link>https://subdavis.com/posts/2025-11-pittsburgh-photos/</link><pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-pittsburgh-photos/</guid><description>&lt;p&gt;Photos from RandyLand, Bicycle Heaven, and around town in Pittsburgh, PA. October 2025.&lt;/p&gt;</description></item><item><title>I want to get off Mr. Bones' Wild Ride</title><link>https://subdavis.com/posts/2025-11-introduction/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-introduction/</guid><description>&lt;p&gt;In June of &amp;lsquo;25 I shut off most of my social media accounts: Facebook, Instagram, and LinkedIn. I kept reddit under the happy delusion that I could learn to use it responsibly (lol).&lt;/p&gt;
+&lt;p&gt;The content of my media diet have changed a bit in the last 6 months since I went all-in on RSS. It took real effort, but now, when I open my phone, I reach for my RSS reader rather than a browser or a social app. It feels like an improvement.&lt;/p&gt;</description></item><item><title>A few photos from Pittsburgh</title><link>https://subdavis.com/posts/2025-11-pittsburgh-photos/</link><pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-pittsburgh-photos/</guid><description>&lt;p&gt;Photos from RandyLand, Bicycle Heaven, and around town in Pittsburgh, PA. October 2025.&lt;/p&gt;</description></item><item><title>I want to get off Mr. Bones' Wild Ride</title><link>https://subdavis.com/posts/2025-11-introduction/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-introduction/</guid><description>&lt;p&gt;In June of &amp;lsquo;25 I shut off most of my social media accounts: Facebook, Instagram, and LinkedIn. I kept reddit under the happy delusion that I could learn to use it responsibly (lol) but I&amp;rsquo;ve made strides to curtail that as well.&lt;/p&gt;
 &lt;p&gt;Since then, I&amp;rsquo;ve often thought about what the experience of being &amp;ldquo;on the internet&amp;rdquo; is like, and how that&amp;rsquo;s changed since I began forming digital habits back in High School. My memory is relatively poor, so a habit-forming tool for capturing a bit of life is wonderful. Having my good intentions packaged up to generate ad revenue and give teenagers an anxiety disorder is less so. &lt;a href="https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/"&gt;10% of Meta&amp;rsquo;s revenue for 2024 came from fraud.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The early internet was beautiful, and like all beautiful things it was transformed by greed into dazzling technicolor sludge.&lt;/p&gt;
-&lt;p&gt;But still, I enjoy reading posts by people I&amp;rsquo;ll never meet. Putting stuff out into the world is fun. The &lt;a href="https://bearblog.dev/discover/"&gt;Bear Blog discover feed&lt;/a&gt; is usually pretty wholesome, HackerNews is still rockin&amp;rsquo;, and my RSS app is chock full of honest work by decent humans. In the near future I&amp;rsquo;d even like to recommend some of them.&lt;/p&gt;
-&lt;p&gt;The prevailing normal form and style of most social posts lack honesty and curiosity. Instagram is a posh bar I&amp;rsquo;m never properly dressed for.&lt;/p&gt;
-&lt;p&gt;I can dress how I want here 🙂&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Still, I enjoy reading posts by people I&amp;rsquo;ll never meet. Putting stuff out into the world is fun. The &lt;a href="https://bearblog.dev/discover/"&gt;Bear Blog discover feed&lt;/a&gt; is usually pretty wholesome, HackerNews is still rockin&amp;rsquo;, and my RSS app is chock full of honest work by decent humans. In the near future I&amp;rsquo;d even like to recommend some of them.&lt;/p&gt;
+&lt;p&gt;The prevailing form and style of most social platforms lack honesty and curiosity.&lt;/p&gt;</description></item></channel></rss>
