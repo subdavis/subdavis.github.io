@@ -1,16 +1,16 @@
 <nav aria-label="Breadcrumb" class="mb-6">
-  <ol class="flex flex-wrap items-center space-x-2 text-sm text-gray-400 font-mono">
+  <ol class="flex flex-wrap items-center space-x-2 text-sm text-accent-600 font-mono">
     {{ range .Ancestors.Reverse }}
       <li class="flex items-center space-x-2 text-nowrap">
         
-        <a href="{{ .RelPermalink }}" class="hover:text-purple-400 transition-colors">
+        <a href="{{ .RelPermalink }}" class="text-accent-700 hover:text-accent-700 transition-colors">
           {{ .Title }}
         </a>
-        <span class="text-gray-600">/</span>
+        <span class="text-accent-600">/</span>
       </li>
     {{ end }}
     <li class="flex items-center space-x-2">
-      <span class="text-gray-300">{{ or .Slug .Title }}</span>
+      <span class="text-black">{{ or .Slug .Title }}</span>
     </li>
   </ol>
 </nav>
