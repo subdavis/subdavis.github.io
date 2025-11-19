@@ -13,17 +13,17 @@
 <div class="posts-list space-y-4">
   {{ range $posts }}
     <article class="post-item grid grid-cols-[auto_2fr] gap-x-4">
-      <time class="text-gray-500 text-sm font-mono mt-2 ml-2">
+      <time class="text-accent-600 text-sm font-mono mt-2 ml-2">
         {{ .Date.Format "02 Jan 2006" }}
       </time>
       <div>
         <h3 class="text-lg sm:text-xl">
-          <a href="{{ .RelPermalink }}" class="text-gray-200 hover:text-purple-400 transition-colors underline decoration-1">
+          <a href="{{ .RelPermalink }}" class="text-accent-700 hover:text-accent-700 transition-colors underline decoration-1">
             {{ .Title }}
           </a>
         </h3>
         {{ if .Description }}
-          <p class="text-gray-500 text-sm">{{ .Description }}</p>
+          <p class="text-accent-600 text-sm">{{ .Description }}</p>
         {{ end }}
       </div>
     </article>

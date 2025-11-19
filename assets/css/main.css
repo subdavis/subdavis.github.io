@@ -7,6 +7,13 @@
   --color-black: #000;
   --color-white: #fff;
 
+  /* Simplified color scheme - 4 essential colors */
+  --color-accent-50: #f9fafb;     /* Light background gray */
+  --color-accent-200: #e5e7eb;    /* Border gray */
+  --color-accent-600: #6b7280;    /* Dimmer text gray for subtitles */
+  --color-accent-700: #000000;    /* Full black for links/text */
+  --color-accent-900: #000000;    /* Full black */
+
   --color-gray-100: #f7fafc;
   --color-gray-200: #edf2f7;
   --color-gray-300: #e2e8f0;
@@ -110,3 +117,15 @@
 }
 
 @import "./post.css";
+
+/* Serif font for the entire site */
+body {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Grayscale filter for homepage images only (bio and projects) */
+.profile img,
+.blurb img,
+.card-image {
+  /* filter: grayscale(100%); */
+}

@@ -1,22 +1,22 @@
-<div class="flex flex-row my-4">
+<div class="flex flex-row my-6">
   <img
     class="card-image z-10 my-4"
     src="/img/{{ .img }}"
     alt="{{ .title }}"
     style="object-fit: {{ .objectFit | default "cover" }};"
   >
-  <div class="z-0 flex flex-col rounded bg-gray-800 border-gray-900 p-3 pl-16 -ml-12">
-    <div class="text-gray-100 text-lg items-center">
+  <div class="z-0 flex flex-col  p-3 pl-16 -ml-12 rounded-xs">
+    <div class="text-black text-lg items-center">
       {{ if .href }}
-        <a href="{{ .href }}" class="underline inline">{{ .title }}</a>
+        <a href="{{ .href }}" class="underline inline text-accent-700 hover:text-accent-700">{{ .title }}</a>
       {{ else }}
         <span>{{ .title }}</span>
       {{ end }}
-      <div class="text-sm text-purple-400 block sm:inline sm:ml-2">
+      <div class="text-sm text-accent-600 block sm:inline sm:ml-2">
         [{{ .subtitle }}]
       </div>
     </div>
-    <div class="text-gray-100 text-sm md:text-base">
+    <div class="text-black text-sm md:text-base">
       {{ .text }}
     </div>
   </div>

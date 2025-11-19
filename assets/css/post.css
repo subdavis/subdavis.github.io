@@ -1,14 +1,14 @@
 
 .prose h2 {
-  @apply text-2xl font-bold text-gray-100 mt-8 mb-4;
+  @apply text-2xl font-bold text-black mt-8 mb-4;
 }
 
 .prose h3 {
-  @apply text-xl font-bold text-gray-200 mt-6 mb-3;
+  @apply text-xl font-bold text-black mt-6 mb-3;
 }
 
 .prose p {
-  @apply mb-4;
+  @apply mb-4 text-black;
 }
 
 .prose ul, .prose ol {
@@ -17,26 +17,32 @@
 
 .prose ul {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  @apply ml-6;
 }
 
 .prose ol {
   list-style-type: decimal;
-  list-style-position: inside;
+  list-style-position: outside;
+  @apply ml-6;
 }
 
 .prose li {
-  @apply mb-2;
+  @apply mb-2 text-black;
 }
 
 .prose a {
-  @apply text-purple-400 hover:text-purple-300 underline;
+  @apply text-accent-700 hover:text-accent-700 underline;
 }
 
 .prose code {
-  @apply bg-gray-800 px-1 py-0.5 rounded text-sm;
+  @apply bg-accent-50 px-1 py-0.5 rounded text-sm text-black border border-accent-200;
 }
 
 .prose pre {
-  @apply bg-gray-800 p-4 rounded overflow-x-auto mb-4;
+  @apply bg-accent-50 p-4 rounded overflow-x-auto mb-4 border border-accent-200;
+}
+
+.prose pre code {
+  @apply bg-transparent border-0 p-0;
 }
