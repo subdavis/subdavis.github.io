@@ -20,6 +20,7 @@ params:
   gpg: "44DD0B074C0F6F91"
   umami_website_id: "bfadb547-f5e5-4a8e-9416-13340a2bfdfd"
   umami_src: "https://umami.subdavis.com/script.js"
+  umami_domain: "subdavis.com"
 
 build:
   buildStats:

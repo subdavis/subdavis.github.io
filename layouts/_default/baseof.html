@@ -39,7 +39,7 @@
   
   <!-- Umami Analytics -->
   {{ if .Site.Params.umami_website_id }}
-  <script defer data-website-id="{{ .Site.Params.umami_website_id }}" src="{{ .Site.Params.umami_src }}"></script>
+  <script defer data-website-id="{{ .Site.Params.umami_website_id }}" src="{{ .Site.Params.umami_src }}" data-domains="{{ .Site.Params.umami_domain }}"></script>
   {{ end }}
 </head>
 <body class="bg-white">
