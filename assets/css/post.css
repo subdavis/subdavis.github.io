@@ -46,3 +46,11 @@
 .prose pre code {
   @apply bg-transparent border-0 p-0;
 }
+
+.prose hr {
+  @apply my-8 border-t border-accent-600;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-accent-600 pl-4 my-4 italic text-gray-700 bg-accent-50/30;
+}
