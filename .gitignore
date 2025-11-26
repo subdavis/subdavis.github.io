@@ -14,3 +14,9 @@ dist/
 
 # Yarn node
 .yarn/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

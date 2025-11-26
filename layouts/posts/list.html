@@ -2,15 +2,15 @@
 <div class="my-6 max-w-3xl">
   {{ partial "breadcrumb.html" . }}
   <div class="flex justify-between items-center mb-8">
-    <h1 class="text-4xl font-bold text-black">{{ .Title }}</h1>
+    <h1 class="text-4xl font-bold text-accent-700">{{ .Title }}</h1>
     
   </div>
   
   {{ partial "posts-list.html" (dict "posts" .Pages) }}
 
-  <p class="my-6 text-black">
+  <footer class="mt-8 pt-8 border-t border-accent-200 flex justify-between items-center">
     {{ partial "rss.html" (dict "showText" true) }}
-  </div>
+  </footer>
 </div>
 {{ end }}
 

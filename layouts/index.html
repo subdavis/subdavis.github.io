@@ -9,7 +9,6 @@
   {{ $posts := where .Site.RegularPages "Section" "posts" }}
   {{ partial "posts-list.html" (dict "posts" $posts "limit" 8) }}
 
-
   {{ partial "subtitle.html" (dict "text" "Projects") }}
 
   {{ range .Site.Data.homepage.projects }}

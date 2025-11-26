@@ -1,0 +1,35 @@
+{{- $src := .Get "src" -}} {{- $data := .Page.Resources.GetMatch $src -}} {{-
+$id := substr (md5 $src) 0 16 -}}
+<div
+  class="chart"
+  style="
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: calc(var(--spacing) * 6);
+  "
+>
+  <canvas id="{{ $id }}"></canvas>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  var ctx = document.getElementById('{{ $id }}')
+  var externalOptions = {{ $data.Content | safeJS }};
+  console.log(externalOptions);
+  new Chart(ctx, {
+      ...externalOptions,
+      plugins: [],
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+            mode: 'index',
+            intersect: false,
+        },
+        plugins: {
+          annotation: externalOptions.annotation,
+        },
+      }
+  });
+});
+</script>

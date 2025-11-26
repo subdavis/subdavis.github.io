@@ -1,14 +1,17 @@
+.prose {
+  @apply text-lg;
+}
 
 .prose h2 {
-  @apply text-2xl font-bold text-black mt-8 mb-4;
+  @apply text-2xl font-bold text-accent-700 mt-8 mb-4;
 }
 
 .prose h3 {
-  @apply text-xl font-bold text-black mt-6 mb-3;
+  @apply text-xl font-bold text-accent-700 mt-6 mb-3;
 }
 
 .prose p {
-  @apply mb-4 text-black;
+  @apply mb-4 text-accent-700;
 }
 
 .prose ul, .prose ol {
@@ -28,7 +31,7 @@
 }
 
 .prose li {
-  @apply mb-2 text-black;
+  @apply mb-2 text-accent-700;
 }
 
 .prose a {
@@ -36,7 +39,7 @@
 }
 
 .prose code {
-  @apply bg-accent-50 px-1 py-0.5 rounded text-sm text-black border border-accent-200;
+  @apply bg-accent-50 px-1 py-0.5 rounded text-sm text-accent-700 border border-accent-200;
 }
 
 .prose pre {

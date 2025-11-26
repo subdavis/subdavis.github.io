@@ -6,7 +6,7 @@
     style="object-fit: {{ .objectFit | default "cover" }};"
   >
   <div class="z-0 flex flex-col p-3 pl-16 -ml-12 rounded-xs">
-    <div class="text-black text-lg items-center">
+    <div class="text-accent-700 text-lg items-center">
       {{ if .href }}
         <a href="{{ .href }}" class="underline inline text-accent-700 hover:text-accent-700">{{ .title }}</a>
       {{ else }}
@@ -16,7 +16,7 @@
         [{{ .subtitle }}]
       </div>
     </div>
-    <div class="text-black text-sm md:text-base">
+    <div class="text-accent-700 text-sm md:text-base">
       {{ .text }}
     </div>
   </div>
