@@ -41,10 +41,15 @@
   {{ if .Site.Params.umami_website_id }}
   <script defer data-website-id="{{ .Site.Params.umami_website_id }}" src="{{ .Site.Params.umami_src }}" data-domains="{{ .Site.Params.umami_domain }}"></script>
   {{ end }}
+
+  <!-- Chart.js (only when needed) -->
+  {{ if .Params.chartjs }}
+    {{ partial "chartjs.html" . }}
+  {{ end }}
 </head>
 <body class="bg-white">
   {{ block "header" . }}{{ end }}
-  <div class="main w-full bg-white">
+  <main class="main w-full bg-white">
     <div class="max-w-screen-md mx-auto px-8 pb-4 xl:px-12">
       {{ block "main" . }}{{ end }}
     </div>

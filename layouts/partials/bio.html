@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-center pt-6">
+<header class="flex flex-col justify-center items-center pt-6">
     <div class="profile mb-2 text-accent-900 w-48 h-48">
         <img src="https://avatars.githubusercontent.com/u/4214172" class="rounded-xl" alt="{{ .Site.Title }}">
     </div>
@@ -8,11 +8,11 @@
     <h2 class="text-xl font-bold text-accent-600 mb-2">
         {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
     </h2>
-    <h3 class="blurb-paragraph text-sm md:text-base text-black" role="complementary">
+    <h3 class="blurb-paragraph text-sm md:text-base text-accent-700" role="complementary">
         web developer, apparently. he/him. i love to get email from humans.
     </h3>
     {{ partial "links.html" . }}
-</div>
+</header>
 
 <style>
 .profile img {
