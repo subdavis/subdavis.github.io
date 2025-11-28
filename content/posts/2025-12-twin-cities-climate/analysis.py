@@ -516,6 +516,118 @@ def analyze_total_snowfall_by_year(df: pd.DataFrame) -> dict:
     }
 
 
+def analyze_snowfall_distribution(df: pd.DataFrame) -> dict:
+    """
+    Create a histogram of total seasonal snowfall distribution.
+    Uses 5-inch buckets from 10 to 90 inches.
+    Includes Shapiro-Wilk normality test.
+    
+    Returns:
+        Chart.js configuration dict with bar chart
+    """
+    df_snow = df.copy()
+    
+    # Assign winter season (same logic as total snowfall analysis)
+    df_snow["winter_season"] = df_snow.apply(
+        lambda row: row["year"] if row["month"] >= 11 else row["year"] - 1,
+        axis=1
+    )
+    
+    # Filter to winter months only
+    winter_months = [11, 12, 1, 2, 3]
+    df_winter = df_snow[df_snow["month"].isin(winter_months)]
+    
+    # Get valid winter seasons starting from 1884
+    valid_seasons = sorted(s for s in df_winter["winter_season"].unique() if s >= 1884)
+    
+    # Sum snowfall by winter season
+    total_snowfall = df_winter.groupby("winter_season")["snowfall"].sum()
+    snowfall_values = [total_snowfall.get(year, 0) for year in valid_seasons]
+    
+    # Create histogram with 5-inch buckets
+    bucket_size = 5
+    bucket_min = 10
+    bucket_max = 95  # exclusive upper bound
+    buckets = list(range(bucket_min, bucket_max, bucket_size))
+    
+    # Count values in each bucket
+    counts = []
+    for bucket_start in buckets:
+        bucket_end = bucket_start + bucket_size
+        count = sum(1 for v in snowfall_values if bucket_start <= v < bucket_end)
+        counts.append(count)
+    
+    # Create labels like "10-15", "15-20", etc.
+    labels = [f"{b}-{b + bucket_size}" for b in buckets]
+    
+    # Calculate mean and std for reference
+    mean_snowfall = np.mean(snowfall_values)
+    std_snowfall = np.std(snowfall_values)
+    
+    # Shapiro-Wilk normality test
+    shapiro_stat, shapiro_p = stats.shapiro(snowfall_values)
+    normality_result = "Normal" if shapiro_p >= 0.05 else "Non-normal"
+    
+    return {
+        "type": "bar",
+        "data": {
+            "labels": labels,
+            "datasets": [{
+                "label": "Number of Seasons",
+                "data": counts,
+                "backgroundColor": "rgba(54, 162, 235, 0.7)",
+                "borderColor": "rgb(54, 162, 235)",
+                "borderWidth": 1
+            }]
+        },
+        "options": {
+            "plugins": {
+                "title": {
+                    "display": True,
+                    "text": f"Mean: {mean_snowfall:.1f} in, Std Dev: {std_snowfall:.1f} in"
+                }
+            },
+            "scales": {
+                "x": {
+                    "title": {
+                        "display": True,
+                        "text": "Seasonal Snowfall (inches)"
+                    }
+                },
+                "y": {
+                    "title": {
+                        "display": True,
+                        "text": "Number of Seasons"
+                    }
+                }
+            }
+        },
+        "annotation": {
+            "annotations": {
+                "shapiro_label": {
+                    "type": "label",
+                    "xValue": len(labels) - 1,
+                    "yValue": max(counts),
+                    "backgroundColor": "rgba(245,245,245,0.8)",
+                    "content": [
+                        "Shapiro-Wilk Test",
+                        f"W = {shapiro_stat:.3f}",
+                        f"p = {shapiro_p:.4f}",
+                        f"Result: {normality_result}"
+                    ],
+                    "font": {
+                        "size": 12
+                    },
+                    "position": {
+                        "x": "end",
+                        "y": "start"
+                    }
+                }
+            }
+        }
+    }
+
+
 def run_analysis(df: pd.DataFrame, analysis_func, name: str) -> None:
     """Run an analysis function and save the result to ./analysis/<name>.json"""
     output_dir = Path(__file__).parent / "analysis"
@@ -530,6 +642,85 @@ def run_analysis(df: pd.DataFrame, analysis_func, name: str) -> None:
     print(f"Wrote {output_path}")
 
 
+def analyze_snowfall_rolling_boxplot(df: pd.DataFrame) -> dict:
+    """
+    Create rolling boxplot data for seasonal snowfall.
+    Each data point contains the raw values from a 20-year rolling window,
+    allowing the charting software to compute quantiles.
+    
+    Returns:
+        Chart.js configuration dict with 2D array data for boxplot
+    """
+    df_snow = df.copy()
+    
+    # Assign winter season
+    df_snow["winter_season"] = df_snow.apply(
+        lambda row: row["year"] if row["month"] >= 11 else row["year"] - 1,
+        axis=1
+    )
+    
+    # Filter to winter months only
+    winter_months = [11, 12, 1, 2, 3]
+    df_winter = df_snow[df_snow["month"].isin(winter_months)]
+    
+    # Get valid winter seasons starting from 1884
+    valid_seasons = sorted(s for s in df_winter["winter_season"].unique() if s >= 1884)
+    
+    # Sum snowfall by winter season
+    total_snowfall = df_winter.groupby("winter_season")["snowfall"].sum()
+    snowfall_data = [round(total_snowfall.get(year, 0), 1) for year in valid_seasons]
+    
+    # Create rolling 20-year windows
+    window_size = 20
+    rolling_windows = []
+    labels = []
+    
+    for i in range(len(valid_seasons)):
+        if i < window_size - 1:
+            # Not enough data yet for a full window
+            rolling_windows.append(None)
+            labels.append("")  # Empty label for incomplete windows
+        else:
+            # Get the last 20 years of data
+            window = snowfall_data[i - window_size + 1:i + 1]
+            rolling_windows.append(window)
+            
+            # Label shows the range of years in this window
+            start_year = valid_seasons[i - window_size + 1]
+            end_year = valid_seasons[i]
+            labels.append(f"{start_year}-{str(end_year + 1)[-2:]}")
+    
+    return {
+        "type": "boxplot",
+        "data": {
+            "labels": labels,
+            "datasets": [{
+                "label": "20-Year Rolling Snowfall Distribution",
+                "data": rolling_windows,
+                "backgroundColor": "rgba(54, 162, 235, 0.5)",
+                "borderColor": "rgb(54, 162, 235)",
+                "borderWidth": 1
+            }]
+        },
+        "options": {
+            "scales": {
+                "x": {
+                    "title": {
+                        "display": True,
+                        "text": "Winter Season (end of 20-year window)"
+                    }
+                },
+                "y": {
+                    "title": {
+                        "display": True,
+                        "text": "Seasonal Snowfall (inches)"
+                    }
+                }
+            }
+        }
+    }
+
+
 def run_all_analyses(df: pd.DataFrame) -> None:
     """Run all analysis functions and save results."""
     analyses = [
@@ -538,6 +729,8 @@ def run_all_analyses(df: pd.DataFrame) -> None:
         (analyze_avg_daily_lows_by_season, "avg_daily_lows_by_season"),
         (analyze_avg_monthly_temp, "avg_monthly_temp"),
         (analyze_total_snowfall_by_year, "total_snowfall_by_year"),
+        (analyze_snowfall_distribution, "snowfall_distribution"),
+        (analyze_snowfall_rolling_boxplot, "snowfall_rolling_boxplot"),
     ]
     
     for func, name in analyses:

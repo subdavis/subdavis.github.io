@@ -149,13 +149,20 @@
       "z-10"
     ],
     "ids": [
+      "0f84d9e13a0319a2",
       "10-year-old-hardware",
+      "1950-vs-1970-pivots",
+      "6c37b06288315b3a",
       "8901819740c722cc",
       "a-little-bit-of-systemd-though",
       "a71a62bd1e42fad1",
+      "appendix",
+      "aws",
+      "companies-that-know-their-place",
       "conclusion",
       "conscious-of-content",
       "data-and-analysis-tools",
+      "datadog",
       "dfcda5922474b681",
       "disclaimer",
       "disclaimers",
@@ -166,19 +173,24 @@
       "fn:2",
       "fnref:1",
       "fnref:2",
+      "guiding-principles",
       "hunting-for-ghost-feeds",
+      "im-not-being-cynical",
       "its-just-rss",
       "links",
       "my-needs",
       "no-more-innovation-tokens",
+      "pivot-at-1950-vs-1970",
       "podcast-freedom-fleeting",
       "snowfall-trends",
       "some-takes",
+      "stripe",
       "temperature-variability",
       "tired-of-fighting-dns",
       "traefik-is-whatever-man",
       "what-does-winter-feel-like",
-      "wireguard--tailscale-"
+      "wireguard--tailscale-",
+      "you-are-not-company"
     ]
   }
 }
