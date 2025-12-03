@@ -1,5 +1,6 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+<script src="https://unpkg.com/@sgratzl/chartjs-chart-boxplot@4.4.5/build/index.umd.min.js"></script>"
 <script>
     Chart.defaults.color = '#000';
     Chart.defaults.width = 400;
@@ -24,4 +25,7 @@
         }
     };
   Chart.register(cursorPlugin);
+
+  // register controller in chart.js and ensure the defaults are set
+  Chart.register(ChartBoxPlot.BoxPlotController, ChartBoxPlot.BoxAndWiskers, Chart.LinearScale, Chart.CategoryScale);
 </script>
