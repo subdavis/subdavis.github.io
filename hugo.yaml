@@ -3,6 +3,10 @@ languageCode: "en-us"
 title: "Brandon Davis"
 disableKinds: ["taxonomy", "term", "sitemap"]
 
+markup:
+  highlight:
+    style: github
+
 # RSS feed configuration
 outputs:
   home: ["HTML", "RSS"]
