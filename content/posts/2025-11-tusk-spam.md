@@ -1,6 +1,6 @@
 ---
 title: My name is John and I have found your chrome extension interesting
-date: 2025-11-20
+date: 2025-01-01
 draft: true
 description: A decade later, adware vendors still want your chrome extension 
 ---

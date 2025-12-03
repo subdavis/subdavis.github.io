@@ -171,17 +171,52 @@ def get_valid_years(df: pd.DataFrame, column: str) -> set:
 def analyze_snow_days_by_year(df: pd.DataFrame) -> dict:
     """
     Count the number of days with snow depth > 0 and days with snowfall > 0 by year.
+    Includes pre-1970 and post-1970 trend lines for each series.
     
     Returns:
-        Chart.js configuration dict with two datasets
+        Chart.js configuration dict with two datasets and four trend lines
     """
     valid_years = get_valid_years(df, "snow_depth")
     snow_depth_days = df[df["snow_depth"] > 0].groupby("year").size()
     snowfall_days = df[df["snowfall"] > 0].groupby("year").size()
     
-    labels = [str(year) for year in sorted(valid_years)]
-    depth_data = [int(snow_depth_days.get(year, 0)) for year in sorted(valid_years)]
-    fall_data = [int(snowfall_days.get(year, 0)) for year in sorted(valid_years)]
+    sorted_years = sorted(valid_years)
+    labels = [str(year) for year in sorted_years]
+    depth_data = [int(snow_depth_days.get(year, 0)) for year in sorted_years]
+    fall_data = [int(snowfall_days.get(year, 0)) for year in sorted_years]
+    
+    # Split data at 1970
+    split_year = 1970
+    split_idx = next(i for i, year in enumerate(sorted_years) if year >= split_year)
+    
+    # Create pre/post 1970 datasets for trend lines
+    depth_data_pre = [depth_data[i] if sorted_years[i] < split_year else None for i in range(len(sorted_years))]
+    depth_data_post = [depth_data[i] if sorted_years[i] >= split_year else None for i in range(len(sorted_years))]
+    fall_data_pre = [fall_data[i] if sorted_years[i] < split_year else None for i in range(len(sorted_years))]
+    fall_data_post = [fall_data[i] if sorted_years[i] >= split_year else None for i in range(len(sorted_years))]
+    
+    # Colors
+    depth_color = "rgb(75, 192, 192)"
+    fall_color = "rgb(54, 162, 235)"
+    
+    # Compute trend lines
+    annotations = {}
+    annotations.update(compute_linear_regression(
+        depth_data_pre, depth_color, "Snow on Ground (pre-1970)", 
+        "depth_pre_line", "depth_pre_label", label_x_pct=0.3
+    ))
+    annotations.update(compute_linear_regression(
+        depth_data_post, depth_color, "Snow on Ground (post-1970)", 
+        "depth_post_line", "depth_post_label", label_x_pct=0.7
+    ))
+    annotations.update(compute_linear_regression(
+        fall_data_pre, fall_color, "Snowfall Days (pre-1970)", 
+        "fall_pre_line", "fall_pre_label", label_x_pct=0.2
+    ))
+    annotations.update(compute_linear_regression(
+        fall_data_post, fall_color, "Snowfall Days (post-1970)", 
+        "fall_post_line", "fall_post_label", label_x_pct=0.8
+    ))
     
     return {
         "type": "line",
@@ -192,17 +227,20 @@ def analyze_snow_days_by_year(df: pd.DataFrame) -> dict:
                     "label": "Days with Snow on Ground",
                     "data": depth_data,
                     "fill": False,
-                    "borderColor": "rgb(75, 192, 192)",
+                    "borderColor": depth_color,
                     "tension": 0.1
                 },
                 {
                     "label": "Days with Snowfall",
                     "data": fall_data,
                     "fill": False,
-                    "borderColor": "rgb(54, 162, 235)",
+                    "borderColor": fall_color,
                     "tension": 0.1
                 }
             ]
+        },
+        "annotation": {
+            "annotations": annotations
         }
     }
 
@@ -445,13 +483,28 @@ def analyze_total_snowfall_by_year(df: pd.DataFrame) -> dict:
     std_data_20 = [round(v, 1) if pd.notna(v) else None for v in rolling_std_20]
     std_data_30 = [round(v, 1) if pd.notna(v) else None for v in rolling_std_30]
     
-    # Compute trend line for snowfall totals
+    # Split data at 1970 for trend lines
+    split_year = 1970
+    split_idx = next(i for i, year in enumerate(valid_seasons) if year >= split_year)
+    
+    data_pre = [data[i] if valid_seasons[i] < split_year else None for i in range(len(valid_seasons))]
+    data_post = [data[i] if valid_seasons[i] >= split_year else None for i in range(len(valid_seasons))]
+    
+    # Compute trend lines: overall, pre-1970, post-1970
     color = "rgb(54, 162, 235)"
     std_color_20 = "rgb(255, 159, 64)"
     std_color_30 = "rgb(153, 102, 255)"
-    annotations = compute_linear_regression(
-        data, color, "Total Snowfall", "snowfall_line", "snowfall_label", label_x_pct=0.7
-    )
+    
+    annotations = {}
+    annotations.update(compute_linear_regression(
+        data, color, "All Years", "snowfall_all_line", "snowfall_all_label", label_x_pct=0.5
+    ))
+    annotations.update(compute_linear_regression(
+        data_pre, color, "Pre-1970", "snowfall_pre_line", "snowfall_pre_label", label_x_pct=0.25
+    ))
+    annotations.update(compute_linear_regression(
+        data_post, color, "Post-1970", "snowfall_post_line", "snowfall_post_label", label_x_pct=0.85
+    ))
     
     return {
         "type": "line",
