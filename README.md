@@ -1,4 +1,6 @@
-# Brandon Davis Personal Site (Hugo)
+# Personal Site (Hugo)
+
+Source for https://subdavis.com
 
 This is a static personal website built with [Hugo](https://gohugo.io/) and [Tailwind CSS](https://tailwindcss.com/).
 
