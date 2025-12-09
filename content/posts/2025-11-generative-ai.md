@@ -1,4 +1,3 @@
-
 ---
 title: Thinking about Generative AI
 date: 2025-11-23

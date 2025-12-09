@@ -12,8 +12,8 @@
 {{ if $posts }}
 <div class="posts-list space-y-4">
   {{ range $posts }}
-    <article class="post-item grid grid-cols-[auto_2fr] gap-x-4">
-      <time class="text-accent-600 text-sm font-mono mt-2 ml-2">
+    <article class="post-item grid sm:grid-cols-[auto_2fr] grid-cols-[1fr] gap-x-4">
+      <time class="text-accent-600 text-xs font-mono mt-2 min-w-[100px]">
         {{ .Date.Format "02 Jan 2006" }}
       </time>
       <div>
