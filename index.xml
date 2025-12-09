@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The one-click Navidrome bandcamp purchase sync</title><link>https://subdavis.com/posts/2025-12-navidrome-bandcamp/</link><pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-navidrome-bandcamp/</guid><description>&lt;p&gt;&lt;img src="./diagram.svg" alt="My setup"&gt;&lt;/p&gt;
 &lt;h2 id="why-is-buying-music-so-inconvenient"&gt;Why is buying music so inconvenient?&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s kind of insane that setting up a piracy stack is somehow easier than regularly purchasing and downloading music in a way that supports the artist.&lt;/p&gt;
-&lt;p&gt;Read &lt;a href="https://ndeast.com/posts/death-to-spotify/#"&gt;this setup guide&lt;/a&gt; for example. Toward the bottom of that article, Nik documents his end-to-end purchase workflow. It&amp;rsquo;s horrible. It takes ~10 manual steps and nearly as many different websites to&amp;hellip; buy an album.&lt;/p&gt;
+&lt;p&gt;Read &lt;a href="https://ndeast.com/posts/death-to-spotify/#"&gt;this setup guide&lt;/a&gt; for example. Toward the bottom of that article, Nik documents his end-to-end purchase workflow. It&amp;rsquo;s horrible. It takes ~10 manual steps and 4 different websites to&amp;hellip; buy an album.&lt;/p&gt;
 &lt;p&gt;There are powerful, convenient tools for stealing (which I use!) But if you want to buy things, the only platform not aggressively doing vendor ecosystem lock-in is Bandcamp. It has no consumer-facing API, its app kinda sucks, and there&amp;rsquo;s no good way to grab your purchases except one-at-a-time through the browser.&lt;/p&gt;
 &lt;h2 id="metadata-management"&gt;Metadata management&lt;/h2&gt;
 &lt;p&gt;Serving music files is trivially easy. The metadata management is what gets ya.&lt;/p&gt;
@@ -458,4 +458,40 @@ WantedBy=docker.service
 &lt;p&gt;The content of my media diet have changed a bit in the last 6 months since I went all-in on RSS. It took real effort, but now, when I open my phone, I reach for my RSS reader rather than a browser or a social app. It feels like an improvement.&lt;/p&gt;</description></item><item><title>A few photos from Pittsburgh</title><link>https://subdavis.com/posts/2025-11-pittsburgh-photos/</link><pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-pittsburgh-photos/</guid><description>&lt;p&gt;Photos from RandyLand, Bicycle Heaven, and around town in Pittsburgh, PA. October 2025.&lt;/p&gt;</description></item><item><title>I want to get off Mr. Bones' Wild Ride</title><link>https://subdavis.com/posts/2025-11-introduction/</link><pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-11-introduction/</guid><description>&lt;p&gt;In June of &amp;lsquo;25 I shut off most of my social media accounts: Facebook, Instagram, and LinkedIn. I kept reddit under the happy delusion that I could learn to use it responsibly (lol) but I&amp;rsquo;ve made strides to curtail that as well.&lt;/p&gt;
 &lt;p&gt;Since then, I&amp;rsquo;ve often thought about what the experience of being &amp;ldquo;on the internet&amp;rdquo; is like, and how that&amp;rsquo;s changed since I began forming digital habits back in High School. My memory is relatively poor, so a habit-forming tool for capturing a bit of life is wonderful. Having my good intentions packaged up to generate ad revenue and give teenagers an anxiety disorder is less so. &lt;a href="https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/"&gt;10% of Meta&amp;rsquo;s revenue for 2024 came from fraud.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Still, I enjoy reading posts by people I&amp;rsquo;ll never meet. Putting stuff out into the world is fun. The &lt;a href="https://bearblog.dev/discover/"&gt;Bear Blog discover feed&lt;/a&gt; is usually pretty wholesome, HackerNews is still rockin&amp;rsquo;, and my RSS app is chock full of honest work by decent humans. In the near future I&amp;rsquo;d even like to recommend some of them.&lt;/p&gt;
-&lt;p&gt;The prevailing form and style of most social platforms lack honesty and curiosity.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;The prevailing form and style of most social platforms lack honesty and curiosity.&lt;/p&gt;</description></item><item><title>Curriculum Vitae</title><link>https://subdavis.com/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://subdavis.com/cv/</guid><description>&lt;p&gt;Frontend-leaning developer with expertise in TypeScript and practical backend experience with Python.&lt;/p&gt;
+&lt;h2 id="contact"&gt;Contact&lt;/h2&gt;
+&lt;p&gt;Contact info can be found &lt;a href="https://subdavis.com/"&gt;on the homepage&lt;/a&gt;. I am not on LinkedIn.&lt;/p&gt;
+&lt;h2 id="work-experience"&gt;Work Experience&lt;/h2&gt;
+&lt;h3 id="frontend-software-engineer-at-sonarsource"&gt;Frontend Software Engineer at SonarSource&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Remote, US&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am currently working with my team inside Sonar to deliver Tidelift’s software composition analysis (SCA) capabilities to millions of developers who use Sonar. My main responsibility is new feature work in React working closely with UX designers (Figma) and backend developers to quickly establish goals and requirements.&lt;/p&gt;
+&lt;h3 id="senior-frontend-engineer-at-tidelift"&gt;Senior Frontend Engineer at Tidelift&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Remote, US&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Prior to the acquisition, I was an individual contributor to our customer-facing frontend. I’ve helped lead initiatives across the product. I’m recognized by my colleagues and manager as a Vue.js expert, an advocate for close teamwork, and best practices like meaningful code review.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead the implementation of a broad redesign of the look-and-feel of our application&lt;/li&gt;
+&lt;li&gt;Guided our team through rewriting the majority of the codebase in TypeScript and building consensus and philosophy around how we derive value from a type system&lt;/li&gt;
+&lt;li&gt;Work closely with our design and product teams to turn Figma designs into polished, performant features&lt;/li&gt;
+&lt;li&gt;Improved our error reporting and instrumentation metrics, and used them to improve the stability of our application&lt;/li&gt;
+&lt;li&gt;Reduced development overhead how we package and build our in-house component library
+Worn other hats too, like running data experiments in python, building backend rails features, and improving the engineer onboarding experience with docker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="research--development-engineer-full-stack-at-kitware"&gt;Research &amp;amp; Development Engineer (Full Stack) at Kitware&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Carrboro, NC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Responsible for planning and building scientific web applications in Python and TypeScript. I often worked directly with external customers and end-users to discover, refine, and implement requirements. Often deployed SaaS + ML workloads into cloud environments with Ansible/Terraform using some combination of EC2/ECS/S3/RDS/API Gateway (or GCloud equivalents) and even some Mechanical Turk image annotation.&lt;/p&gt;
+&lt;h3 id="software-engineer-at-capital-one"&gt;Software Engineer at Capital One&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Mclean, VA&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Worked with a pilot team to design and implement queueing and microservices for a scalable generic payment processing system with Apache Kafka and Amazon Elastic Container Service (ECS). Contributed to Golang message gateway, CI/CD for multiple components, Terraform for fault-tolerant Kafka deployment, and internal dashboards.&lt;/p&gt;
+&lt;h3 id="software-engineer-intern-at-cisco"&gt;Software Engineer Intern at Cisco&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Raleigh, NC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Contributed to Django API to interface with internal bug tracking systems, Python tool to catalog and generate checksums for ~100TB of router firmware, backup scripts for PostgreSQL.&lt;/p&gt;
+&lt;h3 id="qa-intern-at-sql-sentry-now-sentryone"&gt;QA Intern at SQL Sentry (now SentryOne)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Charlotte, NC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Created a robust test suite in Ranorex for automating nightly production web application testing, enabling faster detection of problems in our web services. Developed internal tools in C# to extend MS Team Foundation Server task management to catalog new test cases and include them in future regression tests.&lt;/p&gt;
+&lt;h2 id="education"&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bachelor of Science in Computer Science from the University of North Carolina at Chapel Hill.&lt;/li&gt;
+&lt;li&gt;Graduated Spring of 2017&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="projects"&gt;Projects&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://subdavis.com/"&gt;This website&lt;/a&gt; functions as my personal portfolio.&lt;/p&gt;</description></item></channel></rss>
