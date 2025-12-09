@@ -10,7 +10,7 @@ description: I made it so buying music is (almost) as easy as stealing it.
 
 It's kind of insane that setting up a piracy stack is somehow easier than regularly purchasing and downloading music in a way that supports the artist.
 
-Read [this setup guide](https://ndeast.com/posts/death-to-spotify/#) for example. Toward the bottom of that article, Nik documents his end-to-end purchase workflow. It's horrible. It takes ~10 manual steps and nearly as many different websites to... buy an album.
+Read [this setup guide](https://ndeast.com/posts/death-to-spotify/#) for example. Toward the bottom of that article, Nik documents his end-to-end purchase workflow. It's horrible. It takes ~10 manual steps and 4 different websites to... buy an album.
 
 There are powerful, convenient tools for stealing (which I use!) But if you want to buy things, the only platform not aggressively doing vendor ecosystem lock-in is Bandcamp. It has no consumer-facing API, its app kinda sucks, and there's no good way to grab your purchases except one-at-a-time through the browser.
 

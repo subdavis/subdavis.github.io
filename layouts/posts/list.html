@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="my-6 max-w-3xl">
+<div class="my-6 max-w-screen-sm">
   {{ partial "breadcrumb.html" . }}
   <div class="flex justify-between items-center mb-8">
     <h1 class="text-4xl font-bold text-accent-700">{{ .Title }}</h1>
@@ -10,6 +10,7 @@
 
   <footer class="mt-8 pt-8 border-t border-accent-200 flex justify-between items-center">
     {{ partial "rss.html" (dict "showText" true) }}
+    <p class="hidden sm:block">100% Human-Generated Content</p>
   </footer>
 </div>
 {{ end }}

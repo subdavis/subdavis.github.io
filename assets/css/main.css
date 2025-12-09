@@ -118,6 +118,10 @@
 
 @import "./post.css";
 
+html {
+  font-size: 18px;
+}
+
 /* Serif font for the entire site */
 body {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
