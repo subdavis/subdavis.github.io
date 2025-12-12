@@ -7,7 +7,7 @@
   {{ partial "subtitle.html" (dict "text" "Recent Posts") }}
 
   {{ $posts := where .Site.RegularPages "Section" "posts" }}
-  {{ partial "posts-list.html" (dict "posts" $posts "limit" 8) }}
+  {{ partial "posts-list.html" (dict "posts" $posts "limit" 10) }}
 
   {{ partial "subtitle.html" (dict "text" "Projects") }}
 
