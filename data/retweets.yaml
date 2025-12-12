@@ -1,4 +1,11 @@
 retweets:
+  - url: https://www.theatlantic.com/magazine/2026/01/elite-university-student-accommodation/684946/?gift=N6VJQ5Ef0ESNkHkE7y_yM32P7dhE635FPG-8-LZk8tk
+    title: Elite Colleges Have an Extra-Time-on-Tests Problem - The Atlantic (Gift
+      Link)
+    date_added: 2025-12-12T02:37:26.727114Z
+    tags:
+      - Education
+    description: America’s colleges have an extra-time-on-tests problem.
   - url: https://www.noahpinion.blog/p/i-love-ai-why-doesnt-everyone
     title: I love AI. Why doesn't everyone? - by Noah Smith
     date_added: 2025-12-12T00:56:14.998428Z
@@ -17,13 +24,6 @@ retweets:
     date_added: 2025-12-12T00:38:18.954000Z
     tags: []
     description: Every recommended book from The Ezra Klein Show collected
-  - url: https://reason.com/2025/12/04/why-are-38-percent-of-stanford-students-saying-theyre-disabled/
-    title: Why are 38 percent of Stanford students saying they're disabled?
-    date_added: 2025-12-09T23:57:52.720485Z
-    tags:
-      - Education
-    description: If you get into an elite college, you probably don't have a
-      learning disability.
   - url: https://jonready.com/blog/posts/everyone-in-seattle-hates-ai.html
     title: Everyone in Seattle Hates AI — Jonathon Ready
     date_added: 2025-12-09T23:57:00.178006Z
