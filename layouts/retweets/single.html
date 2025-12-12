@@ -8,9 +8,9 @@
       {{ range .Site.Data.retweets.retweets }}
       <li class="text-accent-700">
         <a href="{{ .url }}" class="underline mr-2 text-lg">{{ .title }}</a>
-        {{ if .tags }}
+        {{ if .tag_names }}
         <span class="text-sm text-accent-300 inline-block">
-          {{ range .tags }}
+          {{ range .tag_names }}
             <span class="mr-1 px-[3px] bg-gray-800 text-white rounded-xs">{{ . }}</span>
           {{ end }}
         </span>
