@@ -7,16 +7,16 @@
     <ul class="list-disc ml-4 space-y-2">
       {{ range .Site.Data.retweets.retweets }}
       <li class="text-accent-700">
-        <a href="{{ .url }}" class="underline">{{ .title }}</a>
+        <a href="{{ .url }}" class="underline mr-2">{{ .title }}</a>
         {{ if .tags }}
-        <div class="text-xs text-accent-300 inline-block pl-1">
+        <span class="text-xs text-accent-300 inline-block">
           {{ range .tags }}
-            <span class="ml-1 px-[3px] bg-gray-800 text-white rounded-xs">{{ . }}</span>
+            <span class="mr-1 px-[3px] bg-gray-800 text-white rounded-xs">{{ . }}</span>
           {{ end }}
-        </div>
+        </span>
         {{ end }}
         {{ if .description}}
-        <span class="text-xs text-gray-800 pl-1">{{ .description }}</span>
+        <span class="text-xs text-gray-800">{{ .description }}</span>
         {{ end }}
       </li>
       {{ end }}
