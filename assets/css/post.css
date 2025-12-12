@@ -57,3 +57,7 @@
 .prose blockquote {
   @apply border-l-4 border-accent-600 pl-4 my-4 italic text-gray-700 bg-accent-50/30;
 }
+
+.nav-link {
+  @apply px-1 text-sm underline font-bold font-mono bg-black text-white rounded-xs;
+}

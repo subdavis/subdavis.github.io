@@ -48,11 +48,11 @@
   {{ end }}
 </head>
 <body class="bg-white">
+  <div class="max-w-screen-sm mx-auto px-4">
   {{ block "header" . }}{{ end }}
-  <main class="main w-full bg-white">
-    <div class="max-w-screen-sm mx-auto px-4 pb-4">
+    <main class="main w-full bg-white">
       {{ block "main" . }}{{ end }}
-    </div>
+    </main>
   </div>
 </body>
 </html>

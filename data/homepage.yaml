@@ -35,7 +35,6 @@ projects:
     href: "https://github.com/subdavis/workspaces-io"
     text: "WorkspacesIO is a data management tool built on MinIO, ElasticSearch, and Filestash.app that provides excellent browser and command line interfaces for managing data collections called workspaces. It uses AWS STS tokens to provide coarse-grained access control that allows client tooling to interact directly with the storage backend."
 
-
   - title: "Hosted Service Configurations"
     subtitle: "Docker, Compose, Traefik"
     img: "selfhosted.png"
@@ -63,8 +62,6 @@ projects:
 external_links:
   - title: "forrestli.com"
     href: "http://forrestli.com"
-    color: "primary"
 
   - title: "hgreer.com"
     href: "http://hgreer.com"
-    color: "accent"

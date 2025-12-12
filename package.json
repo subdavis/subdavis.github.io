@@ -6,7 +6,8 @@
   "private": true,
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.16",
-    "tailwindcss": "^4.1.0"
+    "tailwindcss": "^4.1.0",
+    "yaml": "^2.8.2"
   },
   "packageManager": "yarn@4.9.4"
 }

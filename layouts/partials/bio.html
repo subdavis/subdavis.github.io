@@ -1,24 +1,24 @@
-<header class="flex flex-col justify-center items-center m-6">
-    <div class="profile mb-2 text-accent-900">
-        <img src="https://avatars.githubusercontent.com/u/4214172" class="rounded-xl" alt="{{ .Site.Title }}">
+<header class="flex flex-row my-6 mb-8 gap-3 sm:gap-6">
+    <div class="profile text-accent-900 flex-shrink-0">
+        <img src="https://avatars.githubusercontent.com/u/4214172" class="rounded-lg w-26 sm:w-32" alt="{{ .Site.Title }}">
     </div>
-    <h1 class="text-4xl font-bold -mb-1">
-        {{ .Site.Title }}
-    </h1>
-    <h2 class="text-xl font-bold text-accent-600 mb-2">
-        {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
-    </h2>
-    <h3 class="blurb-paragraph text-sm text-accent-700" role="complementary">
-        I make bad software so I don't have to use worse software
-    </h3>
-    <div class="mt-2">
-        {{ partial "links.html" . }}
+    <div class="-mt-1">
+        <h1 class="text-2xl sm:text-4xl font-bold -mb-1">
+            {{ .Site.Title }}
+        </h1>
+        <h2 class="text-sm sm:text-xl font-bold text-accent-600 mb-1">
+            {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
+        </h2>
+        <div class="mb-2 sm:mb-4">
+            {{ partial "links.html" . }}
+        </div>
+        <nav class="flex flex-row gap-4">
+            <a href="/posts" class="nav-link">/posts</a>
+            <a href="/retweets" class="nav-link">/retweets</a>
+        </nav>
     </div>
 </header>
 
 <style>
-.profile img {
-  width: 180px;
-  height: 180px;
-}
+
 </style>
