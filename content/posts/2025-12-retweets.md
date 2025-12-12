@@ -23,7 +23,7 @@ It occurred to me that I could simply auto-generate a blogroll from bookmarks in
 
 There's even [a convenient API](https://linkding.link/api/#bookmarks). The docs don't mention that when you use `/api/bookmarks/shared` no auth token is required!
 
-## Scripting Hugo Data Generation
+## Scripting Hugo data generation
 
 Hugo generates pages from markdown and structured yaml data.
 
@@ -32,6 +32,10 @@ All I have to do is curl my public bookmarks and write them out as yaml in the h
 [Check out that script.](#appendix-a)
 
 ## Nightly GitHub Action
+
+https://github.com/subdavis/subdavis.github.io/actions/workflows/fetch-retweets.yml
+
+Runs in 16 seconds. If a change triggers a commit, the commit triggers a site rebuild.
 
 ## The result
 

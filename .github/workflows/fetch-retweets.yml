@@ -16,12 +16,6 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Enable Corepack
-        run: corepack enable
-
-      - name: Install dependencies
-        run: yarn install --immutable
-
       - name: Fetch retweets from linkding
         run: node scripts/fetch-retweets.js
         env:

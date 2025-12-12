@@ -12,7 +12,6 @@
 
 const fs = require("fs");
 const path = require("path");
-const YAML = require("yaml");
 
 const LINKDING_URL =
   process.env.LINKDING_URL ||
@@ -34,23 +33,6 @@ async function fetchBookmarks() {
   return response.json();
 }
 
-function transformBookmarks(bookmarks) {
-  return bookmarks.map((bookmark) => {
-    const item = {
-      url: bookmark.url,
-      title: bookmark.title || bookmark.url,
-      date_added: bookmark.date_added,
-      tags: bookmark.tag_names || [],
-    };
-
-    if (bookmark.description) {
-      item.description = bookmark.description;
-    }
-
-    return item;
-  });
-}
-
 async function main() {
   try {
     console.log(`Fetching bookmarks from ${LINKDING_URL}`);
@@ -63,11 +45,8 @@ async function main() {
       (a, b) => new Date(b.date_added) - new Date(a.date_added)
     );
 
-    const transformed = transformBookmarks(bookmarks);
-    const yaml = YAML.stringify({ retweets: transformed });
-
-    const outputPath = path.join(__dirname, "..", "data", "retweets.yaml");
-    fs.writeFileSync(outputPath, yaml);
+    const outputPath = path.join(__dirname, "..", "data", "retweets.json");
+    fs.writeFileSync(outputPath, JSON.stringify({ retweets: bookmarks }, null, 2));
 
     console.log(`Wrote ${bookmarks.length} retweets to ${outputPath}`);
   } catch (error) {
