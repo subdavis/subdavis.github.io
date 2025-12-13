@@ -1,9 +1,48 @@
 {
   "retweets": [
     {
+      "id": 511,
+      "url": "https://www.youtube.com/watch?v=ynOiaE9f6NY",
+      "title": "Jingpo Rice Balls. American Supermarket Ingredients. (rare technique) - YouTube",
+      "description": "Jingpo rice balls! A fantastic dish from the very west-most corner of Yunnan that uses some very interesting technique.0:00 - what jingpo rice balls are2:50 ...",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251213181937/https://www.youtube.com/watch?v=ynOiaE9f6NY",
+      "favicon_url": "https://links.subdavis.com/static/https_www_youtube_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/b6b0238406e1a68aa9ee0c50905a3171.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2025-12-13T18:19:37.849905Z",
+      "date_modified": "2025-12-13T18:19:37.849914Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 509,
+      "url": "https://www.theatlantic.com/economy/2025/12/nvidia-ai-financing-deals/685197/?gift=N6VJQ5Ef0ESNkHkE7y_yM1bYAU3GiZjUvg0Fw21T2SU",
+      "title": "Something Ominous Is Happening in the AI Economy - The Atlantic",
+      "description": "The last time so much wealth was tied up in such obscure overlapping arrangements was just before the 2008 financial crisis.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251212143525/https://www.theatlantic.com/economy/2025/12/nvidia-ai-financing-deals/685197/?gift=N6VJQ5Ef0ESNkHkE7y_yM1bYAU3GiZjUvg0Fw21T2SU",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theatlantic_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/23eefa6f52154ebf398418ebbbc887dd.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI",
+        "Economy"
+      ],
+      "date_added": "2025-12-12T14:35:25.520488Z",
+      "date_modified": "2025-12-12T14:35:25.520497Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
       "id": 506,
       "url": "https://www.theatlantic.com/magazine/2026/01/elite-university-student-accommodation/684946/?gift=N6VJQ5Ef0ESNkHkE7y_yM32P7dhE635FPG-8-LZk8tk",
-      "title": "Elite Colleges Have an Extra-Time-on-Tests Problem - The Atlantic (Gift Link)",
+      "title": "Elite Colleges Have an Extra-Time-on-Tests Problem - The Atlantic",
       "description": "America’s colleges have an extra-time-on-tests problem.",
       "notes": "",
       "web_archive_snapshot_url": "https://web.archive.org/web/20251212023726/https://www.theatlantic.com/magazine/2026/01/elite-university-student-accommodation/684946/?gift=N6VJQ5Ef0ESNkHkE7y_yM32P7dhE635FPG-8-LZk8tk",
@@ -16,7 +55,7 @@
         "Education"
       ],
       "date_added": "2025-12-12T02:37:26.727114Z",
-      "date_modified": "2025-12-12T02:38:56.479708Z",
+      "date_modified": "2025-12-12T14:36:04.312045Z",
       "website_title": null,
       "website_description": null
     },

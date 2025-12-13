@@ -3,7 +3,6 @@
   {{ partial "breadcrumb.html" . }}
   <div class="flex justify-between items-center mb-8">
     <h1 class="text-4xl font-bold text-accent-700">{{ .Title }}</h1>
-    
   </div>
   
   {{ partial "posts-list.html" (dict "posts" .Pages) }}
