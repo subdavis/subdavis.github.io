@@ -3,8 +3,8 @@
     {
       "id": 511,
       "url": "https://www.youtube.com/watch?v=ynOiaE9f6NY",
-      "title": "Jingpo Rice Balls. American Supermarket Ingredients. (rare technique) - YouTube",
-      "description": "Jingpo rice balls! A fantastic dish from the very west-most corner of Yunnan that uses some very interesting technique.0:00 - what jingpo rice balls are2:50 ...",
+      "title": "Jingpo Rice Balls. American Supermarket Ingredients. - YouTube",
+      "description": "Jingpo rice balls! A fantastic dish from the very west-most corner of Yunnan that uses some very interesting technique.",
       "notes": "",
       "web_archive_snapshot_url": "https://web.archive.org/web/20251213181937/https://www.youtube.com/watch?v=ynOiaE9f6NY",
       "favicon_url": "https://links.subdavis.com/static/https_www_youtube_com.png",
@@ -12,9 +12,11 @@
       "is_archived": false,
       "unread": false,
       "shared": true,
-      "tag_names": [],
+      "tag_names": [
+        "Food"
+      ],
       "date_added": "2025-12-13T18:19:37.849905Z",
-      "date_modified": "2025-12-13T18:19:37.849914Z",
+      "date_modified": "2025-12-13T18:30:17.433618Z",
       "website_title": null,
       "website_description": null
     },
