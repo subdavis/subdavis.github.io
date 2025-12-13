@@ -58,6 +58,27 @@
   @apply border-l-4 border-accent-600 pl-4 my-4 italic text-gray-700 bg-accent-50/30;
 }
 
+.prose img {
+  @apply my-4 rounded-md border border-accent-200 border-2;
+}
+
 .nav-link {
   @apply px-1 text-sm underline font-bold font-mono bg-black text-white rounded-xs;
+}
+
+/* Callout / Well Components */
+.callout {
+  @apply p-2 my-6 border-2 rounded;
+}
+
+.callout-title {
+  @apply block mb-2 font-bold;
+}
+
+.callout-info {
+  @apply bg-blue-50 border-blue-200 text-blue-900;
+}
+
+.callout-warning {
+  @apply bg-amber-50 border-amber-200 text-amber-900;
 }
