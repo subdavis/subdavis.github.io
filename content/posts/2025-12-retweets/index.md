@@ -11,8 +11,6 @@ I want the ability to easily share tagged links to this website, inspired by the
 
 This is a static hugo site, though. I have no interest in creating a commit just to make new links appear.
 
-I could have called this post "Using linkding as a content management system (CMS) for a hugo blogroll" but
-
 ## Linkding, my bookmark manager
 
 Incidentally, I recently spun up a [linkding](https://linkding.link) instance to unify my bookmark collection and was delighted to discover that it has a **public sharing** feature.  You can see [my shared instance here](https://links.subdavis.com/bookmarks/shared).
