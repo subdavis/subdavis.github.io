@@ -1,5 +1,28 @@
 {
-  "retweets": [
+  "count": 9,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 513,
+      "url": "https://www.theargumentmag.com/p/a-lot-of-people-are-way-too-eager",
+      "title": "A lot of people are way too eager to declare Mississippi a myth, part I",
+      "description": "A response to an alleged debunking",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251213221939/https://www.theargumentmag.com/p/a-lot-of-people-are-way-too-eager",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theargumentmag_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/f9ee3e899a2c5365c3bac84c79a1ef3a.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Education"
+      ],
+      "date_added": "2025-12-13T22:19:39.953947Z",
+      "date_modified": "2025-12-13T22:19:39.953956Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 511,
       "url": "https://www.youtube.com/watch?v=ynOiaE9f6NY",

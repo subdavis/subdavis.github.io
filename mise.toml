@@ -1,2 +1,6 @@
 [tools]
 node = "22"
+
+[tasks.retweet]
+description = "Retweet new tweets from Twitter account"
+run = "curl https://links.subdavis.com/api/bookmarks/shared/ | jq > data/retweets.json"
