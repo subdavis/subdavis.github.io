@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The one-click Navidrome bandcamp purchase sync</title><link>https://subdavis.com/posts/2025-12-navidrome-bandcamp/</link><pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-navidrome-bandcamp/</guid><description>I made it so buying music is (almost) as easy as stealing it.</description><content:encoded>&lt;p&gt;&lt;img src="./diagram.svg" alt="My setup"&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Using the Linkding bookmark manager as a CMS for Hugo blogrolls</title><link>https://subdavis.com/posts/2025-12-retweets/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-retweets/</guid><description>Approximating the convenience of a retweet without a backend.</description><content:encoded>&lt;p&gt;&lt;img src="./linkding.png" alt="linkding"&gt;&lt;/p&gt;
+&lt;p&gt;I want the ability to easily share tagged links to this website, inspired by the blogrolls of yore (shoutout to &lt;a href="https://sethmlarson.dev/blogroll"&gt;sethmlarson&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;This is a static hugo site, though. I have no interest in creating a commit just to make new links appear.&lt;/p&gt;
+&lt;p&gt;I could have called this post &amp;ldquo;Using linkding as a content management system (CMS) for a hugo blogroll&amp;rdquo; but&lt;/p&gt;
+&lt;h2 id="linkding-my-bookmark-manager"&gt;Linkding, my bookmark manager&lt;/h2&gt;
+&lt;p&gt;Incidentally, I recently spun up a &lt;a href="https://linkding.link"&gt;linkding&lt;/a&gt; instance to unify my bookmark collection and was delighted to discover that it has a &lt;strong&gt;public sharing&lt;/strong&gt; feature. You can see &lt;a href="https://links.subdavis.com/bookmarks/shared"&gt;my shared instance here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is the perfect tool for creating structured link data legible to Hugo!&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s &lt;a href="https://linkding.link/api/#bookmarks"&gt;a convenient API&lt;/a&gt; and &lt;code&gt;/api/bookmarks/shared&lt;/code&gt; does not require an auth token.&lt;/p&gt;
+&lt;p&gt;The same thing could probably be &lt;a href="https://docs.linkwarden.app/api/api-introduction"&gt;achieved with Linkwarden&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="adding-a-link"&gt;Adding a link&lt;/h2&gt;
+&lt;p&gt;To share a link to this site, all I need to do is bookmark it with Linkding and check the &amp;ldquo;Share&amp;rdquo; option. The chrome extension is shown below.&lt;/p&gt;
+&lt;p&gt;&lt;img src="./linkding-retweet.png" alt="Linkding extension"&gt;&lt;/p&gt;
+&lt;h2 id="generating-a-hugo-page-from-linkding-data"&gt;Generating a Hugo page from Linkding data&lt;/h2&gt;
+&lt;p&gt;Hugo generates pages from markdown and structured yaml data. I can curl my public bookmarks and write them out as json in the hugo data directory.&lt;/p&gt;
+&lt;h3 id="dataretweetsjson"&gt;&lt;code&gt;./data/retweets.json&lt;/code&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://links.subdavis.com/api/bookmarks/shared/ &lt;span style="color:#1f2328"&gt;|&lt;/span&gt; jq &amp;gt; data/retweets.json
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="contentretweetsmd"&gt;&lt;code&gt;content/retweets.md&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;A static page definition&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;---
+title: Retweets
+type: retweets
+---
+
+Page footer content goes here.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="layoutsretweetssinglehtml"&gt;&lt;code&gt;./layouts/retweets/single.html&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;A page render template. Mine can be &lt;a href="https://github.com/subdavis/subdavis.github.io/blob/main/layouts/retweets/single.html"&gt;seen here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{{ define &amp;#34;main&amp;#34; }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;article&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h1&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;{{ .Title }}*&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h1&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ if .Site.Data.retweets }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;ul&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ range .Site.Data.retweets.retweets }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;li&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;href&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;{{ .url }}&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;{{ .title }}&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;a&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ if .tag_names }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;span&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ range .tag_names }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;span&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;{{ . }}&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;span&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;span&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ if .description}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;span&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;{{ .description }}&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;span&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;li&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;ul&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ else }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;p&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;No retweets yet.&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;p&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;article&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="nightly-github-action"&gt;Nightly GitHub Action&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Action definition: &lt;a href="https://github.com/subdavis/subdavis.github.io/blob/main/.github/workflows/fetch-retweets.yml"&gt;https://github.com/subdavis/subdavis.github.io/blob/main/.github/workflows/fetch-retweets.yml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Run example: &lt;a href="https://github.com/subdavis/subdavis.github.io/actions/workflows/fetch-retweets.yml"&gt;https://github.com/subdavis/subdavis.github.io/actions/workflows/fetch-retweets.yml&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Runs nightly, and if a change is committed, a new build in CloudFlare Pages is triggered.&lt;/p&gt;
+&lt;h2 id="the-result"&gt;The result&lt;/h2&gt;
+&lt;p&gt;I now have a &amp;ldquo;blogroll&amp;rdquo; style page thing at &lt;a href="https://subdavis.com/retweets"&gt;/retweets&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title>The one-click Navidrome bandcamp purchase sync</title><link>https://subdavis.com/posts/2025-12-navidrome-bandcamp/</link><pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-navidrome-bandcamp/</guid><description>I made it so buying music is (almost) as easy as stealing it.</description><content:encoded>&lt;p&gt;&lt;img src="./diagram.svg" alt="My setup"&gt;&lt;/p&gt;
 &lt;h2 id="why-is-buying-music-so-inconvenient"&gt;Why is buying music so inconvenient?&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s kind of insane that setting up a piracy stack is somehow easier than regularly purchasing and downloading music in a way that supports the artist.&lt;/p&gt;
 &lt;p&gt;Read &lt;a href="https://ndeast.com/posts/death-to-spotify/#"&gt;this setup guide&lt;/a&gt; for example. Toward the bottom of that article, Nik documents his end-to-end purchase workflow. It&amp;rsquo;s horrible. It takes ~10 manual steps and 4 different websites to&amp;hellip; buy an album.&lt;/p&gt;
