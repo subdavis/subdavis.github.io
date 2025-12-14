@@ -1,11 +1,11 @@
-<div class="flex flex-row 4">
+<div class="flex flex-row mb-3">
   <img
-    class="card-image z-10 my-4 border-2 border-accent-200 rounded-md"
+    class="card-image z-10 mb-4 mt-1 border-2 border-accent-200 rounded-md"
     src="/img/{{ .img }}"
     alt="{{ .title }}"
     style="object-fit: {{ .objectFit | default "cover" }};"
   >
-  <div class="z-0 flex flex-col p-3 pl-16 -ml-12 rounded-xs">
+  <div class="z-0 flex flex-col pb-3 pl-16 -ml-12 rounded-xs">
     <h3 class="text-accent-700 text-lg items-center">
       {{ if .href }}
         <a href="{{ .href }}" class="underline inline text-accent-700 hover:text-accent-700">{{ .title }}</a>
@@ -16,7 +16,7 @@
         [{{ .subtitle }}]
       </div>
     </h3>
-    <div class="text-accent-700 text-sm md:text-base">
+    <div class="text-accent-700 text-sm">
       {{ .text }}
     </div>
   </div>

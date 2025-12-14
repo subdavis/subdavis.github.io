@@ -12,15 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
       - name: Fetch retweets from linkding
-        run: node scripts/fetch-retweets.js
-        env:
-          LINKDING_URL: ${{ secrets.LINKDING_URL }}
-          LINKDING_TOKEN: ${{ secrets.LINKDING_TOKEN }}
+        run: curl https://links.subdavis.com/api/bookmarks/shared/ | jq > data/retweets.json
 
       - name: Check for changes
         id: changes
