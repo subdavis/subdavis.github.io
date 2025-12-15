@@ -1,8 +1,48 @@
 {
-  "count": 8,
+  "count": 10,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 501,
+      "url": "https://based.cooking/",
+      "title": "Based Cooking",
+      "description": "The fast-loading recipe site with cooking only and no ads.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251214203402/https://based.cooking/",
+      "favicon_url": "https://links.subdavis.com/static/https_based_cooking.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Food"
+      ],
+      "date_added": "2025-12-14T20:34:02.196360Z",
+      "date_modified": "2025-12-14T20:34:02.196370Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 500,
+      "url": "https://cybernetic.dev/matrix",
+      "title": "S&P 500 Correlation Matrix",
+      "description": "High-performance S&P 500 correlation matrix with hierarchical clustering and rolling correlation charts.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251214201230/https://cybernetic.dev/matrix",
+      "favicon_url": "https://links.subdavis.com/static/https_cybernetic_dev.png",
+      "preview_image_url": "https://links.subdavis.com/static/da9cae64ec9992fef7562b22d3b866a7.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "DataVis"
+      ],
+      "date_added": "2025-12-14T20:12:30.709790Z",
+      "date_modified": "2025-12-14T20:20:24.116729Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 8,
       "url": "https://www.theargumentmag.com/p/a-lot-of-people-are-way-too-eager",
@@ -19,7 +59,7 @@
         "Education"
       ],
       "date_added": "2025-12-14T05:28:21.159396Z",
-      "date_modified": "2025-12-14T05:28:21.159407Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -39,7 +79,7 @@
         "Food"
       ],
       "date_added": "2025-12-14T05:28:08.169140Z",
-      "date_modified": "2025-12-14T05:28:08.169149Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -60,7 +100,7 @@
         "Economy"
       ],
       "date_added": "2025-12-14T05:27:44.591145Z",
-      "date_modified": "2025-12-14T05:27:56.552097Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -80,7 +120,7 @@
         "Education"
       ],
       "date_added": "2025-12-14T05:27:32.510134Z",
-      "date_modified": "2025-12-14T05:27:32.510140Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -100,7 +140,7 @@
         "AI"
       ],
       "date_added": "2025-12-14T05:27:20.556593Z",
-      "date_modified": "2025-12-14T05:27:20.556599Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -118,7 +158,7 @@
       "shared": true,
       "tag_names": [],
       "date_added": "2025-12-14T05:26:56.225161Z",
-      "date_modified": "2025-12-14T05:26:56.225170Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -138,7 +178,7 @@
         "AI"
       ],
       "date_added": "2025-12-14T05:26:47.614891Z",
-      "date_modified": "2025-12-14T05:27:03.541690Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     },
@@ -158,7 +198,7 @@
         "Calm"
       ],
       "date_added": "2025-12-14T05:25:59.813576Z",
-      "date_modified": "2025-12-14T05:26:38.298457Z",
+      "date_modified": "2025-12-14T19:12:35.636178Z",
       "website_title": null,
       "website_description": null
     }
