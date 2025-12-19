@@ -1,8 +1,46 @@
 {
-  "count": 11,
+  "count": 13,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 518,
+      "url": "https://en.wikipedia.org/wiki/Gell-Mann_amnesia_effect",
+      "title": "Gell-Mann amnesia effect - Wikipedia",
+      "description": "I keep forgetting the name of this every time I try to describe it.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251219013416/https://en.wikipedia.org/wiki/Gell-Mann_amnesia_effect",
+      "favicon_url": "https://links.subdavis.com/static/https_en_wikipedia_org.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2025-12-19T01:34:16.035193Z",
+      "date_modified": "2025-12-19T01:34:16.035202Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 515,
+      "url": "https://www.lambdalatitudinarians.org/blog/2024/10/02/bikepacking-vt-nh-8/",
+      "title": "Bikepacking Vermontshire: Part 8",
+      "description": "For this year's bike tour, Meg and I rode our ATBs from Littleton, New Hampshire, in a loop around Vermont, and back to New Hampshire. Along the way, we checked out some new spots, and visited some old favourites. We connected it all with a collection of class 4 roads, singletrack, dirt roads, and -- occasional -- pavement.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251218214257/https://www.lambdalatitudinarians.org/blog/2024/10/02/bikepacking-vt-nh-8/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_lambdalatitudinarians_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/3b17891c67bce21db1c2b72d50da5d96.webp",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Bikes"
+      ],
+      "date_added": "2025-12-18T21:42:57.905443Z",
+      "date_modified": "2025-12-18T21:42:57.905452Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 507,
       "url": "https://www.allrecipes.com/giant-lazy-meatballs-recipe-8715240",
@@ -176,9 +214,11 @@
       "is_archived": false,
       "unread": false,
       "shared": true,
-      "tag_names": [],
+      "tag_names": [
+        "Politics"
+      ],
       "date_added": "2025-12-14T05:26:56.225161Z",
-      "date_modified": "2025-12-14T19:12:35.636178Z",
+      "date_modified": "2025-12-18T23:13:48.225598Z",
       "website_title": null,
       "website_description": null
     },
