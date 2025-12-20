@@ -1,8 +1,28 @@
 {
-  "count": 13,
+  "count": 14,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 524,
+      "url": "https://archive.org/details/hamonshuyv1mori/page/17/mode/2up",
+      "title": "Hamonshū : Mori, Yūzan, -1917",
+      "description": "Decoration and ornament. Waves in art.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251219202652/https://archive.org/details/hamonshuyv1mori/page/17/mode/2up",
+      "favicon_url": "https://links.subdavis.com/static/https_archive_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/a3aa5feef4efa6f703c2326bbb9430a2.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Art"
+      ],
+      "date_added": "2025-12-19T20:26:52.371043Z",
+      "date_modified": "2025-12-19T20:27:01.423236Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 518,
       "url": "https://en.wikipedia.org/wiki/Gell-Mann_amnesia_effect",
