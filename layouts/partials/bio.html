@@ -1,15 +1,17 @@
-<header class="flex flex-col items-center mobile:flex-row my-6 mb-8 gap-6">
+<header class="h-card flex flex-col items-center mobile:flex-row my-6 mb-8 gap-6">
     <div class="profile text-accent-4">
-        <img src="/img/bike.jpg" class="rounded-sm border-3 border-accent-4 w-48 mobile:w-36" alt="{{ .Site.Title }}">
+        <img src="/img/bike.jpg" class="u-photo rounded-sm border-3 border-accent-4 w-48 mobile:w-36" alt="{{ .Site.Title }}">
     </div>
     <div class="flex flex-col items-center mobile:items-start">
-        <h1 class="text-4xl -mt-1 font-bold text-accent-4">
-            {{ .Site.Title }}
-        </h1>
+        <a href="https://subdavis.com" class="u-url">
+            <h1 class="p-name text-4xl -mt-1 font-bold text-accent-4">
+                {{ .Site.Title }}
+            </h1>
+        </a>
         <h2 class="text-xl -mt-1 text-accent-3">
             {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
         </h2>
-        <p class="-mt-1 mb-3 text-sm text-accent-3 primary-header">minneapolis, mn</p>
+        <p class="p-locality -mt-1 mb-3 text-sm text-accent-3 primary-header">minneapolis, mn</p>
         <div class="mb-3">
             {{ partial "links.html" . }}
         </div>
