@@ -1,0 +1,47 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Brandon Davis</title><meta name=description content="UNC alum and software engineer. I love experimenting with code, discovering new places, and reading about space exploration"><meta property="og:title" content="Brandon Davis"><meta property="og:site_name" content="subdavis.com"><meta property="og:description" content="UNC alum and software engineer. I love experimenting with code, discovering new places, and reading about space exploration"><meta property="og:image" content="https://subdavis.com/img/li.jpg"><meta property="og:url" content="https://subdavis.com/"><meta name=twitter:card content="summary"><meta name=twitter:site content="@subdavis"><meta name=twitter:creator content="@subdavis"><meta name=twitter:title content="Brandon Davis"><meta name=twitter:description content="UNC alum and software engineer. I love experimenting with code, discovering new places, and reading about space exploration"><meta name=twitter:image content="https://subdavis.com/img/li.jpg"><meta name=twitter:url content="https://subdavis.com/"><link rel=icon type=image/x-icon href=/favicon.ico>
+    
+  
+  
+    
+      
+        <link rel="stylesheet" href="/css/main.42cb0f1601ee9cfc2552da84d8ed7990b73744a57d664cafeb871cc7d5429cd5.css" integrity="sha256-QssPFgHunPwlUtqE2O15kLc3RKV9Zkyv64ccx9VCnNU=" crossorigin="anonymous">
+      
+    
+  
+
+  
+<script defer data-website-id=bfadb547-f5e5-4a8e-9416-13340a2bfdfd src=https://umami.subdavis.com/script.js data-domains=subdavis.com></script></head><body class=bg-white><div class="max-w-screen-sm mx-auto px-4"><main class="main w-full bg-white"><div class="my-6 max-w-screen-sm"><nav aria-label=Breadcrumb class=mb-6><ol class="flex flex-wrap items-center space-x-2 text-sm text-accent-3"><li class="flex items-center space-x-2 text-nowrap"><a href=/ class="text-accent-4 hover:text-accent-4 transition-colors">Brandon Davis
+</a><span class=text-accent-3>/</span></li><li class="flex items-center space-x-2 text-nowrap"><a href=/posts/ class="text-accent-4 hover:text-accent-4 transition-colors">Posts
+</a><span class=text-accent-3>/</span></li><li class="flex items-center space-x-2"><span class=text-accent-4>Generate live albums from YouTube videos with ffmpeg</span></li></ol></nav><article class=max-w-none><header class=mb-8><h1 class="text-4xl font-bold text-accent-4 mb-2">Generate live albums from YouTube videos with ffmpeg</h1><time class="text-accent-3 text-sm mb-4 primary-header" datetime='December 19, 2025'>December 19, 2025</time><p class="text-xl text-accent-4 italic">I love live albums, but it can be difficult to find digital copies.</p></header><div class="prose text-accent-4 leading-6"><p><img src=./navidrome.png alt=navidrome.png></p><p>There are plenty of high-quality full length concerts available on youtube. It only recenlty occurred to me that I could just turn these into my own bootleg live albums.</p><h2 id=step-1-manifest-file>Step 1: Manifest file</h2><p>Make a new text file that follows this template.</p><pre tabindex=0><code>artist: CHVRCHES
+album: Live at Glastonbury 2016
+date: 2016
+source: https://www.youtube.com/watch?v=jIbRto7TQ30
+---
+02:45 Never Ending Circles
+05:56 We Sink
+09:54 Keep You on My Side
+14:24 Make Them Gold
+19:31 Gun
+23:21 Bury It
+26:59 High Enough to Carry You Over
+31:32 Empty Threat
+35:59 Recover
+40:09 Clearest Blue
+</code></pre><h2 id=step-2-run-the-script>Step 2: Run the script</h2><p>The script downloads the video with <a href=https://github.com/yt-dlp/yt-dlp>yt-dlp</a> and transforms it using ffmpeg. ffmpeg even supports <a href=https://id3.org/>ID3 metadata</a> tagging.</p><p><code>./annotate_v2.py my_manifest.txt</code></p><h2 id=results>Results</h2><p>Now you&rsquo;ve got an album directory. You can drop a file called <code>cover.jpg</code> in if you want, but it&rsquo;s optional.</p><pre tabindex=0><code>➜  output git:(main) ✗ ls -T ./CHVRCHES/
+./CHVRCHES
+└── &#39;Live at Glastonbury 2016&#39;
+    ├── &#39;01 - Never Ending Circles.mp3&#39;
+    ├── &#39;02 - We Sink.mp3&#39;
+    ├── &#39;03 - Keep You on My Side.mp3&#39;
+    ├── &#39;04 - Make Them Gold.mp3&#39;
+    ├── &#39;05 - Gun.mp3&#39;
+    ├── &#39;06 - Bury It.mp3&#39;
+    ├── &#39;07 - High Enough to Carry You Over.mp3&#39;
+    ├── &#39;08 - Empty Threat.mp3&#39;
+    ├── &#39;09 - Recover.mp3&#39;
+    ├── &#39;10 - Clearest Blue.mp3&#39;
+    └── cover.png
+</code></pre><p>Done. This was a one-shot with Claude Opus 4.5 and I&rsquo;ve now made a dozen new live albums. I&rsquo;m aware that you could embed the art direclty into the mp3 files, but I&rsquo;m too lazy for that.</p><h2 id=navidrome-setup>Navidrome setup</h2><p>The &ldquo;album&rdquo; wont match anything on MusicBrainz, so IMO it&rsquo;s best to keep them in their own siloed library away from Lidarr or any other metadata automation you might have running. Navidrome supports serving multiple root directories.</p><h2 id=github-repository>GitHub repository</h2><p><a href=https://github.com/subdavis/youtube-album-generator>https://github.com/subdavis/youtube-album-generator</a></p><h2 id=rsync-it-to-navidrome>rsync it to Navidrome</h2><p>Alright, now push it to the sever.</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>rsync -avz --ignore-errors --no-o --no-g --exclude data/output/ user@host:/media/4tb/music_manual
+</span></span></code></pre></div><h2 id=bonus-audiotree>Bonus: Audiotree</h2><p>In case you didn&rsquo;t know, you actually <em>can</em> buy <a href=https://audiotree.bandcamp.com/>audiotree sessions on bandcamp</a>! My favorite so far is <a href="https://www.youtube.com/watch?v=Kfn57_QqprE">mewithoutYou from 2016</a> during the Pale Horse tour.</p></div><footer class="mt-8 pt-8 border-t border-accent-2 flex justify-between items-center"><a href=/posts class="link text-accent-4 hover:text-accent-4">← All posts
+</a><a href=/index.xml title="Subscribe to RSS feed" class="inline-flex items-center gap-2" aria-label="RSS Feed"><svg class="inline w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a1 1 0 000 2c5.523.0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"/><path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5A1 1 0 014 9zM3 15a2 2 0 114 0 2 2 0 01-4 0z"/></svg>
+<span class=link>Subscribe with RSS</span></a></footer></article></div></main></div></body></html>

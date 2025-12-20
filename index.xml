@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Using the Linkding bookmark manager as a CMS for Hugo blogrolls</title><link>https://subdavis.com/posts/2025-12-retweets/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-retweets/</guid><description>Approximating the convenience of a retweet without a backend.</description><content:encoded>&lt;p&gt;&lt;img src="./linkding.png" alt="linkding"&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Generate live albums from YouTube videos with ffmpeg</title><link>https://subdavis.com/posts/2025-12-youtube-album-generator/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-youtube-album-generator/</guid><description>I love live albums, but it can be difficult to find digital copies.</description><content:encoded>&lt;p&gt;&lt;img src="./navidrome.png" alt="navidrome.png"&gt;&lt;/p&gt;
+&lt;p&gt;There are plenty of high-quality full length concerts available on youtube. It only recenlty occurred to me that I could just turn these into my own bootleg live albums.&lt;/p&gt;
+&lt;h2 id="step-1-manifest-file"&gt;Step 1: Manifest file&lt;/h2&gt;
+&lt;p&gt;Make a new text file that follows this template.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;artist: CHVRCHES
+album: Live at Glastonbury 2016
+date: 2016
+source: https://www.youtube.com/watch?v=jIbRto7TQ30
+---
+02:45 Never Ending Circles
+05:56 We Sink
+09:54 Keep You on My Side
+14:24 Make Them Gold
+19:31 Gun
+23:21 Bury It
+26:59 High Enough to Carry You Over
+31:32 Empty Threat
+35:59 Recover
+40:09 Clearest Blue
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="step-2-run-the-script"&gt;Step 2: Run the script&lt;/h2&gt;
+&lt;p&gt;The script downloads the video with &lt;a href="https://github.com/yt-dlp/yt-dlp"&gt;yt-dlp&lt;/a&gt; and transforms it using ffmpeg. ffmpeg even supports &lt;a href="https://id3.org/"&gt;ID3 metadata&lt;/a&gt; tagging.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./annotate_v2.py my_manifest.txt&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="results"&gt;Results&lt;/h2&gt;
+&lt;p&gt;Now you&amp;rsquo;ve got an album directory. You can drop a file called &lt;code&gt;cover.jpg&lt;/code&gt; in if you want, but it&amp;rsquo;s optional.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;➜ output git:(main) ✗ ls -T ./CHVRCHES/
+./CHVRCHES
+└── &amp;#39;Live at Glastonbury 2016&amp;#39;
+ ├── &amp;#39;01 - Never Ending Circles.mp3&amp;#39;
+ ├── &amp;#39;02 - We Sink.mp3&amp;#39;
+ ├── &amp;#39;03 - Keep You on My Side.mp3&amp;#39;
+ ├── &amp;#39;04 - Make Them Gold.mp3&amp;#39;
+ ├── &amp;#39;05 - Gun.mp3&amp;#39;
+ ├── &amp;#39;06 - Bury It.mp3&amp;#39;
+ ├── &amp;#39;07 - High Enough to Carry You Over.mp3&amp;#39;
+ ├── &amp;#39;08 - Empty Threat.mp3&amp;#39;
+ ├── &amp;#39;09 - Recover.mp3&amp;#39;
+ ├── &amp;#39;10 - Clearest Blue.mp3&amp;#39;
+ └── cover.png
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Done. This was a one-shot with Claude Opus 4.5 and I&amp;rsquo;ve now made a dozen new live albums. I&amp;rsquo;m aware that you could embed the art direclty into the mp3 files, but I&amp;rsquo;m too lazy for that.&lt;/p&gt;
+&lt;h2 id="navidrome-setup"&gt;Navidrome setup&lt;/h2&gt;
+&lt;p&gt;The &amp;ldquo;album&amp;rdquo; wont match anything on MusicBrainz, so IMO it&amp;rsquo;s best to keep them in their own siloed library away from Lidarr or any other metadata automation you might have running. Navidrome supports serving multiple root directories.&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/subdavis/youtube-album-generator"&gt;https://github.com/subdavis/youtube-album-generator&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="rsync-it-to-navidrome"&gt;rsync it to Navidrome&lt;/h2&gt;
+&lt;p&gt;Alright, now push it to the sever.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rsync -avz --ignore-errors --no-o --no-g --exclude data/output/ user@host:/media/4tb/music_manual
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="bonus-audiotree"&gt;Bonus: Audiotree&lt;/h2&gt;
+&lt;p&gt;In case you didn&amp;rsquo;t know, you actually &lt;em&gt;can&lt;/em&gt; buy &lt;a href="https://audiotree.bandcamp.com/"&gt;audiotree sessions on bandcamp&lt;/a&gt;! My favorite so far is &lt;a href="https://www.youtube.com/watch?v=Kfn57_QqprE"&gt;mewithoutYou from 2016&lt;/a&gt; during the Pale Horse tour.&lt;/p&gt;</content:encoded></item><item><title>Using the Linkding bookmark manager as a CMS for Hugo blogrolls</title><link>https://subdavis.com/posts/2025-12-retweets/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2025-12-retweets/</guid><description>Approximating the convenience of a retweet without a backend.</description><content:encoded>&lt;p&gt;&lt;img src="./linkding.png" alt="linkding"&gt;&lt;/p&gt;
 &lt;p&gt;I want the ability to easily share tagged links to this website, inspired by the blogrolls of yore (shoutout to &lt;a href="https://sethmlarson.dev/blogroll"&gt;sethmlarson&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;This is a static hugo site, though. I have no interest in creating a commit just to make new links appear.&lt;/p&gt;
 &lt;h2 id="linkding-my-bookmark-manager"&gt;Linkding, my bookmark manager&lt;/h2&gt;
