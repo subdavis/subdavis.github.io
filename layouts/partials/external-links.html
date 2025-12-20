@@ -1,7 +1,29 @@
-<div class="flex flex-row flex-wrap">
+
+<div
+  class="flex flex-row items-center mb-2"
+>
+<span class="text-sm w-auto mr-2 mobile:w-[200px] whitespace-nowrap"
+>An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍</span
+>
+  <a
+    href="https://xn--sr8hvo.ws/previous"
+    class="text-sm px-2 rounded-xs mr-2 cursor-pointer bg-accent-4 text-white whitespace-nowrap"
+    >← previous</a
+  >
+
+  <a
+    href="https://xn--sr8hvo.ws/next"
+    class="text-sm px-2 rounded-xs mr-2 cursor-pointer bg-accent-4 text-white whitespace-nowrap"
+    >next →</a
+  >
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  <span class="text-sm w-auto mr-2 mobile:w-[200px]">Other good pages</span>
   {{ range .Site.Data.homepage.external_links }}
   <a
-    class="text-sm px-2 rounded-xs mr-3 cursor-pointer bg-accent-4 text-white"
+    class="text-sm px-2 rounded-xs mr-2 cursor-pointer bg-accent-4 text-white"
     href="{{ .href }}"
   >
     {{ .title }}
