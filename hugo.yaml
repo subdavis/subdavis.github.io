@@ -42,6 +42,3 @@ module:
     - disableWatch: true
       source: hugo_stats.json
       target: assets/notwatching/hugo_stats.json
-    - disableWatch: true
-      source: tailwind.config.js
-      target: assets/notwatching/tailwind.config.js

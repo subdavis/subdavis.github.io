@@ -7,22 +7,22 @@
 {{ if $posts }}
 <ul class="list-disc ml-4 space-y-2">
   {{ range $posts }}
-  <li class="text-accent-700">
-    <a href="{{ .url }}" class="underline mr-1 text-lg sm:text-lg">{{ .title }}</a>
+  <li class="text-accent-4">
+    <a href="{{ .url }}" class="link mr-1 text-lg mobile:text-lg">{{ .title }}</a>
     {{ if .tag_names }}
     <span class="text-sm text-accent-300 inline-block">
       {{ range .tag_names }}
-      <span class="mr-1 px-[3px] bg-gray-800 text-white rounded-xs"
+      <span class="mr-1 px-[3px] bg-accent-4 text-white rounded-xs"
         >{{ . }}</span
       >
       {{ end }}
     </span>
     {{ end }} {{ if .description}}
-    <span class="text-sm text-gray-800">{{ .description }}</span>
+    <span class="text-sm text-accent-4">{{ .description }}</span>
     {{ end }}
   </li>
   {{ end }}
 </ul>
 {{ else }}
-<p class="text-accent-500 italic">No retweets yet.</p>
+<p class="text-accent-1 italic">No retweets yet.</p>
 {{ end }}

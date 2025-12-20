@@ -1,8 +1,8 @@
 ---
-title: Generate albums from YouTube videos
-date: 2025-01-01
-draft: true
-description: I love live albums, but it can be quite difficult to find digital copies.
+title: Generate live albums from YouTube videos with ffmpeg
+date: 2025-12-18
+draft: false
+description: I love live albums, but it can be difficult to find digital copies.
 ---
 
 ![navidrome.png](./navidrome.png)
@@ -33,7 +33,7 @@ source: https://www.youtube.com/watch?v=jIbRto7TQ30
 
 ## Step 2: Run the script
 
-The script downloads the video with [yt-dlp](https://github.com/yt-dlp/yt-dlp) and transforms it using ffmpeg. ffmpeg even supports [ID3 metadata](https://id3.org/) tagging!
+The script downloads the video with [yt-dlp](https://github.com/yt-dlp/yt-dlp) and transforms it using ffmpeg. ffmpeg even supports [ID3 metadata](https://id3.org/) tagging.
 
 `./annotate_v2.py my_manifest.txt`
 
@@ -62,13 +62,13 @@ Done. This was a one-shot with Claude Opus 4.5 and I've now made a dozen new liv
 
 ## Navidrome setup
 
-The "album" wont match anything on MusicBrainz so it's best to keep them in their own siloed library away from Lidarr or any other metadata automation you might have running.  Navidrome supports serving multiple root directories.
+The "album" wont match anything on MusicBrainz, so IMO it's best to keep them in their own siloed library away from Lidarr or any other metadata automation you might have running.  Navidrome supports serving multiple root directories.
 
 ## GitHub repository
 
 https://github.com/subdavis/youtube-album-generator
 
-## Bonus: rsync it
+## rsync it to Navidrome
 
 Alright, now push it to the sever.
 

@@ -1,16 +1,16 @@
-<header class="flex flex-row my-6 mb-8 gap-3 sm:gap-6">
-    <div class="profile text-accent-900 flex-shrink-0 hidden sm:block">
-        <img src="/img/bike.jpg" class="rounded-md w-26 sm:w-37" alt="{{ .Site.Title }}">
+<header class="flex flex-col items-center mobile:flex-row my-6 mb-8 gap-6">
+    <div class="profile text-accent-4">
+        <img src="/img/bike.jpg" class="rounded-sm border-3 border-accent-4 w-48 mobile:w-36" alt="{{ .Site.Title }}">
     </div>
-    <div class="-mt-1">
-        <h1 class="text-4xl font-bold -mb-1">
+    <div class="flex flex-col items-center mobile:items-start">
+        <h1 class="text-4xl -mt-1 font-bold text-accent-4">
             {{ .Site.Title }}
         </h1>
-        <h2 class="text-xl text-accent-600">
+        <h2 class="text-xl -mt-1 text-accent-3">
             {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
         </h2>
-        <p class="mb-1 text-accent-600">Minneapolis, MN</p>
-        <div class="mb-4">
+        <p class="-mt-1 mb-3 text-sm text-accent-3 primary-header">minneapolis, mn</p>
+        <div class="mb-3">
             {{ partial "links.html" . }}
         </div>
         <nav class="flex flex-row gap-4">
