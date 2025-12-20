@@ -1,4 +1,4 @@
-<div id="links" class="inline-flex flex-row text-xs items-center text-accent-700 gap-2">
+<div id="links" class="inline-flex flex-row text-xs items-center text-accent-4 gap-2">
   <a
     href="https://github.com/{{ .Site.Params.github }}"
     aria-label="GitHub"
@@ -23,18 +23,7 @@
     </svg>
   </a>
   {{ partial "rss.html" (dict "showText" false) }}
-  <a
-    href="/history/key.txt"
-    class="hidden sm:inline-flex gpg flex-row items-center"
-    aria-label="GPG Key"
-  >
-    <span class="text-xs font-mono">
-      <span>44DD</span>
-      <span>0B07</span>
-      <span>4C0F</span>
-      <span>6F91</span>
-    </span>
-  </a>
+
 </div>
 
 <style>

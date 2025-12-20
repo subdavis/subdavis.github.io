@@ -3,12 +3,12 @@
   {{ partial "breadcrumb.html" . }}
   <article class="max-w-none">
     <header class="mb-8">
-      <h1 class="text-4xl font-bold text-accent-700 mb-2">{{ .Title }}</h1>
-      <time class="text-accent-600 text-sm mb-4" datetime='{{ .Date.Format "January 2, 2006" }}'>
+      <h1 class="text-4xl font-bold text-accent-4 mb-2">{{ .Title }}</h1>
+      <time class="text-accent-3 text-sm mb-4 primary-header" datetime='{{ .Date.Format "January 2, 2006" }}'>
         {{ .Date.Format "January 2, 2006" }}
       </time>
       {{ if .Description }}
-        <p class="text-xl text-accent-700 italic">{{ .Description }}</p>
+        <p class="text-xl text-accent-4 italic">{{ .Description }}</p>
       {{ end }}
     </header>
 
@@ -17,12 +17,12 @@
       {{ partial "gallery.html" . }}
     {{ end }}
     
-    <div class="prose text-accent-700 leading-6">
+    <div class="prose text-accent-4 leading-6">
       {{ .Content }}
     </div>
     
-    <footer class="mt-8 pt-8 border-t border-accent-200 flex justify-between items-center">
-      <a href="/posts" class="text-accent-700 hover:text-accent-700">
+    <footer class="mt-8 pt-8 border-t border-accent-2 flex justify-between items-center">
+      <a href="/posts" class="text-accent-4 hover:text-accent-4">
         ← Back to all posts
       </a>
       {{ partial "rss.html" (dict "showText" true) }}
