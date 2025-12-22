@@ -1,8 +1,28 @@
 {
-  "count": 14,
+  "count": 15,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 528,
+      "url": "https://manuelmoreale.com/thoughts/thoughts-on-mcp",
+      "title": "Thoughts on [consumer] MCP",
+      "description": "I was listening to a recent Vergecast episode the other day, and in there, there was a whole segment about MCP servers and AI-powered shopping.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251220172140/https://manuelmoreale.com/thoughts/thoughts-on-mcp",
+      "favicon_url": "https://links.subdavis.com/static/https_manuelmoreale_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2025-12-20T17:21:40.486089Z",
+      "date_modified": "2025-12-20T17:21:40.486095Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 524,
       "url": "https://archive.org/details/hamonshuyv1mori/page/17/mode/2up",
