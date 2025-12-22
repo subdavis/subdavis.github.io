@@ -2,7 +2,7 @@
 @source "hugo_stats.json";
 
 @utility link {
-  @apply underline decoration-0 underline-offset-2;
+  @apply underline decoration-1 underline-offset-2;
 }
 
 @theme {
