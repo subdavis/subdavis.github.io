@@ -1,8 +1,68 @@
 {
-  "count": 18,
+  "count": 21,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 547,
+      "url": "https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/",
+      "title": "How Dad’s Fitness May Be Packaged and Passed Down in Sperm RNA | Quanta Magazine",
+      "description": "Research into how a father’s choices — such as diet, exercise, stress, nicotine use — may transfer traits to his children has become impossible to ignore.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251228030201/https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_quantamagazine_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/c16cd4553d674ce515f88e82333ca6d1.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Science"
+      ],
+      "date_added": "2025-12-28T03:02:01.931484Z",
+      "date_modified": "2025-12-28T03:02:01.931493Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 545,
+      "url": "https://floor796.com/",
+      "title": "Floor796",
+      "description": "A huge animation scene with many references to memes, games, films, series, anime, music groups",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251227214212/https://floor796.com/",
+      "favicon_url": "https://links.subdavis.com/static/https_floor796_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/54e076d8cc4fd4fbaf7752209bc7ef93.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Art"
+      ],
+      "date_added": "2025-12-27T21:42:12.225776Z",
+      "date_modified": "2025-12-27T21:42:12.225784Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 543,
+      "url": "https://www.eff.org/deeplinks/2025/12/ai-police-reports-year-review",
+      "title": "AI Police Reports: Year In Review | Electronic Frontier Foundation",
+      "description": "In 2024, EFF wrote our initial blog about what could go wrong when police let AI write police reports. Since then, the technology has proliferated at a disturbing rate. Why? The most popular generative AI tool for writing police reports is Axon’s Draft One, and Axon also happens to be the largest...",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20251227143557/https://www.eff.org/deeplinks/2025/12/ai-police-reports-year-review",
+      "favicon_url": "https://links.subdavis.com/static/https_www_eff_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/f8107d2322c78f7db77167f5a158c592.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2025-12-27T14:35:57.318134Z",
+      "date_modified": "2025-12-27T14:35:57.318143Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 540,
       "url": "https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/",
