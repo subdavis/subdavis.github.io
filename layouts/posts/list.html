@@ -2,7 +2,7 @@
 <div class="my-6 max-w-screen-sm">
   {{ partial "breadcrumb.html" . }}
   <div class="flex justify-between items-center my-12">
-    <h1 class="text-4xl font-bold text-accent-4 primary-header">{{ .Title }}</h1>
+    <h1 class="text-4xl font-bold text-accent-4">{{ .Title }}</h1>
   </div>
   
   {{ partial "posts-list.html" (dict "posts" .Pages) }}

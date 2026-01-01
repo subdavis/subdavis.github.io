@@ -12,6 +12,7 @@
 
 .prose p {
   @apply mb-4 text-accent-4;
+  @apply body-text;
 }
 
 .prose ul, .prose ol {

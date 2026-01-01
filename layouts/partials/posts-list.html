@@ -13,7 +13,7 @@
 <div class="posts-list space-y-4">
   {{ range $posts }}
     <article class="post-item grid mobile:grid-cols-[auto_2fr] grid-cols-[1fr] gap-x-4">
-      <time class="text-accent-3 text-xs mt-[.4rem] min-w-[70px] primary-header">
+      <time class="text-accent-3 text-xs mt-[.4rem] min-w-[70px] date-style">
         {{ .Date.Format "Jan 2" }}
       </time>
       <div>
@@ -23,7 +23,7 @@
           </a>
         </h3>
         {{ if .Description }}
-          <p class="text-accent-3 text-sm">{{ .Description }}</p>
+          <p class="text-accent-3 text-sm body-text">{{ .Description }}</p>
         {{ end }}
       </div>
     </article>

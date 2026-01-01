@@ -2,7 +2,7 @@
 <div class="my-6 max-w-screen-sm">
   {{ partial "breadcrumb.html" . }}
   <article>
-    <h1 class="text-4xl font-bold text-accent-4 my-12 primary-header">{{ .Title }}*</h1>
+    <h1 class="text-4xl font-bold text-accent-4 my-12">{{ .Title }}*</h1>
     {{ partial "retweet-list.html" (dict "retweets" .Site.Data.retweets.results) }}
   </article>
   <div class="prose mt-8 !text-sm">
