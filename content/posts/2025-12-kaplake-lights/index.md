@@ -1,8 +1,8 @@
 ---
 title: $6 IKEA Kapplake lights make excellent desk backlighting
-date: 2025-01-01
-draft: true
-description: This ain't a battlestation. I'm not into RGB.
+date: 2026-01-01
+draft: false
+description: I don't like RGB.
 ---
 
 The [IKEA Kapplake accent light](https://www.ikea.com/us/en/p/kapplake-led-spotlight-white-30543166/) works really well as a backlight.
