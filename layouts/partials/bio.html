@@ -11,7 +11,7 @@
         <h2 class="text-xl -mt-1 text-accent-3">
             {{ .Site.Params.email | replaceRE "@" "@<span style=\"display: none;\">&nbsp;</span>" | safeHTML }}
         </h2>
-        <p class="p-locality -mt-1 mb-3 text-sm text-accent-3 primary-header">minneapolis, mn</p>
+        <p class="p-locality -mt-1 mb-3 text-sm text-accent-3">minneapolis, mn</p>
         <div class="mb-3">
             {{ partial "links.html" . }}
         </div>

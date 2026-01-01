@@ -20,12 +20,11 @@
   --breakpoint-mobile: 500px; /* Add a new 'xs' breakpoint */
 }
 
-@import "./post.css";
-
-@font-face {
-  font-family: "Beth Ellen";
-  src: url('/font/Beth_Ellen/BethEllen-Regular.ttf') format('truetype');
+@utility body-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@import "./post.css";
 
 @font-face {
   font-family: "IM Fell";
@@ -41,13 +40,14 @@ body {
   font-family: "IM Fell", 'Courier New', Courier, monospace;
 }
 
-.primary-header {
-  font-family: "Beth Ellen", serif;
-}
 
 /* Grayscale filter for homepage images only (bio and projects) */
 .profile img,
 .blurb img,
 .card-image {
   /* filter: grayscale(100%); */
+}
+
+.date-style {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
