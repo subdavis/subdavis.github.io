@@ -1,8 +1,29 @@
 {
-  "count": 21,
+  "count": 22,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 552,
+      "url": "https://henry.codes/writing/a-website-to-destroy-all-websites/",
+      "title": "A Website To End All Websites | Henry From Online",
+      "description": "How to win the war for the soul of the internet, and build the Web We Want.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260101233034/https://henry.codes/writing/a-website-to-destroy-all-websites/",
+      "favicon_url": "https://links.subdavis.com/static/https_henry_codes.png",
+      "preview_image_url": "https://links.subdavis.com/static/bb7ab69d0a547f8a6988766f82b3a905.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Calm",
+        "IndieWeb"
+      ],
+      "date_added": "2026-01-01T23:30:34.932196Z",
+      "date_modified": "2026-01-02T00:51:24.300183Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 547,
       "url": "https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/",
@@ -67,7 +88,7 @@
       "id": 540,
       "url": "https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/",
       "title": "Maybe the Default Settings Are Too High",
-      "description": "20FacebookEmailPinterestRedditShare20SHARESI’ve been reading Lord of the Rings for two months and I’m just at the end of the first part. It’s not because I’m not enjoying it. It’s one of the most enjoyable reading experiences I can remember. From the […]",
+      "description": "I’ve been reading Lord of the Rings for two months and I’m just at the end of the first part. It’s not because I’m not enjoying it. It’s one of the most enjoyable reading experiences I can remember.",
       "notes": "",
       "web_archive_snapshot_url": "https://web.archive.org/web/20251226030935/https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/",
       "favicon_url": "https://links.subdavis.com/static/https_www_raptitude_com.png",
@@ -79,7 +100,7 @@
         "Calm"
       ],
       "date_added": "2025-12-26T03:09:35.326915Z",
-      "date_modified": "2025-12-26T03:09:35.326924Z",
+      "date_modified": "2026-01-02T00:50:44.804753Z",
       "website_title": null,
       "website_description": null
     },
