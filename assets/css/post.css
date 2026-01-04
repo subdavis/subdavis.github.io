@@ -32,7 +32,7 @@
 }
 
 .prose li {
-  @apply mb-2 text-accent-4;
+  @apply mb-2 text-accent-4 body-text;
 }
 
 .prose a {
