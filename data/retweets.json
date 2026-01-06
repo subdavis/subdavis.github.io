@@ -1,8 +1,48 @@
 {
-  "count": 22,
+  "count": 24,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 559,
+      "url": "https://joshcollinsworth.com/blog/sloptimism",
+      "title": "AI optimism is a class privilege - Josh Collinsworth blog",
+      "description": "I think I have an idea why we're so extremely divided on AI: it's because we have an intuitive sense of who it stands to benefit, and who stands to pay the costs. I think whether you see reason for optimism has a lot to do with which group you see yourself in.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260105210155/https://joshcollinsworth.com/blog/sloptimism",
+      "favicon_url": "https://links.subdavis.com/static/https_joshcollinsworth_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/2068cd053ddf6c1d50838974954cdd45.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-01-05T21:01:55.400644Z",
+      "date_modified": "2026-01-05T21:02:46.258183Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 556,
+      "url": "https://tonsky.me/blog/tahoe-icons/",
+      "title": "It’s hard to justify Tahoe icons",
+      "description": "Looking at the first principles of icon design—and how Apple failed to apply all of them in macOS Tahoe",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260105160708/https://tonsky.me/blog/tahoe-icons/",
+      "favicon_url": "https://links.subdavis.com/static/https_tonsky_me.png",
+      "preview_image_url": "https://links.subdavis.com/static/1416117ed6ad041d47fd3eb556f921b7.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Design"
+      ],
+      "date_added": "2026-01-05T16:07:08.562202Z",
+      "date_modified": "2026-01-05T16:07:08.562211Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 552,
       "url": "https://henry.codes/writing/a-website-to-destroy-all-websites/",
