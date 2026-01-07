@@ -1,8 +1,28 @@
 {
-  "count": 24,
+  "count": 25,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 560,
+      "url": "https://github.com/rberg27/doom-coding",
+      "title": "stop doom-scrolling, start doom-coding",
+      "description": "A guide for how to use your smartphone to code anywhere at anytime.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260107045228/https://github.com/rberg27/doom-coding",
+      "favicon_url": "https://links.subdavis.com/static/https_github_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/49f88da5a36d7c6eb2e66155b18cb5ef.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-01-07T04:52:28.927914Z",
+      "date_modified": "2026-01-07T04:52:28.927921Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 559,
       "url": "https://joshcollinsworth.com/blog/sloptimism",
