@@ -1,62 +1,62 @@
 projects:
   - title: "Keepass Tusk"
     subtitle: "JavaScript, Webpack"
-    img: "tusk.png"
+    img: "tusk-200w.webp"
     href: "https://subdavis.com/Tusk"
     text: "Tusk is a browser extension for filling passwords from a KeePass database stored in the cloud. I didn't start this project (it began as CKP) but I created a fork with a new UI since the original project lost steam. You can install Tusk for Chrome or Firefox. I've since abandoned the project due to difficulties with cloud storage APIs, particularly Google Drive."
 
   - title: "Kobo Book Downloader"
     subtitle: "Python, Flask, Tailwind CSS"
-    img: "kobodl.png"
+    img: "kobodl-200w.webp"
     href: "https://github.com/subdavis/kobo-book-downloader"
     text: "kobodl is a command-line tool and web service to download and remove DRM from books purchased from kobo.com. I forked it from another project to add audiobook support, multi-user support, a web interface, and create proper distribution packages with pypi and docker."
 
   - title: "RSS Glue"
     subtitle: "Python, Click"
-    img: "glue.webp"
+    img: "glue-200w.webp"
     text: "Frustrated with inflexible and flaky RSS digest services, I made my own flaky one. RSS Glue can take arbitrary chronological feeds and merge, digest, filter, and transform them into whatever you like."
     href: "https://github.com/subdavis/rss-glue"
 
   - title: "This Website!"
     subtitle: "Hugo, Tailwind"
-    img: "site.png"
+    img: "site-200w.webp"
     href: "https://github.com/subdavis/subdavis.github.io"
     text: "This website was built with Hugo and Tailwind CSS. I migrated from Vue.js and Nuxt to simplify the tech stack and eliminate the need for runtime JavaScript. My last personal site was a table-layout throwback intended to render well in text-based browsers like lynx and links."
 
   - title: 'bikegroups.org'
     subtitle: "React, Next.js, Tailwind"
-    img: "bikegroups.png"
+    img: "bikegroups-200w.webp"
     href: "https://bikegroups.org/"
     text: "bikegroups.org is a simple directory for the Minneapolis cycling community. It grew out of my frustration with how social media platforms gatekeep and bury information."
 
   - title: "WorkspacesIO"
     subtitle: "Python, FastApi, Vue 3"
-    img: "wio.png"
+    img: "wio-200w.webp"
     href: "https://github.com/subdavis/workspaces-io"
     text: "WorkspacesIO is a data management tool built on MinIO, ElasticSearch, and Filestash.app that provides excellent browser and command line interfaces for managing data collections called workspaces. It uses AWS STS tokens to provide coarse-grained access control that allows client tooling to interact directly with the storage backend."
 
   - title: "Hosted Service Configurations"
     subtitle: "Docker, Compose, Traefik"
-    img: "selfhosted.png"
+    img: "selfhosted-200w.webp"
     href: "https://github.com/subdavis/selfhosted"
     text: "This is a git repository where I keep compose configurations for all the services I host. It's also a tutorial for how to set these services up, and represents a lot of time and research about how to best configure docker and traefik. /r/selfhosted provided a lot of inspiration."
 
   - title: "VIAME Dive"
     subtitle: "Vue.js, Vuetify, Typescript"
-    img: "fish.png"
+    img: "fish-200w.webp"
     href: "https://github.com/Kitware/dive"
     text: "Media annotation and analysis tools for web and desktop. Challenges include rendering performance and managing code complexity, as traditional MVC patterns often lead to performance bottlenecks."
 
   - title: "Archive: HackNC"
     subtitle: "Pug, Grunt, CSS"
-    img: "hacknc.png"
+    img: "hacknc-200w.webp"
     href: "https://fall2016.hacknc.com/"
     text: "In the summer and fall of 2016, I lead the development team to build the website for HackNC, the annual undergraduate-run hackathon at UNC Chapel Hill. This is the first real web design I was involved in, and my first time working alongside a talented dsgraphic designer."
 
   - title: "Archive: Conway's Game of Life"
     subtitle: "JavaScript"
-    img: "life.png"
-    href: "https://subdavis.com/life"
+    img: "life-200w.webp"
+    href: "http://life.subdavis.com"
     text: "I implemented an infinite version of the classic Conway's Game in native javascript. This is one of the first pieces of code I was ever proud of, and the project was my first foray into browser animation with canvases."
 
 external_links:
