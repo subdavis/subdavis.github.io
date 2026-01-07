@@ -3,6 +3,7 @@
     class="card-image z-10 mb-4 mt-1 border-2 border-accent-4 rounded-sm"
     src="/img/{{ .img }}"
     alt="{{ .title }}"
+    loading="lazy"
     style="object-fit: {{ .objectFit | default "cover" }};"
   >
   <div class="z-0 flex flex-col pb-3 pl-16 -ml-12">

@@ -43,8 +43,6 @@ This is Alexandra Elbakyan, the founder of SciHub.
 
 My point here is simply that these projects are not neutral or egalitarian. They have a perspective and a purpose that demands engagement from its users. You might not like the world Alexandra would build, if she could build it.
 
-While we don't know anything about "Anna", we can assume she has a similar ideological bent.
-
 ## No free lunch
 
 You can't support artists without supporting artists. Ditching Spotify solves nothing if the replacement is piracy.

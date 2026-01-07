@@ -3,6 +3,7 @@ title: Thoughts for 2026
 date: 2026-01-04 15:30:00
 draft: false
 description: Bottom text.
+images: ['hennepin-and-8th.jpg']
 ---
 
 ![Hennepin and 8th](./hennepin-and-8th.jpg)

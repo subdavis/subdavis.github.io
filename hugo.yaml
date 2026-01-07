@@ -13,10 +13,8 @@ outputs:
   section: ["HTML", "RSS"]
 
 params:
-  description: "UNC alum and software engineer. I love experimenting with code, discovering new places, and reading about space exploration"
   author: "Brandon Davis"
   email: "brandon<span style=\"display:none;\">@gmail.com</span>@subdavis.com"
-  image: "https://subdavis.com/img/li.jpg"
   github: "subdavis"
   twitter: "subdavis"
   linkedin: "subdavis"
