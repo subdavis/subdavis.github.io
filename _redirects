@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://subdavis.netlify.com/* https://subdavis.com/:splat 301!
