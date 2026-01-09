@@ -18,7 +18,7 @@ There are 3 angles. [Here is the Google Drive folder. Watch with caution.](https
 
 A [fourth video (warning: graphic)](https://www.youtube.com/watch?v=K9CJY5p0xz4) is the longer cut of the left angle.  In it, you can see the ICE officer who killed Renee Good abandon the scene in a gold SUV without waiting for medical aid or other authorities arrive.
 
-Here are the exact frames where shots are fired.
+Here are the exact frames where shots are fired. [Reuters has another breakdown.](https://www.reuters.com/graphics/USA-TRUMP/MINNESOTA-RECONSTRUCT/egvbbeqeevq/)
 
 ![Shots fired frames](./exact-frames-of-each-of-the-3-shots-fired-showing-visible-v0-0pqmmig3e2cg1.webp)
 
