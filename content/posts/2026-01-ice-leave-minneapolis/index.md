@@ -14,11 +14,9 @@ Neither the footage nor a single eyewitness account agrees with the [DHS officia
 
 ## The footage
 
-There are 3 angles.
+There are 3 angles. [Here is the Google Drive folder. Watch with caution.](https://drive.google.com/drive/folders/1Gb_IkGVK7WvsTAXfMvQUoM4a1P3VwXiu)
 
-A fourth video is labeled graphic: It is the longer cut of the left angle.  In it, you can see the ICE officer who killed Renee Good abandon the scene in a gold SUV without waiting for medical aid or other authorities arrive.
-
-[Here is the Google Drive folder. Watch with caution.](https://drive.google.com/drive/folders/1Gb_IkGVK7WvsTAXfMvQUoM4a1P3VwXiu)
+A [fourth video (warning: graphic)](https://www.youtube.com/watch?v=K9CJY5p0xz4) is the longer cut of the left angle.  In it, you can see the ICE officer who killed Renee Good abandon the scene in a gold SUV without waiting for medical aid or other authorities arrive.
 
 Here are the exact frames where shots are fired.
 
