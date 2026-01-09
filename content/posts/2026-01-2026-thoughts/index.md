@@ -16,7 +16,6 @@ I celebrated the new year by having covid and coughing a lot. It caused us to ca
 1. My favorite place to be is still on a bicycle in the woods. The consistency of this fact is comforting.
 1. I want to build a writing habit. Got a jump start on this last November, but I'd be satisfied with producing 2-3 short posts a month consistently.
 1. I over-indexed this past year on trying to solve my device addiction by selectively cutting out specific websites. Live and learn. I'll try something else and try to be patient about it.
-1. I currently read a lot of periodicals (Substacks mostly) with a strong liberal-center-left point of view, and I'd like to diversify that more in all directions. Ezra Klein, [Slow Boring](https://www.slowboring.com), [Noah Smith](https://www.noahpinion.blog/), [The Argument Mag](https://www.theargumentmag.com/) etc. have become my comfort zone.
 
 My favorite book this year was the novella [The River Has Roots](https://www.goodreads.com/book/show/211004176-the-river-has-roots) by Amal El-Mohtar (who also wrote another favorite, [This is How You Lose the Time War](https://en.wikipedia.org/wiki/This_Is_How_You_Lose_the_Time_War))
 
