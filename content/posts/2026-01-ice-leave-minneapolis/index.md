@@ -2,6 +2,7 @@
 title: Renee Good was killed by ICE agents in Minneapolis yesterday
 date: 2026-01-08 22:00:00
 description: We cannot countenance these lies
+draft: true
 ---
 
 ![Renee Good Vigil](./beautiful-vigil-for-renee-good-tonight-v0-zbw5765qk2cg1.webp)
