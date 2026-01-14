@@ -1,8 +1,28 @@
 {
-  "count": 27,
+  "count": 28,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 565,
+      "url": "https://docs.python.org/3/library/getpass.html",
+      "title": "getpass — Portable password input — Python 3.14.2 documentation",
+      "description": "I was today years old when I learned that python has a whole module for getting protected user input.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260113210010/https://docs.python.org/3/library/getpass.html",
+      "favicon_url": "https://links.subdavis.com/static/https_docs_python_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/fdf8ab7d8184f82374ce14136fe81b5f.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Code"
+      ],
+      "date_added": "2026-01-13T21:00:10.349536Z",
+      "date_modified": "2026-01-13T21:00:10.349542Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 564,
       "url": "https://www.youtube.com/watch?v=i5m-RHS1fU0",
