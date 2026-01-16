@@ -1,8 +1,48 @@
 {
-  "count": 28,
+  "count": 30,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 569,
+      "url": "https://entropicthoughts.com/kitchen-slide-rule",
+      "title": "You Need A Kitchen Slide Rule",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260116042152/https://entropicthoughts.com/kitchen-slide-rule",
+      "favicon_url": "https://links.subdavis.com/static/https_entropicthoughts_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Cooking"
+      ],
+      "date_added": "2026-01-16T04:21:52.892329Z",
+      "date_modified": "2026-01-16T04:21:52.892338Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 567,
+      "url": "https://www.approachwithalacrity.com/claude-ne/",
+      "title": "Claude is not a senior engineer (yet)",
+      "description": "It appears that other people have made the same observation as me that LLMs have poor “taste” and are bad at abstractions.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260116040242/https://www.approachwithalacrity.com/claude-ne/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_approachwithalacrity_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/55030dfaf74e9cdd59dd6b7ddfb39e33.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-01-16T04:02:42.909543Z",
+      "date_modified": "2026-01-16T04:02:42.909550Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 565,
       "url": "https://docs.python.org/3/library/getpass.html",
