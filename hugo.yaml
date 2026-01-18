@@ -1,7 +1,7 @@
 baseURL: "https://subdavis.com/"
 languageCode: "en-us"
 title: "Brandon Davis"
-disableKinds: ["taxonomy", "term", "sitemap"]
+disableKinds: ["taxonomy", "term"]
 
 markup:
   highlight:
