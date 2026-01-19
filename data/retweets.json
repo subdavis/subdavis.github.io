@@ -1,8 +1,28 @@
 {
-  "count": 30,
+  "count": 31,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 572,
+      "url": "https://hegemon.substack.com/p/the-age-of-academic-slop-is-upon",
+      "title": "The Age of Academic Slop is Upon Us - by Seva Gunitsky",
+      "description": "what happens when AI automates \"normal science\"?",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260118145124/https://hegemon.substack.com/p/the-age-of-academic-slop-is-upon",
+      "favicon_url": "https://links.subdavis.com/static/https_hegemon_substack_com.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/3cc1265b74f64ecc52ca5500a0ef7be4.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-01-18T14:51:24.574170Z",
+      "date_modified": "2026-01-18T14:51:24.574175Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 569,
       "url": "https://entropicthoughts.com/kitchen-slide-rule",
