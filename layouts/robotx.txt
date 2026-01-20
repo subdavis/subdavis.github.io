@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /redditAccessible
+Disallow: /Tusk
+Disallow: /life
