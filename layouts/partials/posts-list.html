@@ -4,7 +4,7 @@
     - posts: collection of pages to display
     - limit: (optional) maximum number of posts to show
 */}}
-{{ $posts := where .posts "Params.unlisted" "ne" true }}
+{{ $posts := where .posts ".Params.unlisted" "ne" true }}
 {{ if .limit }}
   {{ $posts = first .limit $posts }}
 {{ end }}

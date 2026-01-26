@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
+  
+  <!-- Open Graph / Twitter Cards -->
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Webmention -->
+  <link rel="webmention" href="https://webmention.io/subdavis.com/webmention" />
+
+  <!-- Preload font -->
+  <link
+    rel="preload"
+    href="/font/IM_Fell_Great_Primer/IMFellGreatPrimer-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin="anonymous"
+  >
+  
+  <!-- RSS Feed -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "css.html" . }}
+  {{ end }}
+  
+  <!-- Umami Analytics -->
+  {{ if .Site.Params.umami_website_id }}
+  <script defer data-website-id="{{ .Site.Params.umami_website_id }}" src="{{ .Site.Params.umami_src }}" data-domains="{{ .Site.Params.umami_domain }}"></script>
+  {{ end }}
+
+  <!-- Chart.js (only when needed) -->
+  {{ if .Params.chartjs }}
+    {{ partial "chartjs.html" . }}
+  {{ end }}
+</head>
+<body class="bg-white">
+  <div class="max-w-screen-sm mx-auto px-4">
+  {{ block "header" . }}{{ end }}
+    <main class="main w-full bg-white">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+</body>
+</html>

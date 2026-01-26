@@ -1,8 +1,28 @@
 {
-  "count": 32,
+  "count": 33,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 582,
+      "url": "https://www.minnpost.com/cityscape/2026/01/rules-of-the-road-are-at-the-center-of-the-ice-occupation-and-resistance/",
+      "title": "Rules of the road are at the center of ICE occupation, resistance",
+      "description": "Whenever the ICE occupation finally ends — and it’s no longer necessary to track agents with cars — laws must be enforced.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260124145643/https://www.minnpost.com/cityscape/2026/01/rules-of-the-road-are-at-the-center-of-the-ice-occupation-and-resistance/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_minnpost_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/3f1334513412a19451d7f3fa1ee632f5.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "ICE"
+      ],
+      "date_added": "2026-01-24T14:56:43.183819Z",
+      "date_modified": "2026-01-24T14:56:43.183828Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 581,
       "url": "https://www.reddit.com/r/pics/comments/1ql4mg4/oc_thousands_rally_against_ice_in_minneapolis/",
