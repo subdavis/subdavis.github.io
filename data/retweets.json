@@ -1,8 +1,28 @@
 {
-  "count": 33,
+  "count": 34,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 583,
+      "url": "https://www.usatoday.com/story/opinion/voices/2026/01/26/ice-detained-us-citizens-minnesota-arrests/88304880007/",
+      "title": "I tried to warn neighbors about ICE. Then agents attacked me.",
+      "description": "One ICE agent, apparently referring to Renee Good, said, 'You guys gotta stop obstructing us — that's why that lesbian b---- is dead.'",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260127180307/https://www.usatoday.com/story/opinion/voices/2026/01/26/ice-detained-us-citizens-minnesota-arrests/88304880007/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_usatoday_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/fb619fa3af60c2ca10b23c6fc789931d.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "ICE"
+      ],
+      "date_added": "2026-01-27T18:03:07.399175Z",
+      "date_modified": "2026-01-27T18:03:07.399187Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 582,
       "url": "https://www.minnpost.com/cityscape/2026/01/rules-of-the-road-are-at-the-center-of-the-ice-occupation-and-resistance/",
