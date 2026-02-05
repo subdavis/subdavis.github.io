@@ -1,8 +1,28 @@
 {
-  "count": 34,
+  "count": 35,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 586,
+      "url": "https://waxahatchee.bandcamp.com/album/tigers-blood",
+      "title": "Tigers Blood | Waxahatchee",
+      "description": "Tigers Blood by Waxahatchee, released 22 March 2024\n\n1. 3 Sisters\n2. Evil Spawn\n3. Ice Cold\n4. Right Back to It\n5. Burns Out at Midnight\n6. Bored\n7. Lone Star Lake\n8. Crimes of the Heart\n9. Crowbar\n10. 365\n11. The Wolves\n12. Tigers Blood",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260205151052/https://waxahatchee.bandcamp.com/album/tigers-blood",
+      "favicon_url": "https://links.subdavis.com/static/https_waxahatchee_bandcamp_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/1a1dba20da4644fefa7e824a0053d3fd.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Music"
+      ],
+      "date_added": "2026-02-05T15:10:52.238742Z",
+      "date_modified": "2026-02-05T15:10:52.238748Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 583,
       "url": "https://www.usatoday.com/story/opinion/voices/2026/01/26/ice-detained-us-citizens-minnesota-arrests/88304880007/",
