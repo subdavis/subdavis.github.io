@@ -76,12 +76,28 @@
             background: #f0f4ff;
         }
 
+        .location-item.touch-dragging {
+            opacity: 0.3;
+        }
+
+        .drag-clone {
+            position: fixed;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
         .drag-handle {
             color: #999;
             font-size: 20px;
             cursor: grab;
             user-select: none;
             line-height: 1;
+            touch-action: none;
+            padding: 8px;
+            margin: -8px;
         }
 
         .drag-handle:active {
@@ -186,6 +202,15 @@
         const MAX_LOCATIONS = 8;
         let draggedElement = null;
 
+        // Touch drag state
+        let touchDragState = {
+            element: null,
+            clone: null,
+            startY: 0,
+            currentY: 0,
+            offsetY: 0
+        };
+
         // Initialize the app
         function init() {
             renderLocationInputs();
@@ -224,12 +249,16 @@
                 >
             `;
 
-            // Add drag and drop event listeners
+            // Add drag and drop event listeners (mouse)
             div.addEventListener('dragstart', handleDragStart);
             div.addEventListener('dragend', handleDragEnd);
             div.addEventListener('dragover', handleDragOver);
             div.addEventListener('drop', handleDrop);
             div.addEventListener('dragleave', handleDragLeave);
+
+            // Add touch event listeners to drag handle
+            const dragHandle = div.querySelector('.drag-handle');
+            dragHandle.addEventListener('touchstart', handleTouchStart, { passive: false });
 
             // Add input change listener for auto-save
             const input = div.querySelector('.location-input');
@@ -301,6 +330,124 @@
             }
 
             return false;
+        }
+
+        // Touch event handlers for better mobile experience
+        function handleTouchStart(e) {
+            // Get the location item (parent of drag handle)
+            const locationItem = e.target.closest('.location-item');
+            if (!locationItem) return;
+
+            // Store the touch start position
+            const touch = e.touches[0];
+            touchDragState.element = locationItem;
+            touchDragState.startY = touch.clientY;
+            touchDragState.currentY = touch.clientY;
+
+            // Calculate offset from top of element
+            const rect = locationItem.getBoundingClientRect();
+            touchDragState.offsetY = touch.clientY - rect.top;
+
+            // Create visual clone
+            const clone = locationItem.cloneNode(true);
+            clone.classList.add('drag-clone');
+            clone.style.width = rect.width + 'px';
+            clone.style.left = rect.left + 'px';
+            clone.style.top = rect.top + 'px';
+            document.body.appendChild(clone);
+            touchDragState.clone = clone;
+
+            // Add dragging class to original
+            locationItem.classList.add('touch-dragging');
+
+            // Add global touch event listeners
+            document.addEventListener('touchmove', handleTouchMove, { passive: false });
+            document.addEventListener('touchend', handleTouchEnd);
+            document.addEventListener('touchcancel', handleTouchEnd);
+
+            // Prevent default to avoid scrolling
+            e.preventDefault();
+        }
+
+        function handleTouchMove(e) {
+            if (!touchDragState.element || !touchDragState.clone) return;
+
+            const touch = e.touches[0];
+            touchDragState.currentY = touch.clientY;
+
+            // Move the clone
+            const newTop = touch.clientY - touchDragState.offsetY;
+            touchDragState.clone.style.top = newTop + 'px';
+
+            // Find the element under the touch point
+            touchDragState.clone.style.pointerEvents = 'none';
+            const elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
+            touchDragState.clone.style.pointerEvents = 'auto';
+
+            // Find the closest location item
+            const targetItem = elementBelow?.closest('.location-item');
+
+            // Remove drag-over from all items
+            document.querySelectorAll('.location-item').forEach(item => {
+                item.classList.remove('drag-over');
+            });
+
+            // Add drag-over to target if it's different from dragged element
+            if (targetItem && targetItem !== touchDragState.element) {
+                targetItem.classList.add('drag-over');
+            }
+
+            // Prevent scrolling while dragging
+            e.preventDefault();
+        }
+
+        function handleTouchEnd(e) {
+            if (!touchDragState.element) return;
+
+            // Find the element at the touch end position
+            const touch = e.changedTouches[0];
+            touchDragState.clone.style.pointerEvents = 'none';
+            const elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
+            const targetItem = elementBelow?.closest('.location-item');
+
+            // Perform the swap if we have a valid target
+            if (targetItem && targetItem !== touchDragState.element) {
+                const values = getAllLocationValues();
+                const draggedIndex = parseInt(touchDragState.element.dataset.index);
+                const targetIndex = parseInt(targetItem.dataset.index);
+
+                [values[draggedIndex], values[targetIndex]] = [values[targetIndex], values[draggedIndex]];
+                setAllLocationValues(values);
+                saveToLocalStorage();
+            }
+
+            // Clean up
+            if (touchDragState.clone) {
+                touchDragState.clone.remove();
+            }
+
+            if (touchDragState.element) {
+                touchDragState.element.classList.remove('touch-dragging');
+            }
+
+            // Remove drag-over from all items
+            document.querySelectorAll('.location-item').forEach(item => {
+                item.classList.remove('drag-over');
+            });
+
+            // Remove global listeners
+            document.removeEventListener('touchmove', handleTouchMove);
+            document.removeEventListener('touchend', handleTouchEnd);
+            document.removeEventListener('touchcancel', handleTouchEnd);
+
+            // Reset state
+            touchDragState = {
+                element: null,
+                clone: null,
+                startY: 0,
+                currentY: 0,
+                offsetY: 0
+            };
         }
 
         // Get all location values from inputs
