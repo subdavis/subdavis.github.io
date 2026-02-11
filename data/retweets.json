@@ -1,8 +1,28 @@
 {
-  "count": 36,
+  "count": 37,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 588,
+      "url": "https://www.reddit.com/r/ezraklein/comments/1r11emh/bart_in_san_francisco_added_hardened_fare_gates/",
+      "title": "BART in San Francisco added hardened fare gates and added over $10M in revenue and dramatically reduced maintenance issues. : r/ezraklein",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260211034158/https://www.reddit.com/r/ezraklein/comments/1r11emh/bart_in_san_francisco_added_hardened_fare_gates/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_reddit_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Politics"
+      ],
+      "date_added": "2026-02-11T03:41:58.854250Z",
+      "date_modified": "2026-02-11T03:41:58.854260Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 587,
       "url": "https://techoversight.org/2026/01/25/top-report-mdl-jan-25/",
