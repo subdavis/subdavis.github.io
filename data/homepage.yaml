@@ -12,7 +12,7 @@ projects:
     text: "kobodl is a command-line tool and web service to download and remove DRM from books purchased from kobo.com. I forked it from another project to add audiobook support, multi-user support, a web interface, and create proper distribution packages with pypi and docker."
 
   - title: "RSS Glue"
-    subtitle: "Python, Click"
+    subtitle: "Python, FastAPI"
     img: "glue-200w.webp"
     text: "Frustrated with inflexible and flaky RSS digest services, I made my own flaky one. RSS Glue can take arbitrary chronological feeds and merge, digest, filter, and transform them into whatever you like."
     href: "https://github.com/subdavis/rss-glue"
