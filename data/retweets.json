@@ -1,8 +1,26 @@
 {
-  "count": 37,
+  "count": 38,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 593,
+      "url": "https://www.fast.ai/posts/2026-01-28-dark-flow/",
+      "title": "Breaking the Spell of Vibe Coding – fast.ai",
+      "description": "Sinister variations on the positive state of flow",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260215054034/https://www.fast.ai/posts/2026-01-28-dark-flow/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_fast_ai.png",
+      "preview_image_url": "https://links.subdavis.com/static/238db68e1560524f32309a576a62fe40.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2026-02-15T05:40:34.762365Z",
+      "date_modified": "2026-02-15T05:40:34.762374Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 588,
       "url": "https://www.reddit.com/r/ezraklein/comments/1r11emh/bart_in_san_francisco_added_hardened_fare_gates/",
