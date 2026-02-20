@@ -1,8 +1,49 @@
 {
-  "count": 39,
+  "count": 41,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 599,
+      "url": "https://mintcitylights.com/2026/02/02/genai-and-hp/",
+      "title": "I feel about generative AI the same way I feel about Harry Potter | mint city lights",
+      "description": "I feel about generative AI the same way I feel about Harry Potter, which is that I personally don’t wish to have anything to do with them, but I also feel th...",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260220141000/https://mintcitylights.com/2026/02/02/genai-and-hp/",
+      "favicon_url": "https://links.subdavis.com/static/https_mintcitylights_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/67e9bcdf95c2e1cffc74ff7f62e89fb5.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-02-20T14:10:00.510426Z",
+      "date_modified": "2026-02-20T14:10:00.510434Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 597,
+      "url": "https://kevquirk.com/kids-and-smartphones",
+      "title": "Kids and Smartphones - Kev Quirk",
+      "description": "We recently gave my oldest son his first phone, and it's really concerning me already.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260220135503/https://kevquirk.com/kids-and-smartphones",
+      "favicon_url": "https://links.subdavis.com/static/https_kevquirk_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/1ec3ca96c244df7b45586d642f51da9b.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Calm",
+        "Tech"
+      ],
+      "date_added": "2026-02-20T13:55:03.277168Z",
+      "date_modified": "2026-02-20T13:55:03.277178Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 596,
       "url": "https://streets.mn/2026/02/17/the-business-of-building-data-centers/",
