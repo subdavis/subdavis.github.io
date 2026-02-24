@@ -1,8 +1,29 @@
 {
-  "count": 41,
+  "count": 42,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 602,
+      "url": "https://fortune.com/2026/02/21/laptops-tablets-schools-gen-z-less-cognitively-capable-parents-first-time-cellphone-bans-standardized-test-scores/",
+      "title": "The U.S. spent $30 billion to ditch textbooks for laptops and tablets",
+      "description": "Neuroscientist Jared Cooney Horvath said older generations “screwed up” giving students access to so much technology: “I genuinely hope Gen Z quickly figures that out and gets mad.”",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260223161652/https://fortune.com/2026/02/21/laptops-tablets-schools-gen-z-less-cognitively-capable-parents-first-time-cellphone-bans-standardized-test-scores/",
+      "favicon_url": "https://links.subdavis.com/static/https_fortune_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/4a88bfa75cf1d2f13b5c7c99e0e38454.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Education",
+        "Tech"
+      ],
+      "date_added": "2026-02-23T16:16:52.073773Z",
+      "date_modified": "2026-02-23T16:17:12.946413Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 599,
       "url": "https://mintcitylights.com/2026/02/02/genai-and-hp/",
