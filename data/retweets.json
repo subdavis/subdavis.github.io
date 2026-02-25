@@ -1,8 +1,28 @@
 {
-  "count": 42,
+  "count": 43,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 604,
+      "url": "https://spectrum.ieee.org/age-verification",
+      "title": "Is Age Verification a Trap? - IEEE Spectrum",
+      "description": "Age verification is forcing companies to undermine data privacy laws.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260224142346/https://spectrum.ieee.org/age-verification",
+      "favicon_url": "https://links.subdavis.com/static/https_spectrum_ieee_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/bdb351474b37c0cb37607bc9fea256c3.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Tech"
+      ],
+      "date_added": "2026-02-24T14:23:46.099811Z",
+      "date_modified": "2026-02-24T14:23:46.099817Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 602,
       "url": "https://fortune.com/2026/02/21/laptops-tablets-schools-gen-z-less-cognitively-capable-parents-first-time-cellphone-bans-standardized-test-scores/",
