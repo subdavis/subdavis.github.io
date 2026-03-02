@@ -1,8 +1,29 @@
 {
-  "count": 43,
+  "count": 44,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 607,
+      "url": "https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html",
+      "title": "MCP is dead. Long live the CLI",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260302042756/https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html",
+      "favicon_url": "https://links.subdavis.com/static/https_ejholmes_github_io.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI",
+        "MCP"
+      ],
+      "date_added": "2026-03-02T04:27:56.916354Z",
+      "date_modified": "2026-03-02T04:27:56.916363Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 604,
       "url": "https://spectrum.ieee.org/age-verification",
