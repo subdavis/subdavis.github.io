@@ -5,8 +5,6 @@ description: Mixing claude with procedural code beyond one-shot i/o.
 images: ["topreventwar.jpg"]
 ---
 
-![Claude Code](./claude.webp)
-
 I've been using claude code on and off since it launched a year ago. Since the Christmas holiday, it seems [a ton of folks outside the software industry have discovered it](https://www.theargumentmag.com/p/i-cant-stop-yelling-at-claude-code) as well.
 
 Despite its popularity, I've seen almost no discussion of Claude Code SDK. It's essentially a typescript or [python](https://platform.claude.com/docs/en/agent-sdk/python) wrapper to the agent harness that allows you to fully manage the handoff between agentic and procedural parts of an application.
@@ -116,18 +114,6 @@ for _ in range(max_turns):
 
 You'd miss it in the `beta.tool_runner` wrapper, but tool use blocks append to an ever-growing `messages` array that gets fed back into the client every turn.
 
-**Thats exactly how claude code works**, and its why the SDK token use grows exponentially by turn.
-
-## A working project
-
-If you don't mind the mess, [here's a real project for updating a Google Calendar based on the posts from an RSS stream.](https://github.com/subdavis/bikegroups-org-calendar/blob/main/calendar_sync/claude.py)
-
-When a post announces an upcoming event, the agent has 4 tools:
-
-* `get_images`
-* `search_events_by_date`
-* `search_events_by_keyword`
-* `submit_decision`
 
 ## Takeaway
 
