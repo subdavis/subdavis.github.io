@@ -1,8 +1,28 @@
 {
-  "count": 44,
+  "count": 45,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 608,
+      "url": "https://open.substack.com/pub/matthewyglesias/p/who-really-saved-the-whales?utm_campaign=post-expanded-share&utm_medium=web",
+      "title": "Who really saved the whales?  - by Matthew Yglesias",
+      "description": "The multiple lives and deaths of the commercial whaling industry",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260302145517/https://open.substack.com/pub/matthewyglesias/p/who-really-saved-the-whales?utm_campaign=post-expanded-share&utm_medium=web",
+      "favicon_url": "https://links.subdavis.com/static/https_open_substack_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Economy"
+      ],
+      "date_added": "2026-03-02T14:55:17.787326Z",
+      "date_modified": "2026-03-07T22:02:59.259638Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 607,
       "url": "https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html",
