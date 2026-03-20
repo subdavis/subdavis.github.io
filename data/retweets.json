@@ -1,8 +1,48 @@
 {
-  "count": 46,
+  "count": 48,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 612,
+      "url": "https://www.youtube.com/watch%3Fv%3D0L4g8AbfLTM",
+      "title": "Why Free Transit Is A Bad Idea (In Most Cities) - YouTube",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260319220510/https://www.youtube.com/watch%3Fv%3D0L4g8AbfLTM",
+      "favicon_url": "https://links.subdavis.com/static/https_www_youtube_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Urbanism"
+      ],
+      "date_added": "2026-03-19T22:05:10.009031Z",
+      "date_modified": "2026-03-19T22:05:10.009038Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 611,
+      "url": "https://www.pew.org/en/research-and-analysis/articles/2026/03/18/austins-surge-of-new-housing-construction-drove-down-rents",
+      "title": "Austin’s Surge of New Housing Construction Drove Down Rents",
+      "description": "After decades of explosive growth, Austin, Texas, in the 2010s was a victim of its own success. Lured by high-tech jobs and the city’s hip reputation, too many people were competing for too few homes. From 2010 to 2019, rents in Austin increased nearly 93%—more than in any other major American city. And home sale prices increased 82%, more than in any other metro area in Texas.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260319130635/https://www.pew.org/en/research-and-analysis/articles/2026/03/18/austins-surge-of-new-housing-construction-drove-down-rents",
+      "favicon_url": "https://links.subdavis.com/static/https_www_pew_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/bcf8c98db826b57562f7948eb67be3e1.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Housing"
+      ],
+      "date_added": "2026-03-19T13:06:35.603304Z",
+      "date_modified": "2026-03-19T13:06:35.603312Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 609,
       "url": "https://karpathy.ai/jobs/",
