@@ -1,8 +1,28 @@
 {
-  "count": 49,
+  "count": 50,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 614,
+      "url": "https://www.quantamagazine.org/the-jellies-that-evolved-a-different-way-to-keep-time-20260320/",
+      "title": "The Jellies That Evolved a Different Way To Keep Time | Quanta Magazine",
+      "description": "Off the coast of Japan, biologists netted a pea-size jellyfish with an unusual circadian clock — a chance finding that suggests there are likely more overlooked biological timekeeping mechanisms to be discovered.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260322141429/https://www.quantamagazine.org/the-jellies-that-evolved-a-different-way-to-keep-time-20260320/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_quantamagazine_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/302efc701358a4cdd9be5fe6744b65aa.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Science"
+      ],
+      "date_added": "2026-03-22T14:14:29.303442Z",
+      "date_modified": "2026-03-22T14:14:29.303452Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 613,
       "url": "https://portlandtribune.com/2026/03/18/oregon-school-cell-phone-ban-engaged-students-joyful-teachers/",
