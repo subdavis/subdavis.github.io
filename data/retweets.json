@@ -1,8 +1,28 @@
 {
-  "count": 52,
+  "count": 53,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 621,
+      "url": "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
+      "title": "I Read the Claude Code Source Code. Here's Everything You Can Configure That the Docs Don't Tell You.",
+      "description": "Hook fields that rewrite commands mid-flight, persistent agent memory, auto-mode rules in plain English, self-improving dream loops, and every example is copy-paste ready.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260402041140/https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
+      "favicon_url": "https://links.subdavis.com/static/https_buildingbetter_tech.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/a993f9d5edf15a12e21a6473f1e14e92.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-04-02T04:11:40.615067Z",
+      "date_modified": "2026-04-02T04:11:40.615076Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 617,
       "url": "https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html",
