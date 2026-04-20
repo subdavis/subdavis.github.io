@@ -1,8 +1,28 @@
 {
-  "count": 54,
+  "count": 55,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 632,
+      "url": "https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
+      "title": "Traders placed over $1bn in perfectly timed bets on the Iran war. What is going on?",
+      "description": "Suspicious wagers on the US-Israel war in Iran are creating huge windfalls and raising concerns among lawmakers",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260419133519/https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theguardian_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/301fe83f2c613631142dedf2e97e3aaa.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Politics"
+      ],
+      "date_added": "2026-04-19T13:35:19.817180Z",
+      "date_modified": "2026-04-19T13:35:19.817188Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 627,
       "url": "https://www.owlsnearme.com/%3Flat%3D44.991%26lng%3D-93.257",
