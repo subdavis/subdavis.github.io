@@ -1,8 +1,26 @@
 {
-  "count": 55,
+  "count": 56,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 634,
+      "url": "https://www.nytimes.com/2026/04/17/dining/carleton-college-minnesota-cookie-house.html?unlocked_article_code=1.c1A.KTDv.ueIkEINhadsO&smid=nytcore-ios-share",
+      "title": "Other Colleges Have Frat Houses. This One Has a Cookie House.",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260422135043/https://www.nytimes.com/2026/04/17/dining/carleton-college-minnesota-cookie-house.html?unlocked_article_code=1.c1A.KTDv.ueIkEINhadsO&smid=nytcore-ios-share",
+      "favicon_url": "https://links.subdavis.com/static/https_www_nytimes_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2026-04-22T13:50:43.981027Z",
+      "date_modified": "2026-04-22T13:50:43.981033Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 632,
       "url": "https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
