@@ -1,18 +1,16 @@
 ---
-title: Cache busting Hono CSS
+title: Cache busting Hono CSS for Cloudflare Workers
 date: 2026-04-25
 description: Without a(nother) build tool.
 ---
 
-[https://hono.dev/](https://hono.dev/) is a lot of fun to use, in large part due to the simplicity of the tooling. It feels a bit like writing one-file-per-page web applications in PHP or python and dropping them on a web server somewhere. I used to do this in ~2012 when I was just learning to code.
+[Hono JS](https://hono.dev/) is a barebones framework I've used on projects recently to write server side JSX.
 
-Hono apps are just server-side JSX. I run some apps on cloudflare workers with wrangler, which opaquely wraps esbuild at deploy time.
-
-You can bundle along any static assets you like and ship them to be served alongside your worker app, but these are not esbuild artifacts and are never touched by a built tool.
+You can bundle any static assets you like and ship them to be served alongside your worker app, but these are not esbuild artifacts and are never touched by a build tool.
 
 **There is no cache busting**, so I made my own simple pre-build step to add file hashes.
 
-My only point in jotting this down is that you don't necessarily need to adopt Vite or Webpack for small capabilities like this, or understand the depths of Clouflare cache controls. You can be confident that this just works.
+My only point in jotting this down is that you don't necessarily need to adopt Vite or Webpack for small capabilities like this, or understand the depths of Clouflare cache controls.
 
 ## `scripts/build-css.sh`
 
