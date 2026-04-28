@@ -1,8 +1,28 @@
 {
-  "count": 56,
+  "count": 57,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 636,
+      "url": "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/",
+      "title": "What if you don't need MCP at all?",
+      "description": "Got Bash and some code interpreter? Skip MCP.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260427221710/https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/",
+      "favicon_url": "https://links.subdavis.com/static/https_mariozechner_at.png",
+      "preview_image_url": "https://links.subdavis.com/static/7fba17cb66012fdf5e320fe76e9e3c2f.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-04-27T22:17:10.510661Z",
+      "date_modified": "2026-04-27T22:17:10.510671Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 634,
       "url": "https://www.nytimes.com/2026/04/17/dining/carleton-college-minnesota-cookie-house.html?unlocked_article_code=1.c1A.KTDv.ueIkEINhadsO&smid=nytcore-ios-share",
