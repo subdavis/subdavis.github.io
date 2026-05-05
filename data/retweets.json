@@ -1,8 +1,28 @@
 {
-  "count": 57,
+  "count": 58,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 641,
+      "url": "https://jvns.ca/blog/2026/05/02/testing-vue-components-in-the-browser/",
+      "title": "Testing Vue components in the browser",
+      "description": "from Julia Evans",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260504220930/https://jvns.ca/blog/2026/05/02/testing-vue-components-in-the-browser/",
+      "favicon_url": "https://links.subdavis.com/static/https_jvns_ca.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Code"
+      ],
+      "date_added": "2026-05-04T22:09:30.042518Z",
+      "date_modified": "2026-05-04T22:09:30.042527Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 636,
       "url": "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/",
