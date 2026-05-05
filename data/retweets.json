@@ -1,8 +1,246 @@
 {
-  "count": 45,
+  "count": 57,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 636,
+      "url": "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/",
+      "title": "What if you don't need MCP at all?",
+      "description": "Got Bash and some code interpreter? Skip MCP.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260427221710/https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/",
+      "favicon_url": "https://links.subdavis.com/static/https_mariozechner_at.png",
+      "preview_image_url": "https://links.subdavis.com/static/7fba17cb66012fdf5e320fe76e9e3c2f.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-04-27T22:17:10.510661Z",
+      "date_modified": "2026-04-27T22:17:10.510671Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 634,
+      "url": "https://www.nytimes.com/2026/04/17/dining/carleton-college-minnesota-cookie-house.html?unlocked_article_code=1.c1A.KTDv.ueIkEINhadsO&smid=nytcore-ios-share",
+      "title": "Other Colleges Have Frat Houses. This One Has a Cookie House.",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260422135043/https://www.nytimes.com/2026/04/17/dining/carleton-college-minnesota-cookie-house.html?unlocked_article_code=1.c1A.KTDv.ueIkEINhadsO&smid=nytcore-ios-share",
+      "favicon_url": "https://links.subdavis.com/static/https_www_nytimes_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2026-04-22T13:50:43.981027Z",
+      "date_modified": "2026-04-22T13:50:43.981033Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 632,
+      "url": "https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
+      "title": "Traders placed over $1bn in perfectly timed bets on the Iran war. What is going on?",
+      "description": "Suspicious wagers on the US-Israel war in Iran are creating huge windfalls and raising concerns among lawmakers",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260419133519/https://www.theguardian.com/world/2026/apr/18/iran-war-bets-ethics-concerns",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theguardian_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/301fe83f2c613631142dedf2e97e3aaa.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Politics"
+      ],
+      "date_added": "2026-04-19T13:35:19.817180Z",
+      "date_modified": "2026-04-19T13:35:19.817188Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 627,
+      "url": "https://www.owlsnearme.com/%3Flat%3D44.991%26lng%3D-93.257",
+      "title": "Owls near Hennepin",
+      "description": "Look at owls near you",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260404140522/https://www.owlsnearme.com/%3Flat%3D44.991%26lng%3D-93.257",
+      "favicon_url": "https://links.subdavis.com/static/https_www_owlsnearme_com.jpg",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Nature"
+      ],
+      "date_added": "2026-04-04T14:05:22.969455Z",
+      "date_modified": "2026-04-04T14:05:22.969464Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 621,
+      "url": "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
+      "title": "I Read the Claude Code Source Code. Here's Everything You Can Configure That the Docs Don't Tell You.",
+      "description": "Hook fields that rewrite commands mid-flight, persistent agent memory, auto-mode rules in plain English, self-improving dream loops, and every example is copy-paste ready.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260402041140/https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
+      "favicon_url": "https://links.subdavis.com/static/https_buildingbetter_tech.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/a993f9d5edf15a12e21a6473f1e14e92.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-04-02T04:11:40.615067Z",
+      "date_modified": "2026-04-02T04:11:40.615076Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 617,
+      "url": "https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html",
+      "title": "Meta and YouTube Found Negligent in Landmark Social Media Addiction Case",
+      "description": "A jury found the companies harmed a young user with design features that were addictive and led to her mental health distress.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260326195757/https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html",
+      "favicon_url": "https://links.subdavis.com/static/https_www_nytimes_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Social-Media"
+      ],
+      "date_added": "2026-03-26T19:57:57.687507Z",
+      "date_modified": "2026-03-26T19:58:06.962096Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 615,
+      "url": "https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees",
+      "title": "Meta AI agent’s instruction causes large sensitive data leak to employees | AI (artificial intelligence) | The Guardian",
+      "description": "Artificial intelligence agent instructed engineer to take actions that exposed user and company data internally",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260323135601/https://www.theguardian.com/technology/2026/mar/20/meta-ai-agents-instruction-causes-large-sensitive-data-leak-to-employees",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theguardian_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/0f5090b005e590317b0150f3efcf31b9.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Social-Media"
+      ],
+      "date_added": "2026-03-23T13:56:01.025057Z",
+      "date_modified": "2026-03-23T13:56:01.025066Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 614,
+      "url": "https://www.quantamagazine.org/the-jellies-that-evolved-a-different-way-to-keep-time-20260320/",
+      "title": "The Jellies That Evolved a Different Way To Keep Time | Quanta Magazine",
+      "description": "Off the coast of Japan, biologists netted a pea-size jellyfish with an unusual circadian clock — a chance finding that suggests there are likely more overlooked biological timekeeping mechanisms to be discovered.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260322141429/https://www.quantamagazine.org/the-jellies-that-evolved-a-different-way-to-keep-time-20260320/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_quantamagazine_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/302efc701358a4cdd9be5fe6744b65aa.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Science"
+      ],
+      "date_added": "2026-03-22T14:14:29.303442Z",
+      "date_modified": "2026-03-22T14:14:29.303452Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 613,
+      "url": "https://portlandtribune.com/2026/03/18/oregon-school-cell-phone-ban-engaged-students-joyful-teachers/",
+      "title": "Oregon School Cell Phone Ban: ‘Engaged students, joyful teachers’ | The Portland Tribune",
+      "description": "There was plenty of uncertainty and debate about the effectiveness of a cell phone ban decreed by executive order last summer.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260321145416/https://portlandtribune.com/2026/03/18/oregon-school-cell-phone-ban-engaged-students-joyful-teachers/",
+      "favicon_url": "https://links.subdavis.com/static/https_portlandtribune_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/edee00416e7a74f6cb9371bd91656706.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Education"
+      ],
+      "date_added": "2026-03-21T14:54:16.895819Z",
+      "date_modified": "2026-03-21T14:54:16.895828Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 612,
+      "url": "https://www.youtube.com/watch%3Fv%3D0L4g8AbfLTM",
+      "title": "Why Free Transit Is A Bad Idea (In Most Cities) - YouTube",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260319220510/https://www.youtube.com/watch%3Fv%3D0L4g8AbfLTM",
+      "favicon_url": "https://links.subdavis.com/static/https_www_youtube_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Urbanism"
+      ],
+      "date_added": "2026-03-19T22:05:10.009031Z",
+      "date_modified": "2026-03-19T22:05:10.009038Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 611,
+      "url": "https://www.pew.org/en/research-and-analysis/articles/2026/03/18/austins-surge-of-new-housing-construction-drove-down-rents",
+      "title": "Austin’s Surge of New Housing Construction Drove Down Rents",
+      "description": "After decades of explosive growth, Austin, Texas, in the 2010s was a victim of its own success. Lured by high-tech jobs and the city’s hip reputation, too many people were competing for too few homes. From 2010 to 2019, rents in Austin increased nearly 93%—more than in any other major American city. And home sale prices increased 82%, more than in any other metro area in Texas.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260319130635/https://www.pew.org/en/research-and-analysis/articles/2026/03/18/austins-surge-of-new-housing-construction-drove-down-rents",
+      "favicon_url": "https://links.subdavis.com/static/https_www_pew_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/bcf8c98db826b57562f7948eb67be3e1.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Housing"
+      ],
+      "date_added": "2026-03-19T13:06:35.603304Z",
+      "date_modified": "2026-03-19T13:06:35.603312Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 609,
+      "url": "https://karpathy.ai/jobs/",
+      "title": "US Job Market Visualizer",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260318022312/https://karpathy.ai/jobs/",
+      "favicon_url": "https://links.subdavis.com/static/https_karpathy_ai.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Economy"
+      ],
+      "date_added": "2026-03-18T02:23:12.122409Z",
+      "date_modified": "2026-03-18T02:23:12.122415Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 608,
       "url": "https://open.substack.com/pub/matthewyglesias/p/who-really-saved-the-whales?utm_campaign=post-expanded-share&utm_medium=web",
