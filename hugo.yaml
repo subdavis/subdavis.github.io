@@ -15,6 +15,7 @@ outputs:
 params:
   author: "Brandon Davis"
   email: "brandon<span style=\"display:none;\">@gmail.com</span>@subdavis.com"
+  description: "is a professional frontend developer, amateur cyclist, tinkerer, sometimes-sewist, and open-source enthusiast living in Minneapolis."
   github: "subdavis"
   twitter: "subdavis"
   linkedin: "subdavis"

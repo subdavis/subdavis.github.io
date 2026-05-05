@@ -1,8 +1,9 @@
-<div id="links" class="inline-flex flex-row text-xs items-center text-accent-4 gap-2">
+<div id="links" class="inline-flex flex-row text-sm items-center text-accent-4 gap-4">
   <a
     href="https://github.com/{{ .Site.Params.github }}"
     aria-label="GitHub"
     rel="me authn"
+    title="GitHub"
   >
     <svg class="inline-block w-5 h-5" fill="currentColor" viewBox="0 0 496 512">
       <path
@@ -10,13 +11,14 @@
       />
     </svg>
   </a>
-  <a href="https://bandcamp.com/{{ .Site.Params.bandcamp }}" aria-label="Bandcamp" rel="me">
+  <a href="https://bandcamp.com/{{ .Site.Params.bandcamp }}" aria-label="Bandcamp" rel="me" title="Bandcamp">
     <img src="img/bandcamp.svg" class="inline-block w-5 h-5" alt="Bandcamp">
   </a>
   <a
     href="https://www.goodreads.com/user/show/{{ .Site.Params.goodreads }}"
     aria-label="Goodreads"
     rel="me"
+    title="Goodreads"
   >
     <svg class="inline-block w-5 h-5" fill="currentColor" viewBox="0 0 448 512">
       <path
@@ -25,7 +27,6 @@
     </svg>
   </a>
   {{ partial "rss.html" (dict "showText" false) }}
-
 </div>
 
 <style>
