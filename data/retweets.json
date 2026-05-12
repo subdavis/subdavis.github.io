@@ -1,8 +1,50 @@
 {
-  "count": 58,
+  "count": 60,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 646,
+      "url": "https://www.seangoedecke.com/software-engineering-may-no-longer-be-a-lifetime-career/",
+      "title": "Software engineering may no longer be a lifetime career",
+      "description": "I had a calm tag, so I figured a panic tag would be appropriate (/s)",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260512040519/https://www.seangoedecke.com/software-engineering-may-no-longer-be-a-lifetime-career/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_seangoedecke_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/2c65b665e51829f8af77bd2492490d26.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI",
+        "Panic"
+      ],
+      "date_added": "2026-05-12T04:05:19.873996Z",
+      "date_modified": "2026-05-12T04:05:19.874006Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 644,
+      "url": "https://www.theatlantic.com/ideas/2026/05/waymo-self-driving-cars/687119/?gift=N6VJQ5Ef0ESNkHkE7y_yM20S4h1RaJA19tqyAX0cYTk",
+      "title": "Save the Taxi Drivers - The Atlantic",
+      "description": "I don’t normally comment on my shared links, but this one was included because of outstandingly poor reasoning.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260512000301/https://www.theatlantic.com/ideas/2026/05/waymo-self-driving-cars/687119/?gift=N6VJQ5Ef0ESNkHkE7y_yM20S4h1RaJA19tqyAX0cYTk",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theatlantic_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/aa3fde0bf689d6b2bc1a0b6032d308f0.gif",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI",
+        "Urbanism"
+      ],
+      "date_added": "2026-05-12T00:03:01.877995Z",
+      "date_modified": "2026-05-12T00:05:03.573439Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 641,
       "url": "https://jvns.ca/blog/2026/05/02/testing-vue-components-in-the-browser/",
