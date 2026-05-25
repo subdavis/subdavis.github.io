@@ -1,8 +1,28 @@
 {
-  "count": 60,
+  "count": 61,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 648,
+      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      "title": "Microsoft reports expose AI's cost problem: The tech is more expensive than paying human employees | Fortune",
+      "description": "Companies are racing to incentivize employees to use AI. But as some companies are finding, the more employees that use the technology, the heavier the bill.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260524160843/https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      "favicon_url": "https://links.subdavis.com/static/https_fortune_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/c7386975544961a2be052125f38b81aa.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-05-24T16:08:43.004570Z",
+      "date_modified": "2026-05-24T16:08:43.004579Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 646,
       "url": "https://www.seangoedecke.com/software-engineering-may-no-longer-be-a-lifetime-career/",
