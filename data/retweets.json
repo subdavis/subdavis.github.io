@@ -1,8 +1,26 @@
 {
-  "count": 61,
+  "count": 62,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 652,
+      "url": "https://www.noahpinion.blog/p/the-way-we-treat-pigs-is-a-sin",
+      "title": "The way we treat pigs is a sin - by Noah Smith",
+      "description": "The practice of \"crating\" is torture, plain and simple. Voters want to end it, but Congress might not let them.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260601221112/https://www.noahpinion.blog/p/the-way-we-treat-pigs-is-a-sin",
+      "favicon_url": "https://links.subdavis.com/static/https_www_noahpinion_blog.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/1a5b80538bcd175c03a5fadc95289d85.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2026-06-01T22:11:12.759636Z",
+      "date_modified": "2026-06-01T22:11:12.759642Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 648,
       "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
