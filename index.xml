@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Cache busting Hono CSS for Cloudflare Workers</title><link>https://subdavis.com/posts/2026-04-cache-busting-hono/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2026-04-cache-busting-hono/</guid><description>Without a(nother) build tool.</description><content:encoded>&lt;p&gt;&lt;a href="https://hono.dev/"&gt;Hono JS&lt;/a&gt; is a barebones framework I&amp;rsquo;ve used on projects recently to write server side JSX.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Brandon Davis</title><link>https://subdavis.com/</link><description>Recent content on Brandon Davis</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 20 Jul 2026 22:00:00 +0000</lastBuildDate><atom:link href="https://subdavis.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Paperless-ngx via MCP with Claude or ChatGPT</title><link>https://subdavis.com/posts/2026-07-22-paperless-ai/</link><pubDate>Mon, 20 Jul 2026 22:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2026-07-22-paperless-ai/</guid><description>A fast path to a functioning OAuth 2.0 compatible paperless connector</description><content:encoded>&lt;p&gt;&lt;img src="./paperless-mcp.png" alt="Paperless NGX in Claude"&gt;&lt;/p&gt;
+&lt;p&gt;I recently got my documents in order with &lt;a href="https://docs.paperless-ngx.com/"&gt;Paperless-NGX&lt;/a&gt;. It&amp;rsquo;s been on my todo list for years, but I mistakenly believed I would need a document scanner to make effective use of Paperless. Not so! Mobile camera scanning is pretty good, and so far I prefer the &lt;a href="https://www.quickscanapp.com/"&gt;QuickScan&lt;/a&gt; app.&lt;/p&gt;
+&lt;p&gt;Almost immediately, I wanted an MCP connector. There are over &lt;a href="https://github.com/search?q=paperless%20mcp&amp;amp;type=repositories"&gt;50 of them on github&lt;/a&gt;, so I thought I could stand up a server, protect it with token auth, and plug it into the claude app.&lt;/p&gt;
+&lt;p&gt;Not so fast, bub. You need Oauth 2.0&lt;/p&gt;
+&lt;h2 id="custom-mcp-with-claudeai-or-chatgpt"&gt;Custom MCP with Claude.ai or ChatGPT&lt;/h2&gt;
+&lt;p&gt;For the sake of this post, I&amp;rsquo;m going to refer to Claude, but everything here applies to ChatGPT as well. We&amp;rsquo;re talking about Claude.ai (or the mobile app) but not Claude code.&lt;/p&gt;
+&lt;div class="callout body-text callout-info" role="alert"&gt;
+ &lt;strong class="callout-title"&gt;Note&lt;/strong&gt;
+ I do not use selfhosted AI tools like openclaw or hermes. If you do, any of the 50 existing options will work for you.
+&lt;/div&gt;
+
+&lt;p&gt;I want to use my paperless data with Claude. It requires that MCP servers, called &amp;ldquo;Connectors&amp;rdquo; in Claude, or &amp;ldquo;Plugins&amp;rdquo; in ChatGPT, run behind Oauth 2.0.&lt;/p&gt;
+&lt;p&gt;Crucially, you &lt;strong&gt;must supply an Oauth 2.0 provider&lt;/strong&gt;. Most developers are familiar with building an Oauth client application that uses some cloud hosted identity provider like google to handle sign-in. It gives you a token pair with refresh that you can hang onto and use on behalf of that user.&lt;/p&gt;
+&lt;p&gt;In this situation, Claude is the client, and you must run the server. The reward/effort ratio was quickly tipping toward &amp;ldquo;not worth it&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Except Cloudflare now has a product that just&amp;hellip; does this.&lt;/p&gt;
+&lt;h2 id="cloudflare-mcp-server-portals"&gt;Cloudflare MCP Server Portals&lt;/h2&gt;
+&lt;p&gt;Cloudflare made a thing that lets you run an MCP server behind its identity services almost like a reverse proxy. &lt;a href="https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/"&gt;Read the documentation here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The cloudflare product offering is so large now that they should probably offer certification exams like AWS. They might even do that. I can&amp;rsquo;t be bothered to check, because you can now &lt;a href="https://developers.cloudflare.com/agent-setup/"&gt;paste this into an agent&lt;/a&gt; and get a lovely suite of skills that lets you very efficiently interrogate their documentation.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve had a really good experience developing for the Workers platform using these skills. If I sound like a Cloudflare shill, it&amp;rsquo;s probably because Matthew Prince replied to one of my tweets in 2014 and mailed me some stickers and that&amp;rsquo;s apparently all it takes to buy my love.&lt;/p&gt;
+&lt;p&gt;So anyway, I happened to have the skills already installed and probably typed something like &lt;code&gt;&amp;quot;How can I run an mcp server with Oauth using cloudflare&amp;quot;&lt;/code&gt;, expecting some convoluted assemblage of half a dozen vaguely named products like &lt;em&gt;Access&lt;/em&gt; and &lt;em&gt;Zero Trust&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;But lo and behold, Cloudflare MCP Portals.&lt;/p&gt;
+&lt;p&gt;&lt;img src="./mcp-portal-request-flow.CybWTaQp_Z1vEGof.png" alt="MCP Portal request flow"&gt;&lt;/p&gt;
+&lt;h2 id="deploying-it"&gt;Deploying it&lt;/h2&gt;
+&lt;p&gt;I made &lt;a href="https://github.com/subdavis/paperless-mcp/blob/main/DEPLOY.md"&gt;a detailed guide for setting this up&lt;/a&gt; but here&amp;rsquo;s the gist of it. You don&amp;rsquo;t even need to own a domain inside cloudflare.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have a Streamable HTTP MCP server running in cloudflare workers deployed with wrangler. It holds a token to access your Paperless instance, and translates MCP tool calls into API client calls.&lt;/li&gt;
+&lt;li&gt;You click a bunch of bullshit in the Cloudflare console.&lt;/li&gt;
+&lt;li&gt;You get an authenticated proxy multiplexer thing that stands in front of one (or many) MCP servers.&lt;/li&gt;
+&lt;li&gt;You paste that URL into Claude, and when you authenticate, it sends you to Cloudflare to sign in and pick what servers or tools you want to expose to Claude.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you follow the above guide closely, you can have a functioning Paperless MCP server in about 20 minutes.&lt;/p&gt;
+&lt;p&gt;Then you can get on with the important stuff:&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://subdavis.com/posts/2026-07-22-paperless-ai/screenshot-example.png"
+ alt="Paperless NGX in Claude" width="300"&gt;
+&lt;/figure&gt;
+
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Github Repo: &lt;a href="https://github.com/subdavis/paperless-mcp"&gt;https://github.com/subdavis/paperless-mcp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deployment Guide: &lt;a href="https://github.com/subdavis/paperless-mcp/blob/main/DEPLOY.md"&gt;https://github.com/subdavis/paperless-mcp/blob/main/DEPLOY.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cloudflare Docs: &lt;a href="https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/"&gt;https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title>Cache busting Hono CSS for Cloudflare Workers</title><link>https://subdavis.com/posts/2026-04-cache-busting-hono/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://subdavis.com/posts/2026-04-cache-busting-hono/</guid><description>Without a(nother) build tool.</description><content:encoded>&lt;p&gt;&lt;a href="https://hono.dev/"&gt;Hono JS&lt;/a&gt; is a barebones framework I&amp;rsquo;ve used on projects recently to write server side JSX.&lt;/p&gt;
 &lt;p&gt;You can bundle any static assets you like and ship them to be served alongside your worker app, but these are not esbuild artifacts and are never touched by a build tool.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;There is no cache busting&lt;/strong&gt;, so I made my own simple pre-build step to add file hashes.&lt;/p&gt;
 &lt;p&gt;My only point in jotting this down is that you don&amp;rsquo;t necessarily need to adopt Vite or Webpack for small capabilities like this, or understand the depths of Clouflare cache controls.&lt;/p&gt;
