@@ -1,5 +1,6 @@
 [tools]
 node = "22"
+go = "1.25.6"
 
 [tasks.retweet]
 description = "Retweet new tweets from Twitter account"

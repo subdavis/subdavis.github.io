@@ -3,7 +3,7 @@ projects:
     subtitle: "JavaScript, Webpack"
     img: "tusk-200w.webp"
     href: "https://subdavis.com/Tusk"
-    text: "Tusk is a browser extension for filling passwords from a KeePass database stored in the cloud. I didn't start this project (it began as CKP) but I created a fork with a new UI since the original project lost steam. You can install Tusk for Chrome or Firefox. I've since abandoned the project due to difficulties with cloud storage APIs, particularly Google Drive."
+    text: "Tusk is a browser extension for filling passwords from a KeePass database stored in the cloud. I didn't start this project (it began as CKP) but I created a fork with a new UI since the original project lost steam. You can install Tusk for Chrome or Firefox. It is currently in maintenance mode."
 
   - title: "Kobo Book Downloader"
     subtitle: "Python, Flask, Tailwind CSS"
@@ -14,7 +14,7 @@ projects:
   - title: "RSS Glue"
     subtitle: "Python, FastAPI"
     img: "glue-200w.webp"
-    text: "Frustrated with inflexible and flaky RSS digest services, I made my own flaky one. RSS Glue can take arbitrary chronological feeds and merge, digest, filter, and transform them into whatever you like."
+    text: "Tired of inflexible and flaky RSS digest services, I made my own flaky one. RSS Glue can take arbitrary chronological feeds and merge, digest, filter, and transform them into whatever you like."
     href: "https://github.com/subdavis/rss-glue"
 
   - title: "This Website!"
@@ -27,7 +27,7 @@ projects:
     subtitle: "React, Next.js, Tailwind"
     img: "bikegroups-200w.webp"
     href: "https://msp.bike/"
-    text: "msp.bike is a simple directory for the Minneapolis cycling community. It grew out of my frustration with how social media platforms gatekeep and bury information."
+    text: "msp.bike is a simple calendar and directory for the Minneapolis cycling community. It grew out of my frustration with dependence on Meta's user-hostile platforms for local organizing."
 
   - title: "WorkspacesIO"
     subtitle: "Python, FastApi, Vue 3"
