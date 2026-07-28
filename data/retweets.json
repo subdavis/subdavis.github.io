@@ -1,8 +1,28 @@
 {
-  "count": 63,
+  "count": 64,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 655,
+      "url": "https://www.theargumentmag.com/p/who-loses-when-cars-stop-crashing",
+      "title": "Who loses when cars stop crashing? - by Kelsey Piper",
+      "description": "Sometimes progress puts you out of business.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260728005851/https://www.theargumentmag.com/p/who-loses-when-cars-stop-crashing",
+      "favicon_url": "https://links.subdavis.com/static/https_www_theargumentmag_com.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/cd78db9669cb717623d10bd4240ab6a8.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Urbanism"
+      ],
+      "date_added": "2026-07-28T00:58:51.278246Z",
+      "date_modified": "2026-07-28T00:58:51.278253Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 654,
       "url": "https://iamwillwang.com/notes/has-not-been-viewed-much/",
