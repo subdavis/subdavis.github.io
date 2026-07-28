@@ -3,6 +3,7 @@ title: Claude Code SDK is pretty wild
 date: 2026-02-11 22:00:00
 description: Mixing claude with procedural code beyond one-shot i/o.
 images: ["topreventwar.jpg"]
+unlisted: true
 ---
 
 I've been using claude code on and off since it launched a year ago. Since the Christmas holiday, it seems [a ton of folks outside the software industry have discovered it](https://www.theargumentmag.com/p/i-cant-stop-yelling-at-claude-code) as well.
