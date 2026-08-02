@@ -1,8 +1,28 @@
 {
-  "count": 64,
+  "count": 65,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 656,
+      "url": "https://spectrum.ieee.org/the-first-transatlantic-telegraph-cable-was-a-bold-beautiful-failure",
+      "title": "The First Transatlantic Telegraph Cable Was a Bold, Beautiful Failure - IEEE Spectrum",
+      "description": "The Atlantic Telegraph Company’s 1858 failure set the stage for success just eight years later",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260801202928/https://spectrum.ieee.org/the-first-transatlantic-telegraph-cable-was-a-bold-beautiful-failure",
+      "favicon_url": "https://links.subdavis.com/static/https_spectrum_ieee_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/80919fc460c6809624be881a21372c32.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "history"
+      ],
+      "date_added": "2026-08-01T20:29:28.860304Z",
+      "date_modified": "2026-08-01T20:29:28.860314Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 655,
       "url": "https://www.theargumentmag.com/p/who-loses-when-cars-stop-crashing",
