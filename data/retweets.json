@@ -1,8 +1,28 @@
 {
-  "count": 65,
+  "count": 66,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 661,
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "title": "Better Models: Worse Tools",
+      "description": "About an aggravating tool-calling regression in newer Claude models.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260804150325/https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "favicon_url": "https://links.subdavis.com/static/https_lucumr_pocoo_org.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/5d8627e5c33aba7929ddf334ec485623.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-08-04T15:03:25.584044Z",
+      "date_modified": "2026-08-04T15:03:25.584053Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 656,
       "url": "https://spectrum.ieee.org/the-first-transatlantic-telegraph-cable-was-a-bold-beautiful-failure",
