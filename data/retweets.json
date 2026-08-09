@@ -1,8 +1,28 @@
 {
-  "count": 66,
+  "count": 67,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 662,
+      "url": "https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
+      "title": "The AI Apocalypse Is Already Here",
+      "description": "Americans do not care for artificial intelligence. Recent polling shows that their attitudes mostly range from ambivalence to horror.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260809033839/https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_compactmag_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/31e1f24d052b55bff4da8f7332910c3e.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-08-09T03:38:39.101593Z",
+      "date_modified": "2026-08-09T03:38:39.101602Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 661,
       "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
