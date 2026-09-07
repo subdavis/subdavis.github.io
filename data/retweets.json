@@ -1,8 +1,88 @@
 {
-  "count": 64,
+  "count": 68,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 665,
+      "url": "https://minnesotareformer.com/2026/08/13/feds-spied-on-protesters-left-wing-organizations-and-unions-during-metro-surge/",
+      "title": "Documents show how feds spied on protesters, left-wing organizations and unions during Metro Surge • Minnesota Reformer",
+      "description": "Homeland Security investigators secretly recorded conversations, infiltrated Signal chats and obtained financial records for labor unions and progressive groups as part of a wide-ranging surveillance effort during Operation Metro Surge, according to court documents filed Thursday morning.  The documents, first reported by The New York Times, were filed by a defense attorney in the federal […]",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260816195432/https://minnesotareformer.com/2026/08/13/feds-spied-on-protesters-left-wing-organizations-and-unions-during-metro-surge/",
+      "favicon_url": "https://links.subdavis.com/static/https_minnesotareformer_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/2d2e839f149d12062033e93f546fc40a.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Minnesota"
+      ],
+      "date_added": "2026-08-16T19:54:32.960759Z",
+      "date_modified": "2026-08-16T19:54:32.960769Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 662,
+      "url": "https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
+      "title": "The AI Apocalypse Is Already Here",
+      "description": "Americans do not care for artificial intelligence. Recent polling shows that their attitudes mostly range from ambivalence to horror.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260809033839/https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
+      "favicon_url": "https://links.subdavis.com/static/https_www_compactmag_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/31e1f24d052b55bff4da8f7332910c3e.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-08-09T03:38:39.101593Z",
+      "date_modified": "2026-08-09T03:38:39.101602Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 661,
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "title": "Better Models: Worse Tools",
+      "description": "About an aggravating tool-calling regression in newer Claude models.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260804150325/https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "favicon_url": "https://links.subdavis.com/static/https_lucumr_pocoo_org.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/5d8627e5c33aba7929ddf334ec485623.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-08-04T15:03:25.584044Z",
+      "date_modified": "2026-08-04T15:03:25.584053Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 656,
+      "url": "https://spectrum.ieee.org/the-first-transatlantic-telegraph-cable-was-a-bold-beautiful-failure",
+      "title": "The First Transatlantic Telegraph Cable Was a Bold, Beautiful Failure - IEEE Spectrum",
+      "description": "The Atlantic Telegraph Company’s 1858 failure set the stage for success just eight years later",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260801202928/https://spectrum.ieee.org/the-first-transatlantic-telegraph-cable-was-a-bold-beautiful-failure",
+      "favicon_url": "https://links.subdavis.com/static/https_spectrum_ieee_org.png",
+      "preview_image_url": "https://links.subdavis.com/static/80919fc460c6809624be881a21372c32.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "history"
+      ],
+      "date_added": "2026-08-01T20:29:28.860304Z",
+      "date_modified": "2026-08-01T20:29:28.860314Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 655,
       "url": "https://www.theargumentmag.com/p/who-loses-when-cars-stop-crashing",
