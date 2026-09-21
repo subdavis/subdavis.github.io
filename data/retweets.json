@@ -1,8 +1,46 @@
 {
-  "count": 69,
+  "count": 71,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 672,
+      "url": "https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/",
+      "title": "Nobody pays for open source. We can force them to. | Seldo.com",
+      "description": "Thirty years of voluntary funding schemes haven't paid open source maintainers because asking doesn't scale. The real money already flows — to JFrog, Docker, Sonatype — at the registry layer. The fix: registries charge companies for supply (they already do), then route a slice automatically to the maintainers who make that supply worth having.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260921042243/https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/",
+      "favicon_url": "https://links.subdavis.com/static/https_seldo_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [],
+      "date_added": "2026-09-21T04:22:43.751623Z",
+      "date_modified": "2026-09-21T04:22:43.751634Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 671,
+      "url": "https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage%3Futm_campaign%3Dposts-open-in-app%26triedRedirect%3Dtrue",
+      "title": "Frontier Labs Are Selling Garbage to Fools in Washington",
+      "description": "",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20260920231534/https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage%3Futm_campaign%3Dposts-open-in-app%26triedRedirect%3Dtrue",
+      "favicon_url": "https://links.subdavis.com/static/https_deadneurons_substack_com.jpg",
+      "preview_image_url": "https://links.subdavis.com/static/0c5e92524e2c962d87e274fedf820e94.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "AI"
+      ],
+      "date_added": "2026-09-20T23:15:34.871117Z",
+      "date_modified": "2026-09-20T23:15:34.871125Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 670,
       "url": "https://www.economicforces.xyz/p/insuring-against-success",
