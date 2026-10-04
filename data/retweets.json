@@ -1,8 +1,48 @@
 {
-  "count": 71,
+  "count": 73,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 677,
+      "url": "https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician",
+      "title": "So You Think You Could Be An Electrician?—Asterisk",
+      "description": "Funny how the people telling kids to get jobs in the trades tend to be white-collar.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20261004111542/https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician",
+      "favicon_url": "https://links.subdavis.com/static/https_asteriskmag_com.png",
+      "preview_image_url": "https://links.subdavis.com/static/a309938497e28a7ad4bda1dab16c687a.png",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Economy"
+      ],
+      "date_added": "2026-10-04T11:15:42.670387Z",
+      "date_modified": "2026-10-04T11:15:42.670399Z",
+      "website_title": null,
+      "website_description": null
+    },
+    {
+      "id": 676,
+      "url": "https://schlopptoberween.com/",
+      "title": "Schlöpptoberween Vol. 7 - Sat Nov 14",
+      "description": "Schlöpptoberween Vol. 7, Saturday Nov 14: part roaming adventure, part fundraiser for Pedal Power MN. A schlöppy fall bike ride out of Northeast Minneapolis. Grab the remote.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20261003213418/https://schlopptoberween.com/",
+      "favicon_url": "https://links.subdavis.com/static/https_schlopptoberween_com.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Bikes"
+      ],
+      "date_added": "2026-10-03T21:34:18.121388Z",
+      "date_modified": "2026-10-03T21:34:18.121394Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 672,
       "url": "https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/",
