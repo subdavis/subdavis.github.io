@@ -1,8 +1,28 @@
 {
-  "count": 75,
+  "count": 76,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 684,
+      "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
+      "title": "One of the Greatest Inventions in the History of Human Transport",
+      "description": "Blaise Pascal knew he was dying.  He was in his 30s and had been sick most of his life, but at least he didn’t have to worry about being forgotten.",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20261026145407/https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
+      "favicon_url": "https://links.subdavis.com/static/https_humantransit_org.png",
+      "preview_image_url": null,
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Urbanism"
+      ],
+      "date_added": "2026-10-26T14:54:07.788149Z",
+      "date_modified": "2026-10-26T14:54:30.753569Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 682,
       "url": "https://lastmuseum.com/",
