@@ -1,8 +1,28 @@
 {
-  "count": 77,
+  "count": 78,
   "next": null,
   "previous": null,
   "results": [
+    {
+      "id": 689,
+      "url": "https://streets.mn/2012/07/09/are-food-trucks-good-or-bad-for-the-twin-cities/",
+      "title": "Are Food Trucks Good or Bad for the Twin Cities? - Streets.mn",
+      "description": "The Case Against Food Trucks I was at an urban planning function a while back when someone asked me, “What do you think of food trucks?” “I don’t know,” I replied. “They seem pretty good to me.” “T…",
+      "notes": "",
+      "web_archive_snapshot_url": "https://web.archive.org/web/20261109150739/https://streets.mn/2012/07/09/are-food-trucks-good-or-bad-for-the-twin-cities/",
+      "favicon_url": "https://links.subdavis.com/static/https_streets_mn.png",
+      "preview_image_url": "https://links.subdavis.com/static/7cfff893de6d837e5079837d187d852a.jpg",
+      "is_archived": false,
+      "unread": false,
+      "shared": true,
+      "tag_names": [
+        "Urbanism"
+      ],
+      "date_added": "2026-11-09T15:07:39.667775Z",
+      "date_modified": "2026-11-09T15:07:39.667780Z",
+      "website_title": null,
+      "website_description": null
+    },
     {
       "id": 687,
       "url": "https://colinshevlin.blog/a-week-in-the-japanese-alps.html",
